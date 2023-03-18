@@ -1,0 +1,56 @@
+\documentclass{amsart}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing}
+
+\usepackage{booktabs}
+
+\nofiles
+
+\raggedbottom
+
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{tikzpicture}[scale=10]
+\path (0,0) node (A) {A}
+			(0,1) node (B) {B}
+			(1,1) node (C) {C}
+			(1,0) node (D) {D}
+			(.29,0) node (E) {E}
+			(0,.29) node (F) {F}
+			(.21,.5) node (G) {G}
+			(0,.71) node (H) {H}
+			(.29,1) node (I) {I}
+			(.5,.79) node (J) {J}
+			(.71,1) node (K) {K}
+			(1,.71) node (L) {L}
+			(.79,.5) node (M) {M}
+			(1,.29) node (N) {N}
+			(.71,0) node (O) {O}
+			(.5,.21) node (P) {P};
+\draw (A) -- (F) -- (H) -- (B) -- (I) -- (K) -- (C) -- (L) -- (N) -- (D) -- (O) -- (E) -- (A);
+\draw (E) -- (F) -- (G) -- (H) -- (I) -- (J) -- (K) -- (L) -- (M) -- (N) -- (O) -- (P) -- (E);
+\draw (G) -- (J) -- (M) -- (P) -- (G);
+\draw [decorate, decoration={brace,amplitude=4pt,mirror,raise=36pt}] (A) -- (D) node [black,midway,yshift=-46pt] {1};
+\draw [decorate, decoration={brace,amplitude=4pt,raise=36pt}] (A) -- (B) node [black,midway,xshift=-46pt] {1};
+\draw [decorate, decoration={brace,amplitude=4pt,mirror,raise=8pt}] (O) -- (H) node [black,midway,xshift=14pt,yshift=12pt] {1};
+\draw [decorate, decoration={brace,amplitude=4pt,mirror,raise=8pt}] (A) -- (O) node [black,midway,yshift=-22pt] {$\frac{1}{\sqrt{2}}$};
+\draw [decorate, decoration={brace,amplitude=4pt,raise=8pt}] (A) -- (H) node [black,midway,xshift=-22pt] {$\frac{1}{\sqrt{2}}$};
+\end{tikzpicture}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l l l}
+$A = (0, 0)$ & $G = (\frac{1}{\sqrt{2}} - \frac{1}{2}, \frac{1}{2})$ & $M = (1 - \frac{1}{\sqrt{2}} + \frac{1}{2}, \frac{1}{2})$ \\
+$B = (0, 1)$ & $H = (0, \frac{1}{\sqrt{2}})$ & $N = (1, 1 - \frac{1}{\sqrt{2}})$ \\
+$C = (1, 1)$ & $I = (1 - \frac{1}{\sqrt{2}}, 1)$ & $O = (\frac{1}{\sqrt{2}}, 0)$ \\
+$D = (1, 0)$ & $J = (\frac{1}{2}, 1 - \frac{1}{\sqrt{2}} + \frac{1}{2})$ & $P = (\frac{1}{2}, \frac{1}{\sqrt{2}} - \frac{1}{2})$ \\
+$E = (1 - \frac{1}{\sqrt{2}}, 0)$ & $K = (\frac{1}{\sqrt{2}}, 1)$ \\
+$F = (0, 1 - \frac{1}{\sqrt{2}})$ & $L = (1, \frac{1}{\sqrt{2}})$ \\
+\end{tabular}
+\end{table}
+
+\end{document}
+

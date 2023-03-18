@@ -1,0 +1,4 @@
+monospace
+height: 11 pixels
+width: 7 pixels
+x-height: 7 pixels

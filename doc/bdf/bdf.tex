@@ -1,0 +1,48 @@
+\documentclass{amsart}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{arrows}
+
+\nofiles
+
+\raggedbottom
+
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{verbatim}
+SWIDTH <DWIDTHx in Font Units> <DWIDTHy in Font Units>
+DWIDTH <DWIDTHx> <DWIDTHy>
+BBX <BBw> <BBh> <BBxoff> <BByoff>
+
+DWIDTH 6 0
+BBX 3 3 1 6
+\end{verbatim}
+
+\begin{center}
+\begin{tikzpicture}
+\draw[step=1,densely dashed,darkgray] (.1,.1) grid (9.9,13.9);
+\fill[black] (3,9) rectangle (4,12);
+\fill[black] (5,9) rectangle (6,12);
+
+\draw[|<->|,thick] (3,8.5) -- (6,8.5) node[below,midway] {BBw};
+\draw[|<->|,thick] (2.5,9) -- (2.5,12) node[left,midway] {BBh};
+
+\draw[|<->|,thick] (1.5,3) -- (1.5,9) node[left,midway] {BByoff};
+\draw[|<->|,thick] (2,2.5) -- (3,2.5) node[below,midway] {BBxoff};
+
+\draw[|<->|,thick] (2,1.75) -- (8,1.75) node[below,midway] {DWIDTHx};
+
+\definecolor{darkblue}{rgb}{0,0,125}
+\draw[color=darkblue,very thick] (2,2.5) -- (2,3.5);
+\draw[color=darkblue,very thick] (1.5,3) -- (2.5,3);
+
+\draw[color=darkblue,very thick] (8,2.75) -- (8,3.25);
+\draw[color=darkblue,very thick] (7.75,3) -- (8.25,3);
+\end{tikzpicture}
+\end{center}
+
+\end{document}
+

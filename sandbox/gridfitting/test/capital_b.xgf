@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
+	<glyph ps-name="B">
+
+		<!-- NOT DONE -->
+
+		<constant name="last" value="20"/>
+		<!-- phantom points -->
+		<constant name="character-origin" value="last + 1"/>
+		<constant name="advance-width-point" value="last + 2"/>
+		<constant name="top-origin" value="last + 3"/>
+		<constant name="advance-height-point" value="last + 4"/>
+
+
+		<!-- left stem -->
+		<with-vectors axis="x">
+			<move min-distance="no">
+				<reference>
+					<point num="character-origin"/>
+				</reference>
+				<point num="0"/>
+				<shift>
+					<point num="1"/>
+					<point num="2"/>
+				</shift>
+			</move>
+
+			<move distance="stem-width">
+				<reference>
+					<point num="0"/>
+				</reference>
+				<point num="9"/>
+				<shift>
+					<point num="14"/>
+					<point num="15"/>
+					<point num="20"/>
+				</shift>
+			</move>
+		</with-vectors>
+
+
+		<!-- right stem -->
+		<with-vectors axis="x">
+			<move>
+				<reference>
+					<point num="advance-width-point"/>
+				</reference>
+				<point num="7"/>
+				<shift>
+					<point num="2"/>
+					<point num="3"/>
+					<point num="4"/>
+					<point num="5"/>
+					<point num="6"/>
+					<point num="8"/>
+				</shift>
+			</move>
+
+			<move distance="stem-width">
+				<reference>
+					<point num="7"/>
+				</reference>
+				<point num="11"/>
+				<shift>
+					<point num="10"/>
+					<point num="12"/>
+					<point num="13"/>
+					<point num="16"/>
+					<point num="17"/>
+					<point num="18"/>
+					<point num="19"/>
+				</shift>
+			</move>
+		</with-vectors>
+
+
+		<!-- bottom stem -->
+		<with-vectors axis="y">
+			<move>
+				<point num="0"/>
+				<shift>
+					<point num="7"/>
+					<point num="8"/>
+				</shift>
+			</move>
+
+			<move distance="stem-width">
+				<reference>
+					<point num="0"/>
+				</reference>
+				<point num="9"/>
+				<shift>
+					<point num="10"/>
+					<point num="11"/>
+				</shift>
+			</move>
+		</with-vectors>
+
+
+		<!-- top stem -->
+		<with-vectors axis="y">
+			<move>
+				<reference>
+					<point num="top-origin"/>
+				</reference>
+				<point num="1"/>
+				<shift>
+					<point num="2"/>
+					<point num="3"/>
+				</shift>
+			</move>
+
+			<move distance="stem-width">
+				<reference>
+					<point num="1"/>
+				</reference>
+				<point num="20"/>
+				<shift>
+					<point num="19"/>
+					<point num="18"/>
+				</shift>
+			</move>
+		</with-vectors>
+
+
+		<!-- top right diagonal -->
+		<call-macro name="hint-corner">
+			<with-param name="in-horz" value="19"/>
+			<with-param name="out-horz" value="2"/>
+			<with-param name="in-vert" value="18"/>
+			<with-param name="out-vert" value="3"/>
+		</call-macro>
+
+
+		<!-- bottom right diagonal -->
+		<call-macro name="hint-corner">
+			<with-param name="in-horz" value="10"/>
+			<with-param name="out-horz" value="8"/>
+			<with-param name="in-vert" value="11"/>
+			<with-param name="out-vert" value="7"/>
+		</call-macro>
+
+
+		<!-- bar -->
+		<with-vectors axis="y">
+			<move distance="bar-height">
+				<reference>
+					<point num="0"/>
+				</reference>
+				<point num="15"/>
+				<shift>
+					<point num="16"/>
+					<point num="17"/>
+				</shift>
+			</move>
+
+			<move distance="stem-width">
+				<reference>
+					<point num="15"/>
+				</reference>
+				<point num="14"/>
+				<shift>
+					<point num="13"/>
+					<point num="12"/>
+				</shift>
+			</move>
+		</with-vectors>
+
+
+		<with-vectors axis="y">
+			<interpolate round="to-double-grid">
+				<reference>
+					<point num="16"/>
+					<point num="13"/>
+				</reference>
+				<point num="5"/>
+			</interpolate>
+
+			<shift>
+				<reference>
+					<point num="5"/>
+				</reference>
+				<point num="4"/>
+				<point num="6"/>
+			</shift>
+		</with-vectors>
+
+
+		<call-macro name="hint-indent">
+			<with-param name="out-top" value="4"/>
+			<with-param name="mid" value="5"/>
+			<with-param name="out-bot" value="6"/>
+
+			<with-param name="in-top-horz" value="16"/>
+			<with-param name="in-top-vert" value="17"/>
+
+			<with-param name="in-bot-horz" value="13"/>
+			<with-param name="in-bot-vert" value="12"/>
+		</call-macro>
+
+	</glyph>
+</xgridfit>
+

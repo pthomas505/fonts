@@ -1,0 +1,3 @@
+proportional
+height: 9 pixels
+x-height: 6 pixels

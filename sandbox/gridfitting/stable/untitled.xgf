@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<infile>../Untitled.ufo</infile>
+	<outfile>Untitled.ttf</outfile>
+
+
+	<xi:include href="hint_corner.xgf" xpointer="xmlns(x=http://xgridfit.sourceforge.net/Xgridfit2) xpointer(//x:macro)"/>
+	<xi:include href="hint_half_corner.xgf" xpointer="xmlns(x=http://xgridfit.sourceforge.net/Xgridfit2) xpointer(//x:macro)"/>
+	<xi:include href="hint_indent.xgf" xpointer="xmlns(x=http://xgridfit.sourceforge.net/Xgridfit2) xpointer(//x:macro)"/>
+
+
+	<control-value name="stem-width" value="128"/>
+	<control-value name="diagonal-stem-width" value="128"/>
+	<control-value name="diagonal-stem-width-corner" value="128"/>
+
+	<control-value name="bar-height" value="640"/>
+	<control-value name="glyph-width" value="768"/>
+	<control-value name="cap-height" value="1152"/>
+
+
+	<pre-program>
+		<!-- Turns off drop-out-control -->
+		<set-dropout-control flags="0" threshold="0"/>
+		<set-dropout-type value="2"/>
+
+		<set-control-value-cut-in value="2.0"/>
+
+		<round value="stem-width"/>
+		<round value="bar-height"/>
+
+		<!--
+			sets rounding to the nearest sqrt(2)/2
+			gridPeriod=sqrt(2)/2
+			period=gridPeriod, phase=0:, threshold=4/8*period
+			1:0:8
+			01:00:1000
+		-->
+		<push>72</push>
+		<command name="S45ROUND"/>
+		<!-- sets the diagonal-stem-width to the rounded stem-width, rounded to the nearest sqrt(2)/2, minus sqrt(2)/2 -->
+		<set-control-value name="diagonal-stem-width" unit="pixel" value="round(control-value(stem-width)) - 0.71"/>
+
+		<!-- sets the diagonal-stem-width-corner to the rounded stem-width, rounded to the nearest sqrt(2)/2 -->
+		<set-control-value name="diagonal-stem-width-corner" unit="pixel" value="round(control-value(stem-width))"/>
+	</pre-program>
+
+
+	<xi:include href="exclam.xgf" xpointer="xmlns(x=http://xgridfit.sourceforge.net/Xgridfit2) xpointer(/x:xgridfit/x:glyph)"/>
+	<xi:include href="quotedbl.xgf" xpointer="xmlns(x=http://xgridfit.sourceforge.net/Xgridfit2) xpointer(/x:xgridfit/x:glyph)"/>
+	<xi:include href="semicolon.xgf" xpointer="xmlns(x=http://xgridfit.sourceforge.net/Xgridfit2) xpointer(/x:xgridfit/x:glyph)"/>
+	<xi:include href="capital_a.xgf" xpointer="xmlns(x=http://xgridfit.sourceforge.net/Xgridfit2) xpointer(/x:xgridfit/x:glyph)"/>
+	<xi:include href="capital_b.xgf" xpointer="xmlns(x=http://xgridfit.sourceforge.net/Xgridfit2) xpointer(/x:xgridfit/x:glyph)"/>
+	<xi:include href="capital_c.xgf" xpointer="xmlns(x=http://xgridfit.sourceforge.net/Xgridfit2) xpointer(/x:xgridfit/x:glyph)"/>
+	<xi:include href="capital_d.xgf" xpointer="xmlns(x=http://xgridfit.sourceforge.net/Xgridfit2) xpointer(/x:xgridfit/x:glyph)"/>
+	<xi:include href="capital_p.xgf" xpointer="xmlns(x=http://xgridfit.sourceforge.net/Xgridfit2) xpointer(/x:xgridfit/x:glyph)"/>
+
+</xgridfit>
+

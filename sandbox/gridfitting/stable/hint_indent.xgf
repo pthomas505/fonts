@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
+	<macro name="hint-indent">
+		<param name="out-top"/>
+		<param name="mid"/>
+		<param name="out-bot"/>
+
+		<param name="in-top-horz"/>
+		<param name="in-top-vert"/>
+
+		<param name="in-bot-horz"/>
+		<param name="in-bot-vert"/>
+
+<!--
+		<with-vectors axis="y">
+			<move round="to-half-grid">
+				<point num="out-top"/>
+			</move>
+
+			<move round="to-half-grid">
+				<point num="out-bot"/>
+			</move>
+		</with-vectors>
+-->
+
+		<with-projection-vector to-line="orthogonal">
+			<line>
+				<point num="mid"/>
+				<point num="out-top"/>
+			</line>
+
+			<with-freedom-vector axis="x">
+				<move distance="diagonal-stem-width-corner" round="no">
+					<reference>
+						<point num="mid"/>
+					</reference>
+					<point num="in-top-horz"/>
+				</move>
+			</with-freedom-vector>
+
+			<with-freedom-vector axis="y">
+				<move distance="diagonal-stem-width-corner" round="no">
+					<reference>
+						<point num="out-top"/>
+					</reference>
+					<point num="in-top-vert"/>
+				</move>
+			</with-freedom-vector>
+		</with-projection-vector>
+
+
+		<with-projection-vector to-line="orthogonal">
+			<line>
+				<point num="mid"/>
+				<point num="out-bot"/>
+			</line>
+
+			<with-freedom-vector axis="x">
+				<move distance="diagonal-stem-width-corner" round="no">
+					<reference>
+						<point num="mid"/>
+					</reference>
+					<point num="in-bot-horz"/>
+				</move>
+			</with-freedom-vector>
+
+			<with-freedom-vector axis="y">
+				<move distance="diagonal-stem-width-corner" round="no">
+					<reference>
+						<point num="out-bot"/>
+					</reference>
+					<point num="in-bot-vert"/>
+				</move>
+			</with-freedom-vector>
+		</with-projection-vector>
+	</macro>
+</xgridfit>
+

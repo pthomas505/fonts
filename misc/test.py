@@ -1,0 +1,53 @@
+import math
+import matplotlib.pyplot as plt
+from shapely.geometry import Polygon
+
+sqrt2 = math.sqrt(2)
+
+point_A = (0, 0)
+point_B = (0, 1)
+point_C = (1, 1)
+point_D = (1, 0)
+point_E = (1 - (1 / sqrt2), 0)
+point_F = (0, 1 - (1 / sqrt2))
+point_G = ((1 / sqrt2) - 0.5, 0.5)
+point_H = (0, 1 / sqrt2)
+point_I = (1 - (1 / sqrt2), 1)
+point_J = (0.5, 1 - (1 / sqrt2) + 0.5)
+point_K = (1 / sqrt2, 1)
+point_L = (1, 1 / sqrt2)
+point_M = (1 - (1 / sqrt2) + 0.5, 0.5)
+point_N = (1, 1 - (1 / sqrt2))
+point_O = (1 / sqrt2, 0)
+point_P = (0.5, (1 / sqrt2) - 0.5)
+
+polygon_A_F_E = Polygon([point_A, point_F, point_E])
+polygon_E_P_O = Polygon([point_E, point_P, point_O])
+polygon_O_N_D = Polygon([point_O, point_N, point_D])
+polygon_E_F_G_P = Polygon([point_E, point_F, point_G, point_P])
+polygon_O_P_M_N = Polygon([point_O, point_P, point_M, point_N])
+polygon_F_H_G = Polygon([point_F, point_H, point_G])
+polygon_P_G_J_M = Polygon([point_P, point_G, point_J, point_M])
+polygon_N_M_L = Polygon([point_N, point_M, point_L])
+polygon_G_H_I_J = Polygon([point_G, point_H, point_I, point_J])
+polygon_M_J_K_L = Polygon([point_M, point_J, point_K, point_L])
+polygon_H_B_I = Polygon([point_H, point_B, point_I])
+polygon_J_I_K = Polygon([point_J, point_I, point_K])
+polygon_L_K_C = Polygon([point_L, point_K, point_C])
+
+
+plt.plot(*polygon_A_F_E.exterior.xy)
+plt.plot(*polygon_E_P_O.exterior.xy)
+plt.plot(*polygon_O_N_D.exterior.xy)
+plt.plot(*polygon_E_F_G_P.exterior.xy)
+plt.plot(*polygon_O_P_M_N.exterior.xy)
+plt.plot(*polygon_F_H_G.exterior.xy)
+plt.plot(*polygon_P_G_J_M.exterior.xy)
+plt.plot(*polygon_N_M_L.exterior.xy)
+plt.plot(*polygon_G_H_I_J.exterior.xy)
+plt.plot(*polygon_M_J_K_L.exterior.xy)
+plt.plot(*polygon_H_B_I.exterior.xy)
+plt.plot(*polygon_J_I_K.exterior.xy)
+plt.plot(*polygon_L_K_C.exterior.xy)
+plt.show()
+

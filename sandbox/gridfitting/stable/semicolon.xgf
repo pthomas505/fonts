@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
+	<glyph ps-name="semicolon">
+		<constant name="last" value="7"/>
+		<!-- phantom points -->
+		<constant name="character-origin" value="last + 1"/>
+		<constant name="advance-width-point" value="last + 2"/>
+		<constant name="top-origin" value="last + 3"/>
+		<constant name="advance-height-point" value="last + 4"/>
+
+
+		<!-- dot -->
+		<with-vectors axis="x">
+			<move>
+				<reference>
+					<point num="character-origin"/>
+				</reference>
+				<point num="4"/>
+				<align>
+					<point num="5"/>
+				</align>
+			</move>
+
+			<move distance="stem-width">
+				<reference>
+					<point num="4"/>
+				</reference>
+				<point num="7"/>
+				<align>
+					<point num="6"/>
+				</align>
+			</move>
+		</with-vectors>
+
+		<with-vectors axis="y">
+			<move>
+				<point num="4"/>
+				<align>
+					<point num="7"/>
+				</align>
+			</move>
+
+			<move distance="stem-width">
+				<reference>
+					<point num="4"/>
+				</reference>
+				<point num="5"/>
+				<align>
+					<point num="6"/>
+				</align>
+			</move>
+		</with-vectors>
+
+		<!-- comma -->
+		<with-vectors axis="x">
+			<align>
+				<reference>
+					<point num="7"/>
+				</reference>
+				<point num="3"/>
+			</align>
+
+			<shift>
+				<reference>
+					<point num="3"/>
+				</reference>
+				<contour num="0"/>
+			</shift>
+		</with-vectors>
+
+
+		<with-vectors axis="y">
+			<move round="to-half-grid">
+				<point num="3"/>
+				<shift>
+					<contour num="0"/>
+				</shift>
+			</move>
+		</with-vectors>
+
+		<!-- Sets the diagonal stem width. -->
+		<with-vectors to-line="orthogonal">
+			<line>
+				<point num="0"/>
+				<point num="3"/>
+			</line>
+
+			<diagonal-stem distance="diagonal-stem-width" round="no">
+				<line>
+					<point num="0"/>
+					<point num="3"/>
+				</line>
+				<line>
+					<point num="1"/>
+					<point num="2"/>
+				</line>
+			</diagonal-stem>
+		</with-vectors>
+	</glyph>
+</xgridfit>
+

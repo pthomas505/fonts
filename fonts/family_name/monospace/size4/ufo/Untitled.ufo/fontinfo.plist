@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+	<key>familyName</key>
+	<string>MyFont</string>
+	<key>styleName</key>
+	<string>Medium</string>
+	<key>copyright</key>
+	<string></string>
+	<key>unitsPerEm</key>
+	<integer>2048</integer>
+	<key>xHeight</key>
+	<integer>896</integer>
+	<key>capHeight</key>
+	<integer>1408</integer>
+	<key>ascender</key>
+	<integer>1536</integer>
+	<key>descender</key>
+	<integer>-512</integer>
+	<key>italicAngle</key>
+	<real>0</real>
+	<key>note</key>
+	<string></string>
+	<key>openTypeHeadCreated</key>
+	<string>2013/11/22 22:25:50</string>
+	<key>postscriptFontName</key>
+	<string>Untitled</string>
+	<key>postscriptFullName</key>
+	<string>Untitled</string>
+	<key>postscriptWeightName</key>
+	<string>Medium</string>
+	<key>postscriptUnderlineThickness</key>
+	<integer>0</integer>
+	<key>postscriptUnderlinePosition</key>
+	<integer>0</integer>
+    </dict>
+</plist>

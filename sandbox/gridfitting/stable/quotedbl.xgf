@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
+	<glyph ps-name="quotedbl">
+		<constant name="last" value="7"/>
+		<!-- phantom points -->
+		<constant name="character-origin" value="last + 1"/>
+		<constant name="advance-width-point" value="last + 2"/>
+		<constant name="top-origin" value="last + 3"/>
+		<constant name="advance-height-point" value="last + 4"/>
+
+
+		<with-vectors axis="x">
+			<move>
+				<reference>
+					<point num="character-origin"/>
+				</reference>
+				<point num="0"/>
+				<align>
+					<point num="1"/>
+				</align>
+			</move>
+
+			<move distance="stem-width">
+				<reference>
+					<point num="0"/>
+				</reference>
+				<point num="3"/>
+				<align>
+					<point num="2"/>
+				</align>
+			</move>
+
+
+			<move>
+				<reference>
+					<point num="3"/>
+				</reference>
+				<point num="4"/>
+				<align>
+					<point num="5"/>
+				</align>
+			</move>
+
+			<move distance="stem-width">
+				<reference>
+					<point num="4"/>
+				</reference>
+				<point num="7"/>
+				<align>
+					<point num="6"/>
+				</align>
+			</move>
+		</with-vectors>
+
+		<with-vectors axis="y">
+			<move>
+				<reference>
+					<point num="top-origin"/>
+				</reference>
+				<point num="1"/>
+				<align>
+					<point num="2"/>
+					<point num="5"/>
+					<point num="6"/>
+				</align>
+			</move>
+
+			<move>
+				<reference>
+					<point num="1"/>
+				</reference>
+				<point num="0"/>
+				<align>
+					<point num="3"/>
+					<point num="4"/>
+					<point num="7"/>
+				</align>
+			</move>
+		</with-vectors>
+	</glyph>
+</xgridfit>
+
