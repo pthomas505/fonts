@@ -1,0 +1,27 @@
+Ubuntu 20.04.6 LTS
+
+
+Installing the font copies the TTF file into:
+~/.local/share/fonts
+
+
+Disable antialiasing for the font named 'Untitled' by creating this file:
+~/.config/fontconfig/fonts.conf:
+
+<?xml version='1.0'?>
+<!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+<fontconfig>
+  <match target="pattern">
+    <test name="family">
+      <string>Untitled</string>
+    </test>
+    <edit mode="assign" name="antialias">
+      <bool>false</bool>
+    </edit>
+  </match>
+</fontconfig>
+
+
+Check if antialiasing is enabled for the font named 'Untitled' by running:
+fc-match -v 'Untitled' family antialias
+
