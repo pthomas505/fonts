@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2"
+          xmlns:xi="http://www.w3.org/2001/XInclude">
+
+
+  <glyph ps-name="A">
+    <constant name="last" value="15"/>
+
+    <!-- phantom points -->
+    <constant name="character-origin" value="last + 1"/>
+    <constant name="advance-width-point" value="last + 2"/>
+    <constant name="top-origin" value="last + 3"/>
+    <constant name="advance-height-point" value="last + 4"/>
+
+
+    <!-- left stem -->
+    <with-vectors axis="x">
+      <move min-distance="no">
+        <reference>
+          <point num="character-origin"/>
+        </reference>
+        <point num="0"/>
+        <shift>
+          <point num="1"/>
+          <point num="2"/>
+        </shift>
+      </move>
+
+      <move distance="stem-width">
+        <reference>
+          <point num="0"/>
+        </reference>
+        <point num="9"/>
+        <shift>
+          <point num="8"/>
+          <point num="10"/>
+          <point num="15"/>
+          <point num="14"/>
+        </shift>
+      </move>
+    </with-vectors>
+
+
+    <!-- right stem -->
+    <with-vectors axis="x">
+      <move>
+        <reference>
+          <point num="advance-width-point"/>
+        </reference>
+        <point num="5"/>
+        <shift>
+          <point num="4"/>
+          <point num="3"/>
+        </shift>
+      </move>
+
+      <move distance="stem-width">
+        <reference>
+          <point num="5"/>
+        </reference>
+        <point num="6"/>
+        <shift>
+          <point num="7"/>
+          <point num="11"/>
+          <point num="12"/>
+          <point num="13"/>
+        </shift>
+      </move>
+    </with-vectors>
+
+
+    <!-- top stem -->
+    <with-vectors axis="y">
+      <move>
+        <reference>
+          <point num="top-origin"/>
+        </reference>
+        <point num="2"/>
+        <shift>
+          <point num="1"/>
+          <point num="3"/>
+          <point num="4"/>
+        </shift>
+      </move>
+
+      <move distance="stem-width">
+        <reference>
+          <point num="2"/>
+        </reference>
+        <point num="14"/>
+        <shift>
+          <point num="12"/>
+          <point num="13"/>
+          <point num="15"/>
+        </shift>
+      </move>
+    </with-vectors>
+
+
+    <!-- top left diagonal -->
+    <call-macro name="hint-corner">
+      <with-param name="in-horz" value="14"/>
+      <with-param name="out-horz" value="2"/>
+      <with-param name="in-vert" value="15"/>
+      <with-param name="out-vert" value="1"/>
+    </call-macro>
+
+
+    <!-- top right diagonal -->
+    <call-macro name="hint-corner">
+      <with-param name="in-horz" value="13"/>
+      <with-param name="out-horz" value="3"/>
+      <with-param name="in-vert" value="12"/>
+      <with-param name="out-vert" value="4"/>
+    </call-macro>
+
+
+    <!-- bar -->
+    <with-vectors axis="y">
+      <interpolate round="to-grid">
+        <reference>
+          <point num="9"/>
+          <point num="2"/>
+        </reference>
+        <point num="10"/>
+      </interpolate>
+
+      <align>
+        <reference><point num="10"/></reference>
+        <point num="11"/>
+      </align>
+
+      <move distance="stem-width">
+        <reference>
+          <point num="10"/>
+        </reference>
+        <point num="8"/>
+        <shift>
+          <point num="7"/>
+        </shift>
+      </move>
+    </with-vectors>
+  </glyph>
+</xgridfit>

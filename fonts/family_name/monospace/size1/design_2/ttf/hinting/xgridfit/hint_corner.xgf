@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2"
+          xmlns:xi="http://www.w3.org/2001/XInclude">
+
+
+  <macro name="hint-corner">
+    <param name="in-horz"/>
+    <param name="out-horz"/>
+    <param name="in-vert"/>
+    <param name="out-vert"/>
+
+
+    <with-vectors axis="x">
+      <move round="to-half-grid">
+        <point num="out-horz"/>
+      </move>
+    </with-vectors>
+
+    <with-vectors axis="y">
+      <move round="to-half-grid">
+        <point num="out-vert"/>
+      </move>
+    </with-vectors>
+
+
+    <with-projection-vector to-line="orthogonal">
+      <line>
+        <point num="out-horz"/>
+        <point num="out-vert"/>
+      </line>
+
+      <with-freedom-vector axis="x">
+        <move distance="diagonal-stem-width-corner" round="no">
+          <reference>
+            <point num="out-horz"/>
+          </reference>
+          <point num="in-horz"/>
+        </move>
+      </with-freedom-vector>
+
+      <with-freedom-vector axis="y">
+        <move distance="diagonal-stem-width-corner" round="no">
+          <reference>
+            <point num="out-vert"/>
+          </reference>
+          <point num="in-vert"/>
+        </move>
+      </with-freedom-vector>
+    </with-projection-vector>
+  </macro>
+</xgridfit>
