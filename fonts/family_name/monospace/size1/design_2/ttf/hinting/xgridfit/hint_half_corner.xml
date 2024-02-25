@@ -1,0 +1,60 @@
+<macro name="hint-half-corner">
+  <param name="in-horz" />
+  <param name="out-horz" />
+  <param name="in-vert" />
+  <param name="out-vert" />
+
+
+  <with-vectors axis="x">
+    <move round="to-half-grid">
+      <point num="out-horz" />
+    </move>
+  </with-vectors>
+
+  <with-vectors axis="y">
+    <move round="to-half-grid">
+      <point num="out-vert" />
+    </move>
+  </with-vectors>
+
+
+  <with-projection-vector to-line="orthogonal">
+    <line>
+      <point num="out-horz" />
+      <point num="out-vert" />
+    </line>
+
+    <with-freedom-vector axis="x">
+      <move distance="diagonal-stem-width-corner" round="no">
+        <reference>
+          <point num="out-horz" />
+        </reference>
+        <point num="in-horz" />
+      </move>
+    </with-freedom-vector>
+
+    <with-freedom-vector axis="y">
+      <move distance="diagonal-stem-width-corner" round="no">
+        <reference>
+          <point num="out-vert" />
+        </reference>
+        <point num="in-vert" />
+      </move>
+    </with-freedom-vector>
+  </with-projection-vector>
+
+
+  <with-vectors to-line="parallel">
+    <line>
+      <point num="out-horz" />
+      <point num="out-vert" />
+    </line>
+
+    <align>
+      <reference>
+        <point num="out-vert" />
+      </reference>
+      <point num="in-vert" />
+    </align>
+  </with-vectors>
+</macro>

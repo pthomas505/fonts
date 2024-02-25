@@ -1,0 +1,103 @@
+<glyph ps-name="semicolon">
+  <constant name="last" value="11" />
+
+  <!-- phantom points -->
+  <constant name="character-origin" value="last + 1" />
+  <constant name="advance-width-point" value="last + 2" />
+  <constant name="top-origin" value="last + 3" />
+  <constant name="advance-height-point" value="last + 4" />
+
+
+  <!-- dot -->
+
+  <with-vectors axis="x">
+    <move>
+      <reference>
+        <point num="character-origin" />
+      </reference>
+      <point num="1" />
+      <shift>
+        <point num="0" />
+        <point num="2" />
+        <point num="3" />
+      </shift>
+    </move>
+
+    <move distance="stem-width">
+      <reference>
+        <point num="1" />
+      </reference>
+      <point num="6" />
+      <shift>
+        <point num="7" />
+        <point num="5" />
+        <point num="4" />
+
+        <point num="8" />
+        <point num="9" />
+        <point num="10" />
+        <point num="11" />
+      </shift>
+    </move>
+  </with-vectors>
+
+
+  <with-vectors axis="y">
+    <move>
+      <reference>
+        <point num="top-origin" />
+      </reference>
+      <point num="3" />
+      <shift>
+        <point num="2" />
+        <point num="4" />
+        <point num="5" />
+      </shift>
+    </move>
+
+    <move distance="stem-width">
+      <reference>
+        <point num="3" />
+      </reference>
+      <point num="0" />
+      <shift>
+        <point num="1" />
+        <point num="7" />
+        <point num="6" />
+      </shift>
+    </move>
+  </with-vectors>
+
+
+  <!-- comma -->
+
+  <with-vectors axis="y">
+    <move>
+      <point num="10" />
+      <shift>
+        <point num="8" />
+        <point num="9" />
+        <point num="11" />
+      </shift>
+    </move>
+  </with-vectors>
+
+  <!-- Sets the diagonal stem width. -->
+  <with-vectors to-line="orthogonal">
+    <line>
+      <point num="8" />
+      <point num="11" />
+    </line>
+
+    <diagonal-stem distance="diagonal-stem-width" round="no">
+      <line>
+        <point num="8" />
+        <point num="11" />
+      </line>
+      <line>
+        <point num="9" />
+        <point num="10" />
+      </line>
+    </diagonal-stem>
+  </with-vectors>
+</glyph>

@@ -1,0 +1,85 @@
+<glyph ps-name="quotedbl">
+  <constant name="last" value="7" />
+
+  <!-- phantom points -->
+  <constant name="character-origin" value="last + 1" />
+  <constant name="advance-width-point" value="last + 2" />
+  <constant name="top-origin" value="last + 3" />
+  <constant name="advance-height-point" value="last + 4" />
+
+
+  <with-vectors axis="x">
+    <!-- left -->
+
+    <move>
+      <reference>
+        <point num="character-origin" />
+      </reference>
+      <point num="4" />
+      <shift>
+        <point num="5" />
+      </shift>
+    </move>
+
+    <move distance="stem-width">
+      <reference>
+        <point num="4" />
+      </reference>
+      <point num="7" />
+      <shift>
+        <point num="6" />
+      </shift>
+    </move>
+
+
+    <!-- right -->
+
+    <move>
+      <reference>
+        <point num="7" />
+      </reference>
+      <point num="0" />
+      <shift>
+        <point num="1" />
+      </shift>
+    </move>
+
+    <move distance="stem-width">
+      <reference>
+        <point num="0" />
+      </reference>
+      <point num="3" />
+      <shift>
+        <point num="2" />
+      </shift>
+    </move>
+  </with-vectors>
+
+  <with-vectors axis="y">
+    <!-- top -->
+    <move>
+      <reference>
+        <point num="top-origin" />
+      </reference>
+      <point num="5" />
+      <shift>
+        <point num="6" />
+        <point num="1" />
+        <point num="2" />
+      </shift>
+    </move>
+
+    <!-- bottom -->
+    <move>
+      <reference>
+        <point num="5" />
+      </reference>
+      <point num="4" />
+      <shift>
+        <point num="7" />
+        <point num="0" />
+        <point num="3" />
+      </shift>
+    </move>
+  </with-vectors>
+</glyph>

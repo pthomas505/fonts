@@ -1,0 +1,86 @@
+<glyph ps-name="exclam">
+  <constant name="last" value="11" />
+
+  <!-- phantom points -->
+  <constant name="character-origin" value="last + 1" />
+  <constant name="advance-width-point" value="last + 2" />
+  <constant name="top-origin" value="last + 3" />
+  <constant name="advance-height-point" value="last + 4" />
+
+
+  <with-vectors axis="x">
+    <move>
+      <reference>
+        <point num="character-origin" />
+      </reference>
+      <point num="1" />
+      <shift>
+        <point num="0" />
+        <point num="2" />
+        <point num="3" />
+        <point num="8" />
+        <point num="9" />
+      </shift>
+    </move>
+
+    <move distance="stem-width">
+      <reference>
+        <point num="1" />
+      </reference>
+      <point num="6" />
+      <shift>
+        <point num="4" />
+        <point num="5" />
+        <point num="7" />
+        <point num="10" />
+        <point num="11" />
+      </shift>
+    </move>
+  </with-vectors>
+
+
+  <with-vectors axis="y">
+    <!-- dot -->
+    <move>
+      <point num="0" />
+      <shift>
+        <point num="1" />
+        <point num="6" />
+        <point num="7" />
+      </shift>
+    </move>
+
+    <move distance="stem-width">
+      <reference>
+        <point num="0" />
+      </reference>
+      <point num="3" />
+      <shift>
+        <point num="2" />
+        <point num="4" />
+        <point num="5" />
+      </shift>
+    </move>
+
+    <!-- line -->
+    <move>
+      <reference>
+        <point num="top-origin" />
+      </reference>
+      <point num="9" />
+      <shift>
+        <point num="10" />
+      </shift>
+    </move>
+
+    <move>
+      <reference>
+        <point num="3" />
+      </reference>
+      <point num="8" />
+      <shift>
+        <point num="11" />
+      </shift>
+    </move>
+  </with-vectors>
+</glyph>
