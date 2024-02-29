@@ -35,19 +35,19 @@
 
     <with-vectors axis="x">
       <move>
-        <point num="4" />
+        <point num="18" />
         <shift>
-          <point num="5" />
+          <point num="19" />
         </shift>
       </move>
 
       <move distance="rounded-stem" round="no">
         <reference>
-          <point num="4" />
+          <point num="18" />
         </reference>
-        <point num="7" />
+        <point num="21" />
         <shift>
-          <point num="6" />
+          <point num="20" />
         </shift>
       </move>
     </with-vectors>
@@ -57,47 +57,47 @@
 
     <with-vectors axis="x">
       <move round="to-half-grid">
-        <point num="0" />
+        <point num="14" />
         <shift>
-          <point num="1" />
-          <point num="2" />
-          <point num="3" />
+          <point num="15" />
+          <point num="16" />
+          <point num="17" />
         </shift>
       </move>
     </with-vectors>
 
     <with-vectors axis="y">
       <move round="to-grid">
-        <point num="0" />
+        <point num="14" />
         <shift>
-          <point num="1" />
-          <point num="2" />
-          <point num="3" />
+          <point num="15" />
+          <point num="16" />
+          <point num="17" />
         </shift>
       </move>
     </with-vectors>
 
 
     <line name="diagonal-line">
-      <point num="0" />
-      <point num="3" />
+      <point num="14" />
+      <point num="17" />
     </line>
 
     <with-freedom-vector to-line="orthogonal">
       <line ref="diagonal-line" />
       <with-projection-vector axis="x">
-        <move distance="rounded-diag-proj" round="no">
+        <move distance="rounded-diag-proj" min-distance="0.5" round="no">
           <reference>
-            <point num="0" />
+            <point num="14" />
           </reference>
-          <point num="1" />
+          <point num="15" />
         </move>
 
-        <move distance="rounded-diag-proj" round="no">
+        <move distance="rounded-diag-proj" min-distance="0.5" round="no">
           <reference>
-            <point num="3" />
+            <point num="17" />
           </reference>
-          <point num="2" />
+          <point num="16" />
         </move>
       </with-projection-vector>
     </with-freedom-vector>
