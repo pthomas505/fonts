@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
+
+  <constant name="sqrt2" value="1.414213562" />
+
+  <control-value name="stem" value="128" />
+
+  <control-value name="rounded-stem" value="0" />
+
+  <control-value name="diag-proj" value="0" />
+
+  <control-value name="rounded-diag-proj" value="0" />
+
+  <pre-program>
+    <!-- Turns off drop-out-control -->
+    <set-dropout-control flags="0" threshold="0" />
+
+    <set-dropout-type value="2" />
+
+    <with-round-state round="to-grid">
+      <set-control-value name="rounded-stem" unit="pixel" value="round(control-value(stem))" />
+    </with-round-state>
+
+    <set-control-value name="diag-proj" unit="pixel" value="(control-value(rounded-stem)) / sqrt2" />
+
+    <with-round-state round="to-double-grid">
+      <set-control-value name="rounded-diag-proj" unit="pixel"
+        value="round(control-value(diag-proj)) - 0.5" />
+    </with-round-state>
+
+  </pre-program>
+
+  <glyph ps-name="exclam">
+    <!-- square -->
+
+    <with-vectors axis="x">
+      <move>
+        <point num="4" />
+        <shift>
+          <point num="5" />
+        </shift>
+      </move>
+
+      <move distance="rounded-stem" round="no">
+        <reference>
+          <point num="4" />
+        </reference>
+        <point num="7" />
+        <shift>
+          <point num="6" />
+        </shift>
+      </move>
+    </with-vectors>
+
+
+    <!-- diagonal line -->
+
+    <with-vectors axis="x">
+      <move round="to-half-grid">
+        <point num="0" />
+        <shift>
+          <point num="1" />
+          <point num="2" />
+          <point num="3" />
+        </shift>
+      </move>
+    </with-vectors>
+
+    <with-vectors axis="y">
+      <move round="to-grid">
+        <point num="0" />
+        <shift>
+          <point num="1" />
+          <point num="2" />
+          <point num="3" />
+        </shift>
+      </move>
+    </with-vectors>
+
+
+    <line name="diagonal-line">
+      <point num="0" />
+      <point num="3" />
+    </line>
+
+    <with-freedom-vector to-line="orthogonal">
+      <line ref="diagonal-line" />
+      <with-projection-vector axis="x">
+        <move distance="rounded-diag-proj" round="no">
+          <reference>
+            <point num="0" />
+          </reference>
+          <point num="1" />
+        </move>
+
+        <move distance="rounded-diag-proj" round="no">
+          <reference>
+            <point num="3" />
+          </reference>
+          <point num="2" />
+        </move>
+      </with-projection-vector>
+    </with-freedom-vector>
+  </glyph>
+</xgridfit>
