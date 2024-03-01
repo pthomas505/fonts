@@ -4,24 +4,6 @@
   <unicode hex="0021"/>
   <outline>
     <contour>
-      <point x="960" y="485" type="line"/>
-      <point x="768" y="677" type="line"/>
-      <point x="859" y="768" type="line"/>
-      <point x="960" y="667" type="line"/>
-      <point x="1061" y="768" type="line"/>
-      <point x="1152" y="677" type="line"/>
-    </contour>
-    <contour>
-      <point x="0" y="384" type="line"/>
-      <point x="0" y="603" type="line"/>
-      <point x="165" y="768" type="line"/>
-      <point x="384" y="768" type="line"/>
-      <point x="384" y="640" type="line"/>
-      <point x="219" y="640" type="line"/>
-      <point x="128" y="549" type="line"/>
-      <point x="128" y="384" type="line"/>
-    </contour>
-    <contour>
       <point x="859" y="0" type="line"/>
       <point x="768" y="91" type="line"/>
       <point x="933" y="256" type="line"/>
