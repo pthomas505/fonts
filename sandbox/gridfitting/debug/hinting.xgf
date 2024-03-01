@@ -5,11 +5,36 @@
 
   <control-value name="stem" value="128" />
 
+  <!--
+    The stem size rounded up to the nearest integer multiple of the grid size.
+    The value is set in the pre-program.
+  -->
   <control-value name="rounded-stem" value="0" />
 
+  <!--
+    The x and y components of the diagonal stem size.
+    The value is set in the pre-program.
+  -->
   <control-value name="diag-proj" value="0" />
 
+  <!--
+    The x and y components of the diagonal stem size rounded up to the nearest integer multiple of half
+  the grid size.
+    The value is set in the pre-program.
+  -->
   <control-value name="rounded-diag-proj" value="0" />
+
+  <!--
+    rounded-diag-proj - 0.5
+    The value is set in the pre-program.
+  -->
+  <control-value name="rounded-diag-proj-minus-half" value="0" />
+
+  <!--
+    rounded-diag-proj - 1.0
+    The value is set in the pre-program.
+  -->
+  <control-value name="rounded-diag-proj-minus-one" value="0" />
 
   <pre-program>
     <!-- Turns off drop-out-control -->
@@ -21,13 +46,38 @@
       <set-control-value name="rounded-stem" unit="pixel" value="round(control-value(stem))" />
     </with-round-state>
 
+    <!--
+      The size of every stem is the length of its projection onto a line orthogonal to it.
+
+      Let D be a vector orthogonal to a diagonal stem.
+      Let the magnitude of D be the same as the size of the diagonal stem.
+      Then x-comp(D)^2 + y-comp(D)^2 = mag(D)^2.
+      Since every diagonal stem is at an angle that is an integer multiple of 45 degrees then it holds
+    that x-comp(D) = y-comp(D).
+      Let a = x-comp(D) = y-comp(D). Let d = mag(D).
+      Then a^2 + a^2 = d^2.
+      Then 2 * a^2 = d^2.
+      Then sqrt(2) * a = d.
+      Then a = d / sqrt(2).
+
+      The goal is to have the size of every stem be the same.
+      This size is going to be the control value named 'rounded-stem'.
+      Hence it is required that d = rounded-stem. Hence a = rounded-stem / sqrt(2).
+      The control value diag-proj is going to be used to control the x and y components of the size of
+    the diagonal stem.
+    -->
     <set-control-value name="diag-proj" unit="pixel" value="(control-value(rounded-stem)) / sqrt2" />
 
     <with-round-state round="to-double-grid">
       <set-control-value name="rounded-diag-proj" unit="pixel"
-        value="round(control-value(diag-proj)) - 0.5" />
+        value="round(control-value(diag-proj))" />
     </with-round-state>
 
+    <set-control-value name="rounded-diag-proj-minus-half" unit="pixel"
+      value="control-value(rounded-diag-proj) - 0.5" />
+
+    <set-control-value name="rounded-diag-proj-minus-one" unit="pixel"
+      value="control-value(rounded-diag-proj) - 1.0" />
   </pre-program>
 
   <glyph ps-name="exclam">
@@ -86,14 +136,87 @@
     <with-freedom-vector to-line="orthogonal">
       <line ref="diagonal-line" />
       <with-projection-vector axis="x">
-        <move distance="rounded-diag-proj" min-distance="0.5" round="no">
+        <move distance="rounded-diag-proj-minus-half" min-distance="0.5" round="no">
           <reference>
             <point num="14" />
           </reference>
           <point num="15" />
         </move>
 
-        <move distance="rounded-diag-proj" min-distance="0.5" round="no">
+        <move distance="rounded-diag-proj-minus-half" min-distance="0.5" round="no">
+          <reference>
+            <point num="17" />
+          </reference>
+          <point num="16" />
+        </move>
+      </with-projection-vector>
+    </with-freedom-vector>
+  </glyph>
+
+  <glyph ps-name="quotedbl">
+    <!-- square -->
+
+    <with-vectors axis="x">
+      <move>
+        <point num="18" />
+        <shift>
+          <point num="19" />
+        </shift>
+      </move>
+
+      <move distance="rounded-stem" round="no">
+        <reference>
+          <point num="18" />
+        </reference>
+        <point num="21" />
+        <shift>
+          <point num="20" />
+        </shift>
+      </move>
+    </with-vectors>
+
+
+    <!-- diagonal line -->
+
+    <with-vectors axis="x">
+      <move round="to-grid">
+        <point num="14" />
+        <shift>
+          <point num="15" />
+          <point num="16" />
+          <point num="17" />
+        </shift>
+      </move>
+    </with-vectors>
+
+    <with-vectors axis="y">
+      <move round="to-grid">
+        <point num="14" />
+        <shift>
+          <point num="15" />
+          <point num="16" />
+          <point num="17" />
+        </shift>
+      </move>
+    </with-vectors>
+
+
+    <line name="diagonal-line">
+      <point num="14" />
+      <point num="17" />
+    </line>
+
+    <with-freedom-vector to-line="orthogonal">
+      <line ref="diagonal-line" />
+      <with-projection-vector axis="x">
+        <move distance="rounded-diag-proj-minus-one" min-distance="no" round="no">
+          <reference>
+            <point num="14" />
+          </reference>
+          <point num="15" />
+        </move>
+
+        <move distance="rounded-diag-proj-minus-one" min-distance="no" round="no">
           <reference>
             <point num="17" />
           </reference>
