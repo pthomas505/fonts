@@ -37,6 +37,8 @@
   <control-value name="rounded-diag-proj-minus-one" value="0" />
 
   <pre-program>
+    <set-control-value-cut-in value="2.0" />
+
     <!-- Turns off drop-out-control -->
     <set-dropout-control flags="0" threshold="0" />
 
