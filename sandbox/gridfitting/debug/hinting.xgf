@@ -78,8 +78,18 @@
     <set-control-value name="rounded-diag-proj-minus-half" unit="pixel"
       value="control-value(rounded-diag-proj) - 0.5" />
 
+    <if test="control-value(rounded-diag-proj-minus-half) &lt; 0">
+      <set-control-value name="rounded-diag-proj-minus-half" unit="pixel"
+        value="0" />
+    </if>
+
     <set-control-value name="rounded-diag-proj-minus-one" unit="pixel"
       value="control-value(rounded-diag-proj) - 1.0" />
+
+    <if test="control-value(rounded-diag-proj-minus-one) &lt; 0">
+      <set-control-value name="rounded-diag-proj-minus-one" unit="pixel"
+        value="0" />
+    </if>
   </pre-program>
 
   <glyph ps-name="exclam">
