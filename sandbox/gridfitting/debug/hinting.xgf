@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
 
+  <!--
+    This file is an example of using hinting to ensure that the diagonal stem size remains as close as possible to the horizontal and vertical stem size. It uses the fact that if the length across the diagonal should be d then the projection of that length onto the x axis and the y axis should be d / sqrt(2). In this case d is the diagonal stem size. Therefore the diagonal is hinted such that the projection onto the x axis and y axis of the length across it is as close as possible to the horizontal and vertical stem size / sqrt(2).
+
+    From the properties of a 45 45 90 degree triangle:
+    a^2 + a^2 = d^2
+    2 * a^2 = d^2
+    sqrt(2) * a = d
+    a = d / sqrt(2)
+  -->
+
   <constant name="sqrt2" value="1.414213562" />
 
   <control-value name="stem" value="128" />
@@ -44,12 +54,6 @@
     </with-round-state>
 
 
-    <!--
-      a^2 + a^2 = d^2
-      2 * a^2 = d^2
-      sqrt(2) * a = d
-      a = d / sqrt(2)
-    -->
     <set-control-value name="stem-to-grid-diagonal-components" unit="pixel"
       value="(control-value(stem-to-grid)) / sqrt2" />
 
