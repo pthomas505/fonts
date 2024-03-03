@@ -14,26 +14,30 @@
         <point num="character-origin" />
       </reference>
       <point num="1" />
-      <shift>
-        <point num="0" />
+      <align>
         <point num="2" />
-        <point num="3" />
         <point num="8" />
         <point num="9" />
+      </align>
+      <shift>
+        <point num="0" />
+        <point num="3" />
       </shift>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="1" />
       </reference>
       <point num="6" />
-      <shift>
-        <point num="4" />
+      <align>
         <point num="5" />
-        <point num="7" />
         <point num="10" />
         <point num="11" />
+      </align>
+      <shift>
+        <point num="4" />
+        <point num="7" />
       </shift>
     </move>
   </with-vectors>
@@ -43,21 +47,25 @@
     <!-- dot -->
     <move>
       <point num="0" />
+      <align>
+        <point num="7" />
+      </align>
       <shift>
         <point num="1" />
         <point num="6" />
-        <point num="7" />
       </shift>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="0" />
       </reference>
       <point num="3" />
+      <align>
+        <point num="4" />
+      </align>
       <shift>
         <point num="2" />
-        <point num="4" />
         <point num="5" />
       </shift>
     </move>
@@ -68,9 +76,9 @@
         <point num="top-origin" />
       </reference>
       <point num="9" />
-      <shift>
+      <align>
         <point num="10" />
-      </shift>
+      </align>
     </move>
 
     <move>
@@ -78,9 +86,9 @@
         <point num="3" />
       </reference>
       <point num="8" />
-      <shift>
+      <align>
         <point num="11" />
-      </shift>
+      </align>
     </move>
   </with-vectors>
 </glyph>

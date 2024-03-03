@@ -11,7 +11,7 @@
   <!-- left stem -->
 
   <with-vectors axis="x">
-    <move min-distance="no">
+    <move>
       <reference>
         <point num="character-origin" />
       </reference>
@@ -21,7 +21,7 @@
       </align>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="0" />
       </reference>
@@ -55,7 +55,7 @@
       </shift>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="7" />
       </reference>
@@ -67,6 +67,7 @@
       </align>
       <shift>
         <point num="10" />
+        <point num="13" />
         <point num="16" />
         <point num="19" />
       </shift>
@@ -87,7 +88,7 @@
       </shift>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="0" />
       </reference>
@@ -118,7 +119,7 @@
       </shift>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="1" />
       </reference>
@@ -169,7 +170,7 @@
       <point num="10" />
     </align>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="9" />
       </reference>

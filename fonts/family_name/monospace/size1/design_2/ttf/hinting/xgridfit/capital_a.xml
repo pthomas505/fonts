@@ -11,26 +11,30 @@
   <!-- left stem -->
 
   <with-vectors axis="x">
-    <move min-distance="no">
+    <move>
       <reference>
         <point num="character-origin" />
       </reference>
       <point num="0" />
-      <shift>
+      <align>
         <point num="1" />
+      </align>
+      <shift>
         <point num="2" />
       </shift>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="0" />
       </reference>
       <point num="9" />
-      <shift>
+      <align>
         <point num="8" />
         <point num="10" />
         <point num="15" />
+      </align>
+      <shift>
         <point num="14" />
       </shift>
     </move>
@@ -45,21 +49,25 @@
         <point num="advance-width-point" />
       </reference>
       <point num="5" />
-      <shift>
+      <align>
         <point num="4" />
+      </align>
+      <shift>
         <point num="3" />
       </shift>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="5" />
       </reference>
       <point num="6" />
-      <shift>
+      <align>
         <point num="7" />
         <point num="11" />
         <point num="12" />
+      </align>
+      <shift>
         <point num="13" />
       </shift>
     </move>
@@ -74,21 +82,25 @@
         <point num="top-origin" />
       </reference>
       <point num="2" />
+      <align>
+        <point num="3" />
+      </align>
       <shift>
         <point num="1" />
-        <point num="3" />
         <point num="4" />
       </shift>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="2" />
       </reference>
       <point num="14" />
+      <align>
+        <point num="13" />
+      </align>
       <shift>
         <point num="12" />
-        <point num="13" />
         <point num="15" />
       </shift>
     </move>
@@ -113,14 +125,14 @@
       <point num="11" />
     </align>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="10" />
       </reference>
       <point num="8" />
-      <shift>
+      <align>
         <point num="7" />
-      </shift>
+      </align>
     </move>
   </with-vectors>
 

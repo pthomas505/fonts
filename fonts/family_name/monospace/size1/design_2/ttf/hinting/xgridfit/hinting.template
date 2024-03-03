@@ -18,21 +18,31 @@
 
 {{hint_indent}}
 
-  <control-value name="stem-width" value="128"/>
-  <control-value name="diagonal-stem-width" value="128"/>
-  <control-value name="diagonal-stem-width-corner" value="128"/>
+  <control-value name="stem" value="128"/>
+
+  <!--
+    The value is set in the pre-program.
+  -->
+  <control-value name="diagonal-stem" value="0"/>
+
+  <!--
+    The value is set in the pre-program.
+  -->
+  <control-value name="diagonal-stem-corner" value="0"/>
 
   <pre-program>
+    <!-- Set to a large enough value to ensure that the control values are used at all sizes. -->
+    <set-control-value-cut-in value="2.0"/>
+
     <!-- Turns off drop-out-control -->
     <set-dropout-control flags="0" threshold="0"/>
     <set-dropout-type value="2"/>
 
-    <set-control-value-cut-in value="2.0"/>
-
-    <round value="stem-width"/>
+    <set-round-state round="to-grid"/>
+    <round value="stem"/>
 
     <!--
-      sets rounding to the nearest sqrt(2)/2
+      sets rounding to the nearest sqrt(2)/2 = 1/sqrt(2)
       gridPeriod=sqrt(2)/2
       period=gridPeriod, phase=0:, threshold=4/8*period
       1:0:8
@@ -41,11 +51,13 @@
     <push>72</push>
     <command name="S45ROUND"/>
 
-    <!-- sets the diagonal-stem-width to the rounded stem-width, rounded to the nearest sqrt(2)/2, minus sqrt(2)/2 -->
-    <set-control-value name="diagonal-stem-width" unit="pixel" value="round(control-value(stem-width)) - 0.71"/>
+    <!-- sets the diagonal-stem-corner to the rounded stem, rounded to the nearest sqrt(2)/2 -->
+    <set-control-value name="diagonal-stem-corner" unit="pixel" value="round(control-value(stem))"/>
 
-    <!-- sets the diagonal-stem-width-corner to the rounded stem-width, rounded to the nearest sqrt(2)/2 -->
-    <set-control-value name="diagonal-stem-width-corner" unit="pixel" value="round(control-value(stem-width))"/>
+    <!-- sets the diagonal-stem to the rounded stem, rounded to the nearest sqrt(2)/2, minus sqrt(2)/2 -->
+    <set-control-value name="diagonal-stem" unit="pixel" value="round(control-value(stem)) - 0.71"/>
+
+    <set-round-state round="to-grid"/>
   </pre-program>
 
 {{exclam}}

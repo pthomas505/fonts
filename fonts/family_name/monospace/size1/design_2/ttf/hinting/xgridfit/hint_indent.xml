@@ -28,7 +28,7 @@
     </line>
 
     <with-freedom-vector axis="x">
-      <move distance="diagonal-stem-width-corner" round="no">
+      <move distance="diagonal-stem-corner" round="no">
         <reference>
           <point num="mid" />
         </reference>
@@ -37,7 +37,7 @@
     </with-freedom-vector>
 
     <with-freedom-vector axis="y">
-      <move distance="diagonal-stem-width-corner" round="no">
+      <move distance="diagonal-stem-corner" round="no">
         <reference>
           <point num="out-top" />
         </reference>
@@ -54,7 +54,7 @@
     </line>
 
     <with-freedom-vector axis="x">
-      <move distance="diagonal-stem-width-corner" round="no">
+      <move distance="diagonal-stem-corner" round="no">
         <reference>
           <point num="mid" />
         </reference>
@@ -63,7 +63,7 @@
     </with-freedom-vector>
 
     <with-freedom-vector axis="y">
-      <move distance="diagonal-stem-width-corner" round="no">
+      <move distance="diagonal-stem-corner" round="no">
         <reference>
           <point num="out-bot" />
         </reference>

@@ -11,26 +11,30 @@
   <!-- left stem -->
 
   <with-vectors axis="x">
-    <move min-distance="no">
+    <move>
       <reference>
         <point num="character-origin" />
       </reference>
       <point num="1" />
+      <align>
+        <point num="2" />
+      </align>
       <shift>
         <point num="0" />
-        <point num="2" />
         <point num="3" />
       </shift>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="1" />
       </reference>
       <point num="10" />
+      <align>
+        <point num="9" />
+      </align>
       <shift>
         <point num="11" />
-        <point num="9" />
         <point num="8" />
       </shift>
     </move>
@@ -44,9 +48,11 @@
         <point num="advance-width-point" />
       </reference>
       <point num="14" />
+      <align>
+        <point num="5" />
+      </align>
       <shift>
         <point num="4" />
-        <point num="5" />
         <point num="15" />
       </shift>
     </move>
@@ -58,21 +64,25 @@
   <with-vectors axis="y">
     <move>
       <point num="0" />
+      <align>
+        <point num="15" />
+      </align>
       <shift>
         <point num="1" />
-        <point num="15" />
         <point num="14" />
       </shift>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="0" />
       </reference>
       <point num="11" />
+      <align>
+        <point num="12" />
+      </align>
       <shift>
         <point num="10" />
-        <point num="12" />
         <point num="13" />
       </shift>
     </move>
@@ -87,21 +97,25 @@
         <point num="top-origin" />
       </reference>
       <point num="3" />
+      <align>
+        <point num="4" />
+      </align>
       <shift>
         <point num="2" />
-        <point num="4" />
         <point num="5" />
       </shift>
     </move>
 
-    <move distance="stem-width">
+    <move distance="stem">
       <reference>
         <point num="3" />
       </reference>
       <point num="8" />
+      <align>
+        <point num="7" />
+      </align>
       <shift>
         <point num="9" />
-        <point num="7" />
         <point num="6" />
       </shift>
     </move>
