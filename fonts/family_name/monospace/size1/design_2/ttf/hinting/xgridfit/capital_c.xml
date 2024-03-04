@@ -15,27 +15,27 @@
       <reference>
         <point num="character-origin" />
       </reference>
-      <point num="1" />
+      <point num="0" />
       <align>
-        <point num="2" />
+        <point num="1" />
       </align>
       <shift>
-        <point num="0" />
-        <point num="3" />
+        <point num="15" />
+        <point num="2" />
       </shift>
     </move>
 
     <move distance="stem">
       <reference>
-        <point num="1" />
+        <point num="0" />
       </reference>
-      <point num="10" />
+      <point num="9" />
       <align>
-        <point num="9" />
+        <point num="8" />
       </align>
       <shift>
-        <point num="11" />
-        <point num="8" />
+        <point num="10" />
+        <point num="7" />
       </shift>
     </move>
   </with-vectors>
@@ -47,13 +47,13 @@
       <reference>
         <point num="advance-width-point" />
       </reference>
-      <point num="14" />
+      <point num="13" />
       <align>
-        <point num="5" />
+        <point num="4" />
       </align>
       <shift>
-        <point num="4" />
-        <point num="15" />
+        <point num="3" />
+        <point num="14" />
       </shift>
     </move>
   </with-vectors>
@@ -63,27 +63,27 @@
 
   <with-vectors axis="y">
     <move>
-      <point num="0" />
+      <point num="15" />
       <align>
-        <point num="15" />
+        <point num="14" />
       </align>
       <shift>
-        <point num="1" />
-        <point num="14" />
+        <point num="0" />
+        <point num="13" />
       </shift>
     </move>
 
     <move distance="stem">
       <reference>
-        <point num="0" />
+        <point num="15" />
       </reference>
-      <point num="11" />
+      <point num="10" />
       <align>
-        <point num="12" />
+        <point num="11" />
       </align>
       <shift>
-        <point num="10" />
-        <point num="13" />
+        <point num="9" />
+        <point num="12" />
       </shift>
     </move>
   </with-vectors>
@@ -96,27 +96,27 @@
       <reference>
         <point num="top-origin" />
       </reference>
-      <point num="3" />
+      <point num="2" />
       <align>
-        <point num="4" />
+        <point num="3" />
       </align>
       <shift>
-        <point num="2" />
-        <point num="5" />
+        <point num="1" />
+        <point num="4" />
       </shift>
     </move>
 
     <move distance="stem">
       <reference>
-        <point num="3" />
+        <point num="2" />
       </reference>
-      <point num="8" />
+      <point num="7" />
       <align>
-        <point num="7" />
+        <point num="6" />
       </align>
       <shift>
-        <point num="9" />
-        <point num="6" />
+        <point num="8" />
+        <point num="5" />
       </shift>
     </move>
   </with-vectors>
@@ -124,36 +124,36 @@
 
   <!-- bottom left diagonal -->
   <call-macro name="hint-corner">
-    <with-param name="in-horz" value="11" />
-    <with-param name="out-horz" value="0" />
-    <with-param name="in-vert" value="10" />
-    <with-param name="out-vert" value="1" />
+    <with-param name="in-horz" value="10" />
+    <with-param name="out-horz" value="15" />
+    <with-param name="in-vert" value="9" />
+    <with-param name="out-vert" value="0" />
   </call-macro>
 
 
   <!-- bottom right diagonal -->
   <call-macro name="hint-half-corner">
-    <with-param name="in-horz" value="12" />
-    <with-param name="out-horz" value="15" />
-    <with-param name="in-vert" value="13" />
-    <with-param name="out-vert" value="14" />
+    <with-param name="in-horz" value="11" />
+    <with-param name="out-horz" value="14" />
+    <with-param name="in-vert" value="12" />
+    <with-param name="out-vert" value="13" />
   </call-macro>
 
 
   <!-- top left diagonal -->
   <call-macro name="hint-corner">
-    <with-param name="in-horz" value="8" />
-    <with-param name="out-horz" value="3" />
-    <with-param name="in-vert" value="9" />
-    <with-param name="out-vert" value="2" />
+    <with-param name="in-horz" value="7" />
+    <with-param name="out-horz" value="2" />
+    <with-param name="in-vert" value="8" />
+    <with-param name="out-vert" value="1" />
   </call-macro>
 
 
   <!-- top right diagonal -->
   <call-macro name="hint-half-corner">
-    <with-param name="in-horz" value="7" />
-    <with-param name="out-horz" value="4" />
-    <with-param name="in-vert" value="6" />
-    <with-param name="out-vert" value="5" />
+    <with-param name="in-horz" value="6" />
+    <with-param name="out-horz" value="3" />
+    <with-param name="in-vert" value="5" />
+    <with-param name="out-vert" value="4" />
   </call-macro>
 </glyph>

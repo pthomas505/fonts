@@ -9,6 +9,7 @@
 {% import 'capital_c.xml' as capital_c %}
 {% import 'capital_d.xml' as capital_d %}
 {% import 'capital_e.xml' as capital_e %}
+{% import 'capital_f.xml' as capital_f %}
 {% import 'capital_p.xml' as capital_p %}
 <?xml version="1.0" encoding="UTF-8"?>
 <xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
@@ -76,6 +77,8 @@
 {{capital_d}}
 
 {{capital_e}}
+
+{{capital_f}}
 
 {{capital_p}}
 

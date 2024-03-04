@@ -1,5 +1,5 @@
-<glyph ps-name="quotedbl">
-  <constant name="last" value="7" />
+<glyph ps-name="F">
+  <constant name="last" value="9" />
 
   <!-- phantom points -->
   <constant name="character-origin" value="last + 1" />
@@ -8,9 +8,9 @@
   <constant name="advance-height-point" value="last + 4" />
 
 
-  <with-vectors axis="x">
-    <!-- left -->
+  <!-- left stem -->
 
+  <with-vectors axis="x">
     <move>
       <reference>
         <point num="character-origin" />
@@ -25,38 +25,44 @@
       <reference>
         <point num="0" />
       </reference>
-      <point num="3" />
+      <point num="9" />
       <align>
-        <point num="2" />
+        <point num="8" />
+        <point num="5" />
+        <point num="4" />
       </align>
     </move>
+  </with-vectors>
 
 
-    <!-- right -->
+  <!-- right side -->
 
+  <with-vectors axis="x">
     <move>
       <reference>
-        <point num="3" />
+        <point num="advance-width-point" />
       </reference>
-      <point num="4" />
+      <point num="2" />
       <align>
-        <point num="5" />
+        <point num="3" />
       </align>
     </move>
 
     <move distance="stem">
       <reference>
-        <point num="4" />
+        <point num="3" />
       </reference>
-      <point num="7" />
+      <point num="6" />
       <align>
-        <point num="6" />
+        <point num="7" />
       </align>
     </move>
   </with-vectors>
 
+
+  <!-- top stem -->
+
   <with-vectors axis="y">
-    <!-- top -->
     <move>
       <reference>
         <point num="top-origin" />
@@ -64,20 +70,45 @@
       <point num="1" />
       <align>
         <point num="2" />
-        <point num="5" />
-        <point num="6" />
       </align>
     </move>
 
-    <!-- bottom -->
-    <move>
+    <move distance="stem">
       <reference>
         <point num="1" />
       </reference>
-      <point num="0" />
+      <point num="4" />
       <align>
         <point num="3" />
-        <point num="4" />
+      </align>
+    </move>
+  </with-vectors>
+
+
+  <!-- bar -->
+
+  <with-vectors axis="y">
+    <interpolate round="to-grid">
+      <reference>
+        <point num="0" />
+        <point num="1" />
+      </reference>
+      <point num="5" />
+    </interpolate>
+
+    <align>
+      <reference>
+        <point num="5" />
+      </reference>
+      <point num="6" />
+    </align>
+
+    <move distance="stem">
+      <reference>
+        <point num="5" />
+      </reference>
+      <point num="8" />
+      <align>
         <point num="7" />
       </align>
     </move>

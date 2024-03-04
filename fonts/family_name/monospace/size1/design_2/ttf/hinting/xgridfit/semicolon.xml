@@ -15,31 +15,31 @@
       <reference>
         <point num="character-origin" />
       </reference>
-      <point num="1" />
+      <point num="4" />
       <align>
-        <point num="2" />
+        <point num="5" />
       </align>
       <shift>
-        <point num="0" />
-        <point num="3" />
+        <point num="11" />
+        <point num="6" />
       </shift>
     </move>
 
     <move distance="stem">
       <reference>
-        <point num="1" />
+        <point num="0" />
       </reference>
-      <point num="6" />
+      <point num="9" />
       <align>
-        <point num="5" />
+        <point num="8" />
       </align>
       <shift>
-        <point num="7" />
-        <point num="4" />
-        <point num="8" />
-        <point num="9" />
         <point num="10" />
-        <point num="11" />
+        <point num="7" />
+        <point num="0" />
+        <point num="1" />
+        <point num="2" />
+        <point num="3" />
       </shift>
     </move>
   </with-vectors>
@@ -50,27 +50,27 @@
       <reference>
         <point num="top-origin" />
       </reference>
-      <point num="3" />
+      <point num="6" />
       <align>
-        <point num="4" />
+        <point num="7" />
       </align>
       <shift>
-        <point num="2" />
         <point num="5" />
+        <point num="8" />
       </shift>
     </move>
 
     <move distance="stem">
       <reference>
-        <point num="3" />
+        <point num="6" />
       </reference>
-      <point num="0" />
+      <point num="11" />
       <align>
-        <point num="7" />
+        <point num="10" />
       </align>
       <shift>
-        <point num="1" />
-        <point num="6" />
+        <point num="4" />
+        <point num="9" />
       </shift>
     </move>
   </with-vectors>
@@ -80,11 +80,11 @@
 
   <with-vectors axis="y">
     <move>
-      <point num="10" />
+      <point num="2" />
       <shift>
-        <point num="8" />
-        <point num="9" />
-        <point num="11" />
+        <point num="0" />
+        <point num="1" />
+        <point num="3" />
       </shift>
     </move>
   </with-vectors>
@@ -92,18 +92,18 @@
   <!-- Sets the diagonal stem width. -->
   <with-vectors to-line="orthogonal">
     <line>
-      <point num="8" />
-      <point num="11" />
+      <point num="3" />
+      <point num="2" />
     </line>
 
     <diagonal-stem distance="diagonal-stem" round="no">
       <line>
-        <point num="8" />
-        <point num="11" />
+        <point num="3" />
+        <point num="2" />
       </line>
       <line>
-        <point num="9" />
-        <point num="10" />
+        <point num="0" />
+        <point num="1" />
       </line>
     </diagonal-stem>
   </with-vectors>
