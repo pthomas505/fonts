@@ -1,0 +1,1285 @@
+font:
+  in: /home/pthomas/Desktop/github/fonts/fonts/family_name/monospace/size1/design_2/ttf/Untitled.ttf
+  out: /home/pthomas/Desktop/github/fonts/fonts/family_name/monospace/size1/design_2/ttf/Untitled-hinted.ttf
+defaults: {}
+cvt:
+  character-origin:
+    val: 0
+    type: pos
+    axis: x
+  baseline:
+    val: 0
+    type: pos
+    axis: y
+  cap-height:
+    val: 896
+    type: pos
+    axis: y
+  xheight:
+    val: 640
+    type: pos
+    axis: y
+  lc-ascender:
+    val: 896
+    type: pos
+    axis: y
+  lc-descender:
+    val: -256
+    type: pos
+    axis: y
+  x-stem:
+    val: 128
+    type: dist
+    axis: x
+  y-stem:
+    val: 128
+    type: dist
+    axis: y
+prep:
+  code: |-
+    <code xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
+                <!-- Turn off hinting above 300 ppem -->
+                <if test="pixels-per-em &gt; 300">
+                    <disable-instructions/>
+                </if>
+                <!-- Dropout control -->
+                <push>4 511</push>
+                <command name="SCANCTRL"/>
+                <command name="SCANTYPE"/>
+                </code>
+functions:
+  delta:
+    primitive: true
+    stack-safe: true
+    size:
+      type: int
+      val: 25
+    distance:
+      type: int
+      val: 0
+    pt:
+      type: point
+      subtype: target
+    code: |-
+      <code xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
+              <command name="SDB"/>
+              <command name="DUP"/>
+              <push>0</push>
+              <command name="NEQ"/>
+              <command name="IF"/>
+              <command name="DUP"/>
+              <push>0</push>
+              <command name="LT"/>
+              <command name="IF"/>
+              <push>8</push>
+              <command name="ADD"/>
+              <command name="ELSE"/>
+              <push>7</push>
+              <command name="ADD"/>
+              <command name="EIF"/>
+              <command name="SWAP"/>
+              <push>1</push>
+              <command name="DELTAP1"/>
+              <command name="ELSE"/>
+              <command name="POP"/>
+              <command name="POP"/>
+              <command name="EIF"/>
+              <push>8</push>
+              <command name="SDB"/>
+              </code>
+macros: {}
+glyphs:
+  exclam:
+    y:
+      points:
+      - ptid: 7
+        points:
+        - ptid: 6
+          rel: align
+        - ptid:
+          - 0
+          - 5
+          rel: shift
+        - ptid: 2
+          rel: blackdist
+          points:
+          - ptid: 3
+            rel: align
+          - ptid:
+            - 1
+            - 4
+            rel: shift
+          - ptid: 8
+            rel: whitedist
+            points:
+            - ptid: 11
+              rel: align
+        pos: baseline
+      - ptid: 9
+        points:
+        - ptid: 10
+          rel: align
+        pos: cap-height
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid:
+          - 1
+          - 8
+          - 9
+          rel: align
+        - ptid:
+          - 2
+          - 7
+          rel: shift
+        - ptid: 5
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid:
+            - 4
+            - 11
+            - 10
+            rel: align
+          - ptid:
+            - 6
+            - 3
+            rel: shift
+  quotedbl:
+    y:
+      points:
+      - ptid: 1
+        points:
+        - ptid:
+          - 2
+          - 5
+          - 6
+          rel: align
+        - ptid: 0
+          rel: blackdist
+          points:
+          - ptid:
+            - 3
+            - 4
+            - 7
+            rel: align
+        pos: cap-height
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid: 1
+          rel: align
+        - ptid: 3
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 2
+            rel: align
+          - ptid: 4
+            rel: whitedist
+            points:
+            - ptid: 5
+              rel: align
+            - ptid: 7
+              rel: blackdist
+              dist: x-stem
+              points:
+              - ptid: 6
+                rel: align
+            dist: x-stem
+  numbersign:
+    y:
+      points:
+      - ptid: 26
+        points:
+        - ptid:
+          - 21
+          - 22
+          - 25
+          rel: align
+        - ptid: 27
+          rel: graydist
+          points:
+          - ptid:
+            - 0
+            - 19
+            - 20
+            - 23
+            - 24
+            rel: align
+          - ptid: 2
+            rel: blackdist
+            dist: y-stem
+            points:
+            - ptid:
+              - 1
+              - 17
+              - 18
+              - 28
+              - 29
+              rel: align
+          dist: y-stem
+      - ptid: 7
+        points:
+        - ptid:
+          - 8
+          - 11
+          - 12
+          rel: align
+        - ptid: 6
+          rel: graydist
+          points:
+          - ptid:
+            - 5
+            - 9
+            - 10
+            - 13
+            - 14
+            rel: align
+          - ptid: 3
+            rel: blackdist
+            dist: y-stem
+            points:
+            - ptid:
+              - 4
+              - 15
+              - 16
+              - 30
+              - 31
+              rel: align
+          dist: y-stem
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid:
+          - 1
+          - 4
+          - 5
+          rel: align
+        - ptid: 27
+          rel: graydist
+          dist: x-stem
+          points:
+          - ptid:
+            - 2
+            - 3
+            - 6
+            - 7
+            - 26
+            rel: align
+          - ptid: 24
+            rel: blackdist
+            dist: x-stem
+            points:
+            - ptid:
+              - 8
+              - 9
+              - 25
+              - 28
+              - 31
+              rel: align
+      - ptid: 19
+        points:
+        - ptid:
+          - 14
+          - 15
+          - 18
+          rel: align
+        - ptid: 20
+          rel: graydist
+          dist: x-stem
+          points:
+          - ptid:
+            - 12
+            - 13
+            - 16
+            - 17
+            - 21
+            rel: align
+          - ptid: 23
+            rel: blackdist
+            dist: x-stem
+            points:
+            - ptid:
+              - 10
+              - 11
+              - 22
+              - 29
+              - 30
+              rel: align
+  quotesingle:
+    y:
+      points:
+      - ptid: 1
+        pos: cap-height
+        points:
+        - ptid: 2
+          rel: align
+        - ptid: 0
+          rel: blackdist
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid: 1
+          rel: align
+        - ptid: 3
+          rel: blackdist
+          points:
+          - ptid: 2
+            rel: align
+          dist: x-stem
+  percent:
+    y:
+      points:
+      - ptid: 6
+        points:
+        - ptid: 7
+          rel: align
+        - ptid:
+          - 5
+          - 8
+          rel: shift
+        - ptid: 11
+          rel: blackdist
+          points:
+          - ptid: 10
+            rel: align
+          - ptid:
+            - 9
+            - 4
+            rel: shift
+          dist: y-stem
+        pos: cap-height
+      - ptid: 19
+        pos: baseline
+        points:
+        - ptid: 18
+          rel: align
+        - ptid:
+          - 12
+          - 17
+          rel: shift
+        - ptid: 14
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 15
+            rel: align
+          - ptid:
+            - 13
+            - 16
+            rel: shift
+    x:
+      points:
+      - ptid: 4
+        points:
+        - ptid: 5
+          rel: align
+        - ptid:
+          - 11
+          - 6
+          rel: shift
+        - ptid: 9
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 8
+            rel: align
+          - ptid:
+            - 7
+            - 10
+            rel: shift
+      - ptid: 17
+        points:
+        - ptid: 16
+          rel: align
+        - ptid:
+          - 18
+          - 15
+          rel: shift
+        - ptid: 12
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 13
+            rel: align
+          - ptid:
+            - 19
+            - 14
+            rel: shift
+  parenleft:
+    y:
+      points:
+      - ptid: 7
+        pos: baseline
+        points:
+        - ptid: 0
+          rel: shift
+        - ptid: 6
+          rel: shift
+          points:
+          - ptid: 5
+            rel: shift
+      - ptid: 2
+        pos: baseline
+        points:
+        - ptid: 1
+          rel: shift
+        - ptid: 3
+          rel: shift
+          points:
+          - ptid: 4
+            rel: shift
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid: 1
+          rel: align
+        - ptid:
+          - 7
+          - 2
+          rel: shift
+        - ptid: 5
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 4
+            rel: align
+          - ptid:
+            - 6
+            - 3
+            rel: shift
+  parenright:
+    y:
+      points:
+      - ptid: 7
+        pos: baseline
+        points:
+        - ptid: 0
+          rel: shift
+          points:
+          - ptid: 1
+            rel: shift
+        - ptid: 6
+          rel: shift
+      - ptid: 4
+        pos: cap-height
+        points:
+        - ptid: 3
+          rel: shift
+          points:
+          - ptid: 2
+            rel: shift
+        - ptid: 5
+          rel: shift
+    x:
+      points:
+      - ptid: 6
+        points:
+        - ptid: 5
+          rel: align
+        - ptid:
+          - 4
+          - 7
+          rel: shift
+        - ptid: 1
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 2
+            rel: align
+          - ptid:
+            - 3
+            - 0
+            rel: shift
+  plus:
+    y:
+      points:
+      - ptid: 3
+        points:
+        - ptid: 4
+          rel: align
+        - ptid: 2
+          rel: graydist
+          points:
+          - ptid:
+            - 1
+            - 5
+            - 6
+            rel: align
+          - ptid: 11
+            rel: blackdist
+            points:
+            - ptid:
+              - 0
+              - 7
+              - 8
+              rel: align
+            - ptid: 10
+              rel: graydist
+              points:
+              - ptid: 9
+                rel: align
+            dist: y-stem
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid: 1
+          rel: align
+        - ptid: 11
+          rel: graydist
+          points:
+          - ptid:
+            - 2
+            - 3
+            - 10
+            rel: align
+          - ptid: 8
+            rel: blackdist
+            points:
+            - ptid:
+              - 4
+              - 5
+              - 9
+              rel: align
+            - ptid: 7
+              rel: graydist
+              points:
+              - ptid: 6
+                rel: align
+            dist: x-stem
+  hyphen:
+    y:
+      points:
+      - ptid: 1
+        points:
+        - ptid: 2
+          rel: align
+        - ptid: 0
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 3
+            rel: align
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid: 1
+          rel: align
+      - ptid: 3
+        points:
+        - ptid: 2
+          rel: align
+  period:
+    y:
+      points:
+      - ptid: 7
+        pos: baseline
+        points:
+        - ptid: 6
+          rel: align
+        - ptid:
+          - 0
+          - 5
+          rel: shift
+        - ptid: 2
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 3
+            rel: align
+          - ptid:
+            - 4
+            - 1
+            rel: shift
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid: 1
+          rel: align
+        - ptid:
+          - 7
+          - 2
+          rel: shift
+        - ptid: 5
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 4
+            rel: align
+          - ptid:
+            - 6
+            - 3
+            rel: shift
+  zero:
+    y:
+      points:
+      - ptid: 7
+        pos: baseline
+        points:
+        - ptid: 6
+          rel: align
+          points:
+          - ptid: 5
+            rel: shift
+        - ptid: 0
+          rel: shift
+        - ptid: 14
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 15
+            rel: align
+            points:
+            - ptid: 16
+              rel: shift
+          - ptid: 13
+            rel: shift
+      - ptid: 2
+        pos: cap-height
+        points:
+        - ptid: 3
+          rel: align
+          points:
+          - ptid: 4
+            rel: shift
+        - ptid: 1
+          rel: shift
+        - ptid: 11
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 10
+            rel: align
+            points:
+            - ptid: 9
+              rel: shift
+          - ptid: 12
+            rel: shift
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid: 1
+          rel: align
+          points:
+          - ptid: 12
+            rel: blackdist
+            dist: x-stem
+            points:
+            - ptid: 8
+              rel: align
+            - ptid: 11
+              rel: shift
+          - ptid: 2
+            rel: shift
+        - ptid: 7
+          rel: shift
+      - ptid: 5
+        points:
+        - ptid: 4
+          rel: align
+          points:
+          - ptid: 3
+            rel: shift
+        - ptid: 6
+          rel: shift
+        - ptid: 16
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 17
+            rel: align
+          - ptid: 15
+            rel: shift
+  one:
+    y:
+      points:
+      - ptid: 4
+        pos: baseline
+        points:
+        - ptid: 3
+          rel: align
+      - ptid: 1
+        pos: cap-height
+        points:
+        - ptid: 2
+          rel: align
+        - ptid: 0
+          rel: shift
+  A:
+    y:
+      points:
+      - ptid: 0
+        pos: baseline
+        points:
+        - ptid:
+          - 5
+          - 6
+          - 9
+          rel: align
+      - ptid: 2
+        pos: cap-height
+        points:
+        - ptid: 3
+          rel: align
+          points:
+          - ptid: 4
+            rel: shift
+        - ptid: 1
+          rel: shift
+        - ptid: 14
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 13
+            rel: align
+            points:
+            - ptid: 12
+              rel: shift
+          - ptid: 15
+            rel: shift
+      - ptid: 10
+        ref:
+        - 0
+        - 2
+        rel: interpolate
+        round: true
+        points:
+        - ptid: 11
+          rel: align
+        - ptid: 8
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 7
+            rel: align
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid: 1
+          rel: align
+          points:
+          - ptid: 2
+            rel: shift
+        - ptid: 9
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid:
+            - 8
+            - 10
+            - 15
+            rel: align
+            points:
+            - ptid: 14
+              ref: 15
+              rel: shift
+      - ptid: 5
+        points:
+        - ptid: 4
+          rel: align
+          points:
+          - ptid: 3
+            rel: shift
+        - ptid: 6
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid:
+            - 7
+            - 11
+            - 12
+            rel: align
+            points:
+            - ptid: 13
+              ref: 12
+              rel: shift
+  B:
+    y:
+      points:
+      - ptid: 0
+        pos: baseline
+        points:
+        - ptid: 8
+          rel: align
+          points:
+          - ptid: 7
+            rel: shift
+        - ptid: 9
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 10
+            rel: align
+            points:
+            - ptid: 11
+              rel: shift
+      - ptid: 1
+        pos: cap-height
+        points:
+        - ptid: 2
+          rel: align
+          points:
+          - ptid: 3
+            rel: shift
+        - ptid: 20
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 19
+            rel: align
+            points:
+            - ptid: 18
+              rel: shift
+      - ptid: 15
+        ref:
+        - 0
+        - 1
+        rel: interpolate
+        round: true
+        points:
+        - ptid: 16
+          rel: align
+          points:
+          - ptid: 17
+            rel: shift
+        - ptid: 14
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 13
+            rel: align
+            points:
+            - ptid: 12
+              rel: shift
+      - ptid: 5
+        ref:
+        - 16
+        - 13
+        rel: interpolate
+        round: true
+        points:
+        - ptid: 4
+          rel: shift
+        - ptid: 6
+          rel: shift
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid: 1
+          rel: align
+        - ptid: 9
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid:
+            - 14
+            - 15
+            - 20
+            rel: align
+      - ptid: 7
+        points:
+        - ptid:
+          - 3
+          - 4
+          - 6
+          rel: align
+          points:
+          - ptid: 2
+            ref: 3
+            rel: shift
+          - ptid: 5
+            ref: 6
+            rel: shift
+        - ptid: 8
+          rel: shift
+        - ptid: 11
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid:
+            - 12
+            - 17
+            - 18
+            rel: align
+            points:
+            - ptid: 13
+              ref: 12
+              rel: shift
+            - ptid: 19
+              ref: 18
+              rel: shift
+            - ptid: 16
+              ref: 17
+              rel: shift
+          - ptid: 10
+            rel: shift
+  C:
+    y:
+      points:
+      - ptid: 15
+        pos: baseline
+        points:
+        - ptid: 14
+          rel: align
+          points:
+          - ptid: 13
+            rel: shift
+        - ptid: 0
+          rel: shift
+        - ptid: 10
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 11
+            rel: align
+            points:
+            - ptid: 12
+              rel: shift
+          - ptid: 9
+            rel: shift
+      - ptid: 2
+        pos: cap-height
+        points:
+        - ptid: 3
+          rel: align
+          points:
+          - ptid: 4
+            rel: shift
+        - ptid: 1
+          rel: shift
+        - ptid: 7
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 6
+            rel: align
+            points:
+            - ptid: 5
+              rel: shift
+          - ptid: 8
+            rel: shift
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid: 1
+          rel: align
+          points:
+          - ptid: 2
+            rel: shift
+        - ptid: 15
+          rel: shift
+        - ptid: 9
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 8
+            rel: align
+            points:
+            - ptid: 7
+              rel: shift
+          - ptid: 10
+            rel: shift
+      - ptid: 13
+        points:
+        - ptid: 4
+          rel: align
+          points:
+          - ptid: 3
+            rel: shift
+        - ptid: 14
+          rel: shift
+  D:
+    y:
+      points:
+      - ptid: 0
+        pos: baseline
+        points:
+        - ptid: 5
+          rel: align
+          points:
+          - ptid: 4
+            rel: shift
+        - ptid: 6
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 7
+            rel: align
+            points:
+            - ptid: 8
+              rel: shift
+      - ptid: 1
+        pos: cap-height
+        points:
+        - ptid: 2
+          rel: align
+          points:
+          - ptid: 3
+            rel: shift
+        - ptid: 11
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 10
+            rel: align
+            points:
+            - ptid: 9
+              rel: shift
+    x:
+      points:
+      - ptid: 0
+        pos: character-origin
+        points:
+        - ptid: 1
+          rel: align
+        - ptid: 6
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 11
+            rel: align
+      - ptid: 4
+        points:
+        - ptid: 3
+          rel: align
+          points:
+          - ptid: 2
+            rel: shift
+        - ptid: 5
+          rel: shift
+        - ptid: 8
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 9
+            rel: align
+            points:
+            - ptid: 10
+              rel: shift
+          - ptid: 7
+            rel: shift
+  E:
+    y:
+      points:
+      - ptid: 0
+        points:
+        - ptid: 11
+          rel: align
+        - ptid: 9
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 10
+            rel: align
+      - ptid: 1
+        pos: cap-height
+        points:
+        - ptid: 2
+          rel: align
+        - ptid: 4
+          rel: blackdist
+          points:
+          - ptid: 3
+            rel: align
+      - ptid: 5
+        ref:
+        - 0
+        - 1
+        rel: interpolate
+        round: true
+        points:
+        - ptid: 6
+          rel: align
+        - ptid: 8
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 7
+            rel: align
+    x:
+      points:
+      - ptid: 0
+        pos: character-origin
+        points:
+        - ptid: 1
+          rel: align
+        - ptid: 9
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid:
+            - 4
+            - 5
+            - 8
+            rel: align
+      - ptid: 11
+        points:
+        - ptid:
+          - 2
+          - 3
+          - 10
+          rel: align
+          points:
+          - ptid: 7
+            ref: 10
+            rel: graydist
+            dist: x-stem
+            points:
+            - ptid: 6
+              rel: align
+  F:
+    y:
+      points:
+      - ptid: 0
+        pos: baseline
+        points:
+        - ptid: 9
+          rel: align
+      - ptid: 1
+        pos: cap-height
+        points:
+        - ptid: 2
+          rel: align
+        - ptid: 4
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 3
+            rel: align
+      - ptid: 5
+        ref:
+        - 0
+        - 1
+        rel: interpolate
+        round: true
+        points:
+        - ptid: 6
+          rel: align
+        - ptid: 8
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 7
+            rel: align
+    x:
+      points:
+      - ptid: 0
+        pos: character-origin
+        points:
+        - ptid: 1
+          rel: align
+        - ptid: 9
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid:
+            - 4
+            - 5
+            - 8
+            rel: align
+      - ptid: 2
+        points:
+        - ptid: 3
+          rel: align
+          points:
+          - ptid: 6
+            rel: graydist
+            dist: x-stem
+            points:
+            - ptid: 7
+              rel: align
+  P:
+    y:
+      points:
+      - ptid: 0
+        pos: baseline
+        points:
+        - ptid: 7
+          rel: align
+      - ptid: 1
+        pos: cap-height
+        points:
+        - ptid: 2
+          rel: align
+          points:
+          - ptid: 3
+            rel: shift
+        - ptid: 13
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 12
+            rel: align
+            points:
+            - ptid: 11
+              rel: shift
+      - ptid: 8
+        ref:
+        - 0
+        - 1
+        rel: interpolate
+        round: true
+        points:
+        - ptid: 9
+          rel: align
+          points:
+          - ptid: 10
+            rel: shift
+        - ptid: 6
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 5
+            rel: align
+            points:
+            - ptid: 4
+              rel: shift
+    x:
+      points:
+      - ptid: 0
+        pos: character-origin
+        points:
+        - ptid: 1
+          rel: align
+        - ptid: 7
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid:
+            - 6
+            - 8
+            - 13
+            rel: align
+      - ptid: 4
+        points:
+        - ptid: 3
+          rel: align
+          points:
+          - ptid: 2
+            rel: shift
+        - ptid: 5
+          rel: shift
+        - ptid: 10
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 11
+            rel: align
+            points:
+            - ptid: 12
+              rel: shift
+          - ptid: 9
+            rel: shift
