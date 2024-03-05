@@ -3,10 +3,6 @@ font:
   out: /home/pthomas/Desktop/github/fonts/fonts/family_name/monospace/size1/design_2/ttf/Untitled-hinted.ttf
 defaults: {}
 cvt:
-  character-origin:
-    val: 0
-    type: pos
-    axis: x
   baseline:
     val: 0
     type: pos
@@ -27,6 +23,14 @@ cvt:
     val: -256
     type: pos
     axis: y
+  left-side:
+    val: 0
+    type: pos
+    axis: x
+  right-side:
+    val: 640
+    type: pos
+    axis: x
   x-stem:
     val: 128
     type: dist
@@ -93,6 +97,7 @@ glyphs:
     y:
       points:
       - ptid: 7
+        pos: baseline
         points:
         - ptid: 6
           rel: align
@@ -114,12 +119,11 @@ glyphs:
             points:
             - ptid: 11
               rel: align
-        pos: baseline
       - ptid: 9
+        pos: cap-height
         points:
         - ptid: 10
           rel: align
-        pos: cap-height
     x:
       points:
       - ptid: 0
@@ -150,6 +154,7 @@ glyphs:
     y:
       points:
       - ptid: 1
+        pos: cap-height
         points:
         - ptid:
           - 2
@@ -164,7 +169,6 @@ glyphs:
             - 4
             - 7
             rel: align
-        pos: cap-height
     x:
       points:
       - ptid: 0
@@ -201,6 +205,7 @@ glyphs:
           rel: align
         - ptid: 27
           rel: graydist
+          dist: y-stem
           points:
           - ptid:
             - 0
@@ -220,7 +225,6 @@ glyphs:
               - 28
               - 29
               rel: align
-          dist: y-stem
       - ptid: 7
         points:
         - ptid:
@@ -230,6 +234,7 @@ glyphs:
           rel: align
         - ptid: 6
           rel: graydist
+          dist: y-stem
           points:
           - ptid:
             - 5
@@ -249,10 +254,10 @@ glyphs:
               - 30
               - 31
               rel: align
-          dist: y-stem
     x:
       points:
       - ptid: 0
+        pos: left-side
         points:
         - ptid:
           - 1
@@ -282,6 +287,7 @@ glyphs:
               - 31
               rel: align
       - ptid: 19
+        pos: right-side
         points:
         - ptid:
           - 14
@@ -336,6 +342,7 @@ glyphs:
     y:
       points:
       - ptid: 6
+        pos: cap-height
         points:
         - ptid: 7
           rel: align
@@ -345,6 +352,7 @@ glyphs:
           rel: shift
         - ptid: 11
           rel: blackdist
+          dist: y-stem
           points:
           - ptid: 10
             rel: align
@@ -352,8 +360,6 @@ glyphs:
             - 9
             - 4
             rel: shift
-          dist: y-stem
-        pos: cap-height
       - ptid: 19
         pos: baseline
         points:
@@ -393,6 +399,7 @@ glyphs:
             - 7
             - 10
             rel: shift
+        pos: left-side
       - ptid: 17
         points:
         - ptid: 16
@@ -411,6 +418,7 @@ glyphs:
             - 19
             - 14
             rel: shift
+        pos: right-side
   parenleft:
     y:
       points:
@@ -514,6 +522,7 @@ glyphs:
             rel: align
           - ptid: 11
             rel: blackdist
+            dist: y-stem
             points:
             - ptid:
               - 0
@@ -525,7 +534,6 @@ glyphs:
               points:
               - ptid: 9
                 rel: align
-            dist: y-stem
     x:
       points:
       - ptid: 0
@@ -554,6 +562,7 @@ glyphs:
               - ptid: 6
                 rel: align
             dist: x-stem
+        pos: left-side
   hyphen:
     y:
       points:
@@ -570,10 +579,12 @@ glyphs:
     x:
       points:
       - ptid: 0
+        pos: left-side
         points:
         - ptid: 1
           rel: align
       - ptid: 3
+        pos: right-side
         points:
         - ptid: 2
           rel: align
@@ -667,6 +678,7 @@ glyphs:
     x:
       points:
       - ptid: 0
+        pos: left-side
         points:
         - ptid: 1
           rel: align
@@ -684,6 +696,7 @@ glyphs:
         - ptid: 7
           rel: shift
       - ptid: 5
+        pos: right-side
         points:
         - ptid: 4
           rel: align
@@ -765,6 +778,7 @@ glyphs:
     x:
       points:
       - ptid: 0
+        pos: left-side
         points:
         - ptid: 1
           rel: align
@@ -785,6 +799,7 @@ glyphs:
               ref: 15
               rel: shift
       - ptid: 5
+        pos: right-side
         points:
         - ptid: 4
           rel: align
@@ -876,6 +891,7 @@ glyphs:
     x:
       points:
       - ptid: 0
+        pos: left-side
         points:
         - ptid: 1
           rel: align
@@ -889,6 +905,7 @@ glyphs:
             - 20
             rel: align
       - ptid: 7
+        pos: right-side
         points:
         - ptid:
           - 3
@@ -973,6 +990,7 @@ glyphs:
     x:
       points:
       - ptid: 0
+        pos: left-side
         points:
         - ptid: 1
           rel: align
@@ -993,6 +1011,7 @@ glyphs:
           - ptid: 10
             rel: shift
       - ptid: 13
+        pos: right-side
         points:
         - ptid: 4
           rel: align
@@ -1041,7 +1060,7 @@ glyphs:
     x:
       points:
       - ptid: 0
-        pos: character-origin
+        pos: left-side
         points:
         - ptid: 1
           rel: align
@@ -1052,6 +1071,7 @@ glyphs:
           - ptid: 11
             rel: align
       - ptid: 4
+        pos: right-side
         points:
         - ptid: 3
           rel: align
@@ -1075,6 +1095,7 @@ glyphs:
     y:
       points:
       - ptid: 0
+        pos: baseline
         points:
         - ptid: 11
           rel: align
@@ -1112,7 +1133,7 @@ glyphs:
     x:
       points:
       - ptid: 0
-        pos: character-origin
+        pos: left-side
         points:
         - ptid: 1
           rel: align
@@ -1126,6 +1147,7 @@ glyphs:
             - 8
             rel: align
       - ptid: 11
+        pos: right-side
         points:
         - ptid:
           - 2
@@ -1177,7 +1199,7 @@ glyphs:
     x:
       points:
       - ptid: 0
-        pos: character-origin
+        pos: left-side
         points:
         - ptid: 1
           rel: align
@@ -1191,6 +1213,7 @@ glyphs:
             - 8
             rel: align
       - ptid: 2
+        pos: right-side
         points:
         - ptid: 3
           rel: align
@@ -1250,7 +1273,7 @@ glyphs:
     x:
       points:
       - ptid: 0
-        pos: character-origin
+        pos: left-side
         points:
         - ptid: 1
           rel: align
@@ -1283,3 +1306,4 @@ glyphs:
               rel: shift
           - ptid: 9
             rel: shift
+        pos: right-side
