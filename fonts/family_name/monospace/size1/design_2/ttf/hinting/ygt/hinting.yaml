@@ -1307,3 +1307,311 @@ glyphs:
           - ptid: 9
             rel: shift
         pos: right-side
+  G:
+    y:
+      points:
+      - ptid: 19
+        pos: baseline
+        points:
+        - ptid: 18
+          rel: align
+          points:
+          - ptid: 17
+            rel: shift
+        - ptid: 0
+          rel: shift
+        - ptid: 10
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 11
+            rel: align
+            points:
+            - ptid: 12
+              rel: shift
+          - ptid: 9
+            rel: shift
+      - ptid: 2
+        pos: cap-height
+        points:
+        - ptid: 3
+          rel: align
+          points:
+          - ptid: 4
+            rel: shift
+        - ptid: 1
+          rel: shift
+        - ptid: 7
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 6
+            rel: align
+            points:
+            - ptid: 5
+              rel: shift
+          - ptid: 8
+            rel: shift
+      - ptid: 15
+        ref:
+        - 19
+        - 2
+        rel: interpolate
+        round: true
+        points:
+        - ptid: 14
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 13
+            rel: align
+        - ptid: 16
+          rel: align
+    x:
+      points:
+      - ptid: 0
+        pos: left-side
+        points:
+        - ptid: 1
+          rel: align
+          points:
+          - ptid: 2
+            rel: shift
+        - ptid: 19
+          rel: shift
+        - ptid: 9
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 8
+            rel: align
+            points:
+            - ptid: 7
+              rel: shift
+          - ptid: 10
+            rel: shift
+      - ptid: 17
+        pos: right-side
+        points:
+        - ptid:
+          - 4
+          - 16
+          rel: align
+          points:
+          - ptid: 3
+            ref: 4
+            rel: shift
+        - ptid: 18
+          rel: shift
+        - ptid: 12
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 13
+            rel: align
+            points:
+            - ptid: 14
+              rel: graydist
+              dist: x-stem
+              points:
+              - ptid: 15
+                rel: align
+          - ptid: 11
+            rel: shift
+  H:
+    y:
+      points:
+      - ptid: 0
+        pos: baseline
+        points:
+        - ptid:
+          - 7
+          - 8
+          - 11
+          rel: align
+      - ptid: 1
+        pos: cap-height
+        points:
+        - ptid:
+          - 2
+          - 5
+          - 6
+          rel: align
+      - ptid: 3
+        ref:
+        - 0
+        - 1
+        rel: interpolate
+        round: true
+        points:
+        - ptid: 10
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 9
+            rel: align
+        - ptid: 4
+          rel: align
+    x:
+      points:
+      - ptid: 0
+        pos: left-side
+        points:
+        - ptid: 1
+          rel: align
+        - ptid: 11
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid:
+            - 2
+            - 3
+            - 10
+            rel: align
+      - ptid: 7
+        pos: right-side
+        points:
+        - ptid: 6
+          rel: align
+        - ptid: 8
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid:
+            - 4
+            - 5
+            - 9
+            rel: align
+  I:
+    y:
+      points:
+      - ptid: 0
+        pos: baseline
+        points:
+        - ptid: 11
+          rel: align
+        - ptid: 1
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid:
+            - 2
+            - 9
+            - 10
+            rel: align
+      - ptid: 5
+        pos: cap-height
+        points:
+        - ptid: 6
+          rel: align
+        - ptid: 4
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid:
+            - 3
+            - 7
+            - 8
+            rel: align
+    x:
+      points:
+      - ptid: 0
+        points:
+        - ptid:
+          - 1
+          - 4
+          - 5
+          rel: align
+          points:
+          - ptid: 2
+            ref: 1
+            rel: graydist
+            points:
+            - ptid: 3
+              rel: align
+            - ptid: 9
+              rel: blackdist
+              points:
+              - ptid: 8
+                rel: align
+              - ptid: 10
+                rel: graydist
+                dist: x-stem
+                points:
+                - ptid:
+                  - 6
+                  - 7
+                  - 11
+                  rel: align
+              dist: x-stem
+            dist: x-stem
+  J:
+    y:
+      points:
+      - ptid: 11
+        pos: baseline
+        points:
+        - ptid: 10
+          rel: align
+          points:
+          - ptid: 9
+            rel: shift
+        - ptid: 0
+          rel: shift
+        - ptid: 4
+          rel: blackdist
+          dist: y-stem
+          points:
+          - ptid: 5
+            rel: align
+            points:
+            - ptid: 6
+              rel: shift
+          - ptid: 3
+            rel: shift
+      - ptid: 7
+        pos: cap-height
+        points:
+        - ptid: 8
+          rel: align
+      - ptid: 1
+        ref:
+        - 11
+        - 7
+        rel: interpolate
+        round: true
+        points:
+        - ptid: 2
+          rel: align
+    x:
+      points:
+      - ptid: 0
+        pos: left-side
+        points:
+        - ptid: 1
+          rel: align
+        - ptid: 11
+          rel: shift
+        - ptid: 3
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 2
+            rel: align
+          - ptid: 4
+            rel: shift
+      - ptid: 9
+        pos: right-side
+        points:
+        - ptid: 8
+          rel: align
+        - ptid: 10
+          rel: shift
+        - ptid: 6
+          rel: blackdist
+          dist: x-stem
+          points:
+          - ptid: 7
+            rel: align
+          - ptid: 5
+            rel: shift
