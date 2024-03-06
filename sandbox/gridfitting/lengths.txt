@@ -1,26 +1,48 @@
-1 * sqrt(2)/2 = .7071
-2 * sqrt(2)/2 = 1.4142
-3 * sqrt(2)/2 = 2.1213
-4 * sqrt(2)/2 = 2.8284
-5 * sqrt(2)/2 = 3.5355
-6 * sqrt(2)/2 = 4.2426
-7 * sqrt(2)/2 = 4.9497
-8 * sqrt(2)/2 = 5.6569
-9 * sqrt(2)/2 = 6.3640
-10 * sqrt(2)/2 = 7.0711
 
-1.5 * sqrt(2) = 2.1213
-2.0 * sqrt(2) = 2.8284
-2.5 * sqrt(2) = 3.5355
-3.0 * sqrt(2) = 4.2426
-3.5 * sqrt(2) = 4.9497
-4.0 * sqrt(2) = 5.6569
-4.5 * sqrt(2) = 6.3640
-5.0 * sqrt(2) = 7.0711
+1 * sqrt(2)/2 = 0.707106781
+2 * sqrt(2)/2 = 1.414213562
+3 * sqrt(2)/2 = 2.121320344
+4 * sqrt(2)/2 = 2.828427125
+5 * sqrt(2)/2 = 3.535533906
+6 * sqrt(2)/2 = 4.242640687
+7 * sqrt(2)/2 = 4.949747468
+8 * sqrt(2)/2 = 5.656854249
+9 * sqrt(2)/2 = 6.363961031
+10 * sqrt(2)/2 = 7.071067812
 
-2 = 1.5
-3 = 2.0
-4 = 3.0
-5 = 3.5
-6 = 4.0
+
+For a diagonal stem at exactly 45 or 135 degrees on a square pixel grid the stem size is restricted to an integer multiple of sqrt(2)/2.
+
+Therefore in attempting to match the diagonal stem size to horizontal and vertical stem sizes that are integer multiples of 1 on a square pixel grid:
+The closest possible diagonal stem size to 1 is 0.707106781 = 1 * sqrt(2)/2
+The closest possible diagonal stem size to 2 is 2.121320344 = 3 * sqrt(2)/2
+The closest possible diagonal stem size to 3 is 2.828427125 = 4 * sqrt(2)/2
+The closest possible diagonal stem size to 4 is 4.242640687 = 6 * sqrt(2)/2
+The closest possible diagonal stem size to 5 is 4.949747468 = 7 * sqrt(2)/2
+The closest possible diagonal stem size to 6 is 5.656854249 = 8 * sqrt(2)/2
+The closest possible diagonal stem size to 7 is 7.071067812 = 10 * sqrt(2)/2
+...
+
+This means that in hinting the diagonal stem size should be determined by taking the resulting rounded horizontal and vertical stem size and rounding it to the nearest sqrt(2)/2.
+
+
+<!--
+  https://learn.microsoft.com/en-us/typography/opentype/spec/tt_instructions#super-round
+  https://learn.microsoft.com/en-us/typography/opentype/spec/tt_instructions#super-round-45-degrees
+  https://xgridfit.sourceforge.net/reference.html#command
+  https://xgridfit.sourceforge.net/reference.html#push
+
+  Sets rounding to the nearest sqrt(2)/2:
+  For S45ROUND the gridPeriod is sqrt(2)/2.
+  period = sqrt(2)/2 = gridPeriod
+  phase = 0
+  threshold = (1/2) * period = (4/8) * period
+
+  In the tables the corresponding period is 1, the phase is 0, and the threshold is 8.
+  period : phase : threshold
+  1:0:8 base 10
+  01:00:1000 base 2 = 01001000 base 2 = 72 base 10
+-->
+<push>72</push>
+<command name="S45ROUND"/>
 
