@@ -23,7 +23,7 @@ The closest possible diagonal stem size to 6 is 5.656854249 = 8 * sqrt(2)/2
 The closest possible diagonal stem size to 7 is 7.071067812 = 10 * sqrt(2)/2
 ...
 
-This means that in hinting the diagonal stem size should be determined by taking the resulting rounded horizontal and vertical stem size and rounding it to the nearest sqrt(2)/2.
+This means that in hinting the diagonal stem size should be determined by taking the resulting rounded horizontal and vertical stem size and rounding that to the nearest sqrt(2)/2. For example if the stem size at a given ppem is 6.8 pixels then the horizontal and vertical stem size becomes 7.0 pixels after rounding to the grid. Therefore the diagonal stem size should be 7.0 rounded to the nearest sqrt(2)/2. This is 7.071067812 pixels = 10 * sqrt(2)/2 pixels.
 
 
 <!--
