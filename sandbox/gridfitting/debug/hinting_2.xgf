@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
+
+  <!--
+    This file is an example of using hinting to ensure that the diagonal stem size remains as close as
+  possible to the horizontal and vertical stem size.
+  -->
+
+  <constant name="sqrt2" value="1.414213562" />
+
+  <control-value name="stem" value="128" />
+
+  <!--
+    The values are set in the pre-program.
+  -->
+  <control-value name="stem-to-grid" value="0" />
+  <control-value name="stem-to-diagonal-grid" value="0" />
+  <control-value name="stem-to-diagonal-grid-offset" value="0" />
+
+  <pre-program>
+    <!-- Set to a large enough value to ensure that the control values are used at all sizes. -->
+    <set-control-value-cut-in value="2.0" />
+
+    <!-- Turns off drop-out-control -->
+    <set-dropout-control flags="0" threshold="0" />
+
+    <set-dropout-type value="2" />
+
+    <with-round-state round="to-grid">
+      <set-control-value name="stem-to-grid" unit="pixel" value="round(control-value(stem))" />
+    </with-round-state>
+
+    <push>72</push>
+    <command name="S45ROUND" />
+    <set-control-value name="stem-to-diagonal-grid" unit="pixel"
+      value="round(control-value(stem-to-grid))" />
+
+    <set-control-value name="stem-to-diagonal-grid-offset" unit="pixel"
+      value="round(control-value(stem-to-grid)) - sqrt2 / 2.0" />
+
+    <set-round-state round="to-grid" />
+  </pre-program>
+
+  <glyph ps-name="exclam">
+    <!-- square -->
+
+    <with-vectors axis="x">
+      <move>
+        <point num="4" />
+        <shift>
+          <point num="5" />
+        </shift>
+      </move>
+
+      <move distance="stem-to-grid" round="no">
+        <reference>
+          <point num="4" />
+        </reference>
+        <point num="7" />
+        <shift>
+          <point num="6" />
+        </shift>
+      </move>
+    </with-vectors>
+
+
+    <!-- diagonal line -->
+
+    <with-vectors axis="x">
+      <move round="to-half-grid">
+        <point num="0" />
+        <shift>
+          <point num="1" />
+          <point num="2" />
+          <point num="3" />
+        </shift>
+      </move>
+    </with-vectors>
+
+    <with-vectors axis="y">
+      <move round="to-grid">
+        <point num="0" />
+        <shift>
+          <point num="1" />
+          <point num="2" />
+          <point num="3" />
+        </shift>
+      </move>
+    </with-vectors>
+
+
+    <line name="diagonal-line">
+      <point num="0" />
+      <point num="3" />
+    </line>
+
+    <with-vectors to-line="orthogonal">
+      <line ref="diagonal-line" />
+
+      <move distance="stem-to-diagonal-grid-offset" min-distance="sqrt2 / 2.0" round="no">
+        <reference>
+          <point num="0" />
+        </reference>
+        <point num="1" />
+      </move>
+
+      <move distance="stem-to-diagonal-grid-offset" min-distance="sqrt2 / 2.0" round="no">
+        <reference>
+          <point num="3" />
+        </reference>
+        <point num="2" />
+      </move>
+    </with-vectors>
+  </glyph>
+
+</xgridfit>
