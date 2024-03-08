@@ -1,26 +1,26 @@
 
-1 * sqrt(2)/2 = 0.707106781
-2 * sqrt(2)/2 = 1.414213562
-3 * sqrt(2)/2 = 2.121320344
-4 * sqrt(2)/2 = 2.828427125
-5 * sqrt(2)/2 = 3.535533906
-6 * sqrt(2)/2 = 4.242640687
-7 * sqrt(2)/2 = 4.949747468
-8 * sqrt(2)/2 = 5.656854249
-9 * sqrt(2)/2 = 6.363961031
-10 * sqrt(2)/2 = 7.071067812
+1 * sqrt(2)/2 = 0.5 * sqrt(2) = 0.707106781
+2 * sqrt(2)/2 = 1.0 * sqrt(2) = 1.414213562
+3 * sqrt(2)/2 = 1.5 * sqrt(2) = 2.121320344
+4 * sqrt(2)/2 = 2.0 * sqrt(2) = 2.828427125
+5 * sqrt(2)/2 = 2.5 * sqrt(2) = 3.535533906
+6 * sqrt(2)/2 = 3.0 * sqrt(2) = 4.242640687
+7 * sqrt(2)/2 = 3.5 * sqrt(2) = 4.949747468
+8 * sqrt(2)/2 = 4.0 * sqrt(2) = 5.656854249
+9 * sqrt(2)/2 = 4.5 * sqrt(2) = 6.363961031
+10 * sqrt(2)/2 = 5.0 * sqrt(2) = 7.071067812
 
 
 For a diagonal stem at exactly 45 or 135 degrees on a square pixel grid the stem size is restricted to an integer multiple of sqrt(2)/2.
 
 Therefore in attempting to match the diagonal stem size to horizontal and vertical stem sizes that are integer multiples of 1 on a square pixel grid:
-The closest possible diagonal stem size to 1 is 0.707106781 = 1 * sqrt(2)/2
-The closest possible diagonal stem size to 2 is 2.121320344 = 3 * sqrt(2)/2
-The closest possible diagonal stem size to 3 is 2.828427125 = 4 * sqrt(2)/2
-The closest possible diagonal stem size to 4 is 4.242640687 = 6 * sqrt(2)/2
-The closest possible diagonal stem size to 5 is 4.949747468 = 7 * sqrt(2)/2
-The closest possible diagonal stem size to 6 is 5.656854249 = 8 * sqrt(2)/2
-The closest possible diagonal stem size to 7 is 7.071067812 = 10 * sqrt(2)/2
+The closest possible diagonal stem size to 1 is 0.707106781 = 1 * sqrt(2)/2 = 0.5 * sqrt(2)
+The closest possible diagonal stem size to 2 is 2.121320344 = 3 * sqrt(2)/2 = 1.5 * sqrt(2)
+The closest possible diagonal stem size to 3 is 2.828427125 = 4 * sqrt(2)/2 = 2.0 * sqrt(2)
+The closest possible diagonal stem size to 4 is 4.242640687 = 6 * sqrt(2)/2 = 3.0 * sqrt(2)
+The closest possible diagonal stem size to 5 is 4.949747468 = 7 * sqrt(2)/2 = 3.5 * sqrt(2)
+The closest possible diagonal stem size to 6 is 5.656854249 = 8 * sqrt(2)/2 = 4.0 * sqrt(2)
+The closest possible diagonal stem size to 7 is 7.071067812 = 10 * sqrt(2)/2 = 5.0 * sqrt(2)
 ...
 
 This means that in hinting the diagonal stem size should be determined by taking the resulting rounded horizontal and vertical stem size and rounding that to the nearest sqrt(2)/2. For example if the stem size at a given ppem is 6.8 pixels then the horizontal and vertical stem size becomes 7.0 pixels after rounding to the grid. Therefore the diagonal stem size should be 7.0 rounded to the nearest sqrt(2)/2. This is 7.071067812 pixels = 10 * sqrt(2)/2 pixels.
@@ -45,4 +45,22 @@ This means that in hinting the diagonal stem size should be determined by taking
 -->
 <push>72</push>
 <command name="S45ROUND"/>
+
+
+To convert a font unit distance to a pixel distance:
+pixel_distance = (font_unit_distance / UPEM) * ppem
+
+UPEM is the number of font units per em. This is fixed at design time.
+ppem is the number of pixels per em. This is determined by the point size and resolution.
+
+For example:
+128 font units at 16 ppem and 2048 UPEM is (128 / 2048) * 16 = 1 pixel
+128 font units at 24 ppem and 2048 UPEM is (128 / 2048) * 24 = 1.5 pixels
+128 font units at 32 ppem and 2048 UPEM is (128 / 2048) * 32 = 2 pixels
+
+To round up to the nearest integer:
+floor(x + 0.5)
+
+To round up to the nearest y:
+round(x / y) * y = floor((x / y) + 0.5) * y
 
