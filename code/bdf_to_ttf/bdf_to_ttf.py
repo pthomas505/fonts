@@ -44,7 +44,10 @@ def main():
         pen.lineTo(point)
       pen.endPath()
 
-    chr.width = fbbx * args.scale + args.scale
+    chr.canonicalContours()
+    chr.canonicalStart()
+
+    chr.width = (fbbx + 1) * args.scale
 
   ff_font.encoding = 'iso8859-1'
   ff_font.encoding = 'compacted'
