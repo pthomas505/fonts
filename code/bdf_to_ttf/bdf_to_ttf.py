@@ -38,6 +38,7 @@ def main():
     pen = ff_font[codepoint].glyphPen()
     for polygon in polygon_list:
       ext_coords = tuple(polygon.exterior.coords)
+      ext_coords = ext_coords[:-1]
       pen.moveTo(ext_coords[0])
       for point in tuple(ext_coords[1:]):
         pen.lineTo(point)
