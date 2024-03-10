@@ -2,7 +2,7 @@
 <xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
   <control-value name="font-units-per-square-cv" value="128" />
 
-  <constant name="font-units-per-square" value="128" />
+  <constant name="font-units-per-square" value="128.0" />
   <constant name="font-units-per-em" value="2048" />
 
   <variable name="design-x-coord" value="0" />
