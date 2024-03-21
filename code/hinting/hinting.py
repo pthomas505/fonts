@@ -50,7 +50,7 @@ header = '''<?xml version="1.0" encoding="UTF-8"?>
 
     <set-equal target="squares-per-em" source="font-units-per-em / font-units-per-square" />
     <set-equal target="pixels-per-square" source="pixels-per-em / squares-per-em" />
-    <set-equal target="scale" source="floor(pixels-per-square)" />
+    <set-equal target="scale" source="ceiling(pixels-per-square)" />
   </pre-program>
 '''
 
