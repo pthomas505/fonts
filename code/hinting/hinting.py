@@ -4,10 +4,10 @@ import fontforge
 
 header = '''<?xml version="1.0" encoding="UTF-8"?>
 <xgridfit xmlns="http://xgridfit.sourceforge.net/Xgridfit2">
-  <control-value name="font-units-per-square-cv" value="128" />
+  <control-value name="font-units-per-square-cv" value="{int_scale}" />
 
-  <constant name="font-units-per-square" value="128.0" />
-  <constant name="font-units-per-em" value="2048" />
+  <constant name="font-units-per-square" value="{float_scale}" />
+  <constant name="font-units-per-em" value="{units_per_em}" />
 
   <variable name="design-x-coord" value="0" />
   <variable name="design-y-coord" value="0" />
@@ -57,11 +57,15 @@ header = '''<?xml version="1.0" encoding="UTF-8"?>
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument('file', type=str, help='The path to a vector font that can be opened in FontForge.')
+
+  parser.add_argument('--units_per_em', type=int, default=2048, help='The units per em of the font to be hinted.')
+  parser.add_argument('--scale', type=int, default=128, help='The length of the sides of the vector squares in the font to be hinted.')
+
   args = parser.parse_args()
 
   font = fontforge.open(args.file)
 
-  print(header)
+  print(header.format(int_scale=args.scale, float_scale=float(args.scale), units_per_em=args.units_per_em))
   for glyph in font.glyphs():
     print('''  <glyph ps-name="{}">'''.format(glyph.glyphname))
     layer = glyph.foreground
