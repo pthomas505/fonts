@@ -192,7 +192,11 @@
     <string>braceright.glif</string>
     <key>asciitilde</key>
     <string>asciitilde.glif</string>
-    <key>uni007F</key>
-    <string>uni007F_.glif</string>
+    <key>logicalnot</key>
+    <string>logicalnot.glif</string>
+    <key>periodcentered</key>
+    <string>periodcentered.glif</string>
+    <key>multiply</key>
+    <string>multiply.glif</string>
   </dict>
 </plist>
