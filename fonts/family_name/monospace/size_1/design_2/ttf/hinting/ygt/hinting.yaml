@@ -1,6 +1,6 @@
 font:
-  in: /home/pthomas/Desktop/github/fonts/fonts/family_name/monospace/size1/design_2/ttf/Untitled.ttf
-  out: /home/pthomas/Desktop/github/fonts/fonts/family_name/monospace/size1/design_2/ttf/Untitled-hinted.ttf
+  in: /home/pthomas/Desktop/github/fonts/fonts/family_name/monospace/size_1/design_2/ttf/Untitled.ttf
+  out: /home/pthomas/Desktop/github/fonts/fonts/family_name/monospace/size_1/design_2/ttf/Untitled-hinted.ttf
 defaults: {}
 cvt:
   baseline:
