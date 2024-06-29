@@ -25,7 +25,6 @@ def main():
   args = parser.parse_args()
 
   bdf_font = bdfparser.Font(args.bdf_file_path)
-  fbbx = bdf_font.headers['fbbx']
 
   ff_font = fontforge.font()
   ff_font.encoding = 'iso10646-1'
@@ -52,7 +51,8 @@ def main():
     chr.canonicalContours()
     chr.canonicalStart()
 
-    chr.width = (fbbx + 1) * args.scale
+    dwx0 = bdf_glyph.meta['dwx0']
+    chr.width = dwx0 * args.scale
 
   ff_font.encoding = 'compacted'
   ff_font.generate(args.output_font_path)
