@@ -28,6 +28,7 @@ def main():
   fbbx = bdf_font.headers['fbbx']
 
   ff_font = fontforge.font()
+  ff_font.encoding = 'iso10646-1'
   ff_font.em = args.units_per_em
 
   for bdf_glyph in bdf_font.iterglyphs():
@@ -53,7 +54,6 @@ def main():
 
     chr.width = (fbbx + 1) * args.scale
 
-  ff_font.encoding = 'iso8859-1'
   ff_font.encoding = 'compacted'
   ff_font.generate(args.output_font_path)
 
