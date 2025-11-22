@@ -1,9 +1,9 @@
 STARTFONT 2.1
-FONT -Patrick J. Thomas-mono_size_5-Normal-R-Normal-Regular-9-90-96-96-M-50-ISO8859-1
+FONT -Patrick J. Thomas-mono_size_5_design_2-Normal-R-Normal-Regular-10-100-96-96-P-50-ISO8859-1
 SIZE 10 96 96
 FONTBOUNDINGBOX 10 11 0 -2
 STARTPROPERTIES 34
-FAMILY_NAME "mono_size_5"
+FAMILY_NAME "mono_size_5_design_2"
 DEFAULT_CHAR -1
 FOUNDRY "Patrick J. Thomas"
 COPYRIGHT "Copyright (c) 2025, Patrick J. Thomas. All rights reserved."
@@ -18,10 +18,10 @@ SETWIDTH_NAME "Normal"
 ADD_STYLE_NAME "Regular"
 SPACING "P"
 WEIGHT 400
-FACE_NAME "mono_size_5"
+FACE_NAME "mono_size_5_design_2"
 HI_VERSION 1
-MENU_NAME "mono_size_5"
-FONT_NAME "mono_size_5"
+MENU_NAME "mono_size_5_design_2"
+FONT_NAME "mono_size_5_design_2"
 CP_RANGE_1 65535
 CP_RANGE_2 65535
 FONTNAME_REGISTRY "-"
