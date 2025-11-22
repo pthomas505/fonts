@@ -1,24 +1,27 @@
 STARTFONT 2.1
-FONT --mono_size_4-Normal-R-Normal-Regular-12-120-96-96-P-80-ISO10646-1
+FONT -Patrick J. Thomas-mono_size_4_design_4-Normal-R-Normal-Regular-12-120-96-96-P-80-ISO10646-1
 SIZE 12 96 96
 FONTBOUNDINGBOX 13 15 0 -4
-STARTPROPERTIES 31
-FAMILY_NAME "mono_size_4"
+STARTPROPERTIES 34
+FAMILY_NAME "mono_size_4_design_4"
 DEFAULT_CHAR -1
+FOUNDRY "Patrick J. Thomas"
+COPYRIGHT "Copyright (c) 2025, Patrick J. Thomas. All rights reserved."
 CODEPAGE "MS Windows 1252 Western (ANSI)"
 ENC_MODE 2
 ENC_ID 1
-CREATION_YEAR 2001
+DESIGNER "Patrick J. Thomas"
+CREATION_YEAR 2025
 WEIGHT_NAME "Normal"
 SLANT "R"
 SETWIDTH_NAME "Normal"
 ADD_STYLE_NAME "Regular"
 SPACING "P"
 WEIGHT 400
-FACE_NAME "mono_size_4"
+FACE_NAME "mono_size_4_design_4"
 HI_VERSION 1
-MENU_NAME "mono_size_4"
-FONT_NAME "mono_size_4"
+MENU_NAME "mono_size_4_design_4"
+FONT_NAME "mono_size_4_design_4"
 CP_RANGE_1 65535
 CP_RANGE_2 65535
 FONTNAME_REGISTRY "-"
