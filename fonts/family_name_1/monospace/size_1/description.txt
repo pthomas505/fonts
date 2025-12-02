@@ -1,4 +1,0 @@
-monospace
-height: 7 pixels
-width: 5 pixels
-x-height: 5 pixels
