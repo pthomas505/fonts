@@ -1,0 +1,49 @@
+mono_size_1_design_3
+uppercase height: 7
+lowercase height: 5
+uppercase width: 5
+lowercase width: 5
+descender: -3
+
+mono_size_2_design_2
+uppercase height: 9
+lowercase height: 5
+uppercase width: 5
+lowercase width: 5
+descender: -3
+
+mono_size_3
+uppercase height: 9
+lowercase height: 6
+uppercase width: 5
+lowercase width: 5
+descender: -3
+
+mono_size_4_design_4
+uppercase height: 11
+lowercase height: 7
+uppercase width: 7
+lowercase width: 7
+descender: -5
+
+mono_size_5_design_2
+uppercase height: 9
+lowercase height: 7
+uppercase width: 5
+lowercase width: 5
+descender: -4
+
+mono_size_6_design_1
+uppercase height: 19
+lowercase height: 11
+uppercase width: 11
+lowercase width: 9
+descender: -7
+
+mono_size_7_design_4
+uppercase height: 15
+lowercase height: 9
+uppercase width: 9
+lowercase width: 9
+descender: -6
+
