@@ -1,9 +1,9 @@
 STARTFONT 2.1
-FONT -Patrick J. Thomas-mono_size_3-Normal-R-Normal-Regular-9-90-96-96-P-0-ISO8859-1
+FONT -Patrick J. Thomas-mono_size_3_design_1-Normal-R-Normal-Regular-9-90-96-96-P-0-ISO8859-1
 SIZE 9 96 96
 FONTBOUNDINGBOX 5 11 0 -2
 STARTPROPERTIES 30
-FAMILY_NAME "mono_size_3"
+FAMILY_NAME "mono_size_3_design_1"
 DEFAULT_CHAR -1
 FOUNDRY "Patrick J. Thomas"
 COPYRIGHT "Copyright (c) 2025, Patrick J. Thomas. All rights reserved."
@@ -17,10 +17,10 @@ SETWIDTH_NAME "Normal"
 ADD_STYLE_NAME "Regular"
 SPACING "P"
 WEIGHT 400
-FACE_NAME "mono_size_3"
+FACE_NAME "mono_size_3_design_1"
 HI_VERSION 1
-MENU_NAME "mono_size_3"
-FONT_NAME "mono_size_3"
+MENU_NAME "mono_size_3_design_1"
+FONT_NAME "mono_size_3_design_1"
 FONTNAME_REGISTRY "-"
 CHARSET_REGISTRY "ISO8859"
 CHARSET_ENCODING "1"
