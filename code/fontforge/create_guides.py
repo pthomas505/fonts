@@ -92,7 +92,7 @@ def get_cell_contour_list(x_offset, y_offset, scale):
 
 
 def main():
-  f = fontforge.activeFont()
+  font = fontforge.activeFont()
   guide = fontforge.layer()
 
   scale = 128
@@ -105,7 +105,7 @@ def main():
       for contour in contour_list:
         guide += contour
 
-  f.guide = guide
+  font.guide = guide
 
 
 if __name__ == "__main__":
