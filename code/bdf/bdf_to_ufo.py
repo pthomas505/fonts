@@ -8,8 +8,6 @@ import pathlib
 
 import xml.etree.ElementTree as ET
 
-import ufo_naming
-
 
 # The array indices place the origin at the top left.
 # The graph coordinates place the origin at the bottom left.
@@ -84,7 +82,7 @@ def main():
   glyph_name_to_glyph_file_name_dict = {}
 
   for glyph in font.iterglyphs():
-    glyph_name = glyph.meta['glyphname'].split('.')[0]
+    glyph_name = glyph.meta['glyphname']
     glyph_node = ET.Element('glyph', name=glyph_name, format='2')
 
     advance = (fbbx + 1) * args.scale
@@ -114,7 +112,7 @@ def main():
           for transformed_point in transformed_point_list:
             ET.SubElement(contour_node, 'point', x=str(transformed_point[0]), y=str(transformed_point[1]), type='line')
 
-    glyph_file_name = ufo_naming.userNameToFileName(glyph_name + '.glif')
+    glyph_file_name = glyph_name + '.glif'
     glyph_file_path = glyphs_folder_path / glyph_file_name
 
     tree = ET.ElementTree(glyph_node)
