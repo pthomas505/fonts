@@ -9,20 +9,6 @@ import pathlib
 import xml.etree.ElementTree as ET
 
 
-# The array indices place the origin at the top left.
-# The graph coordinates place the origin at the bottom left.
-# The origin is (0, 0) for both.
-# array.shape[0] is the number of rows in the array.
-# array.shape[1] is the number of columns in the array.
-
-# Translates the given row and column indices to x and y graph coordinates.
-def rc_to_xy(array, r, c):
-  r_max = array.shape[0] - 1
-  y = r_max - r
-  x = c
-  return (x, y)
-
-
 def main():
   parser = argparse.ArgumentParser()
 
@@ -95,6 +81,11 @@ def main():
 
     bmp = glyph.draw()
     data = numpy.array(bmp.todata(2))
+
+    # The array indices place the origin at the top left.
+    # The graph coordinates place the origin at the bottom left.
+    # The origin is (0, 0) for both.
+    # Flips the array so that the indices match the graph coordinates.
     data = numpy.flipud(data)
 
     point_list = numpy.array([[0, 0], [0, 1], [1, 1], [1, 0]])
