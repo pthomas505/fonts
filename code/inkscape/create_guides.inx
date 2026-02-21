@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
-	<_name>Create guides</_name>
-	<id>org.inkscape.effect.createguides</id>
-	<dependency type="executable" location="extensions">create_guides.py</dependency>
-	<dependency type="executable" location="extensions">inkex.py</dependency>
-	<param name="scale" type="int" min="1" max="1000" _gui-text="Scale"></param>
-	<param name="x_min" type="int" min="-1000" max="1000" _gui-text="X min"></param>
-	<param name="x_max" type="int" min="-1000" max="1000" _gui-text="X max"></param>
-	<param name="y_min" type="int" min="-1000" max="1000" _gui-text="Y min"></param>
-	<param name="y_max" type="int" min="-1000" max="1000" _gui-text="Y max"></param>
+	<name>Create Guides</name>
+	<id>org.inkscape.effect.create_guides</id>
+	<param name="scale" type="int" min="1" max="1000" gui-text="Scale"></param>
+	<param name="x_min" type="int" min="-1000" max="1000" gui-text="X min"></param>
+	<param name="x_max" type="int" min="-1000" max="1000" gui-text="X max"></param>
+	<param name="y_min" type="int" min="-1000" max="1000" gui-text="Y min"></param>
+	<param name="y_max" type="int" min="-1000" max="1000" gui-text="Y max"></param>
 	<effect>
 		<object-type>all</object-type>
 		<effects-menu>
-			 <submenu _name="Font"/>
+			 <submenu name="Font"/>
 		</effects-menu>
 	</effect>
 	<script>
-		<command reldir="extensions" interpreter="python">create_guides.py</command>
+		<command location="inx" interpreter="python">create_guides.py</command>
 	</script>
 </inkscape-extension>
-
