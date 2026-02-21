@@ -1,3 +1,5 @@
+import argparse
+
 import fontforge
 
 import pathlib
@@ -5,17 +7,26 @@ import pathlib
 import xml.etree.ElementTree as ET
 
 
+# Opens a font in FontForge and exports it as a minimal UFO font.
+
+
 def main():
-  font = fontforge.activeFont()
+  parser = argparse.ArgumentParser()
 
-  ufo_file_path = pathlib.Path("/home/pthomas/Desktop/Test.ufo")
+  parser.add_argument('input_file_path', type=pathlib.Path)
+  parser.add_argument('ufo_file_path', type=pathlib.Path)
 
-  ufo_file_path.mkdir(exist_ok=True)
+  args = parser.parse_args()
+
+
+  font = fontforge.open(str(args.input_file_path))
+
+  args.ufo_file_path.mkdir(exist_ok=True)
 
 
   # fontinfo.plist
 
-  fontinfo_file_path = ufo_file_path / 'fontinfo.plist'
+  fontinfo_file_path = args.ufo_file_path / 'fontinfo.plist'
 
   fontinfo_node = ET.Element('plist', version='1.0')
   dict_node = ET.SubElement(fontinfo_node, 'dict')
@@ -31,7 +42,7 @@ def main():
 
   # metainfo.plist
 
-  metainfo_file_path = ufo_file_path / 'metainfo.plist'
+  metainfo_file_path = args.ufo_file_path / 'metainfo.plist'
 
   metainfo_node = ET.Element('plist', version='1.0')
   dict_node = ET.SubElement(metainfo_node, 'dict')
@@ -47,7 +58,7 @@ def main():
 
   # .glif files
 
-  glyphs_folder_path = ufo_file_path / 'glyphs'
+  glyphs_folder_path = args.ufo_file_path / 'glyphs'
   glyphs_folder_path.mkdir(exist_ok=True)
 
   glyph_name_to_glyph_file_name_dict = {}

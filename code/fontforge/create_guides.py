@@ -2,6 +2,9 @@ import fontforge
 import math
 
 
+# Creates a guide layer from a generated list of line segments.
+
+
 def get_cell_contour_list(x_offset, y_offset, scale):
   sqrt2 = math.sqrt(2.0)
 

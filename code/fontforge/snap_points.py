@@ -2,6 +2,9 @@ import fontforge
 import math
 
 
+# Moves every point in the selected glyphs to the closest point in a generated list.
+
+
 def get_cell_point_list(x_offset, y_offset, scale):
   sqrt2 = math.sqrt(2.0)
 
@@ -40,7 +43,7 @@ def main():
       guide_point_list.extend(cell_point_list)
 
   font = fontforge.activeFont()
-  for glyph in font.glyphs():
+  for glyph in font.selection.byGlyphs:
     layer = glyph.foreground
 
     for contour in layer:

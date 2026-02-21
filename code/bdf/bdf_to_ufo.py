@@ -9,16 +9,21 @@ import pathlib
 import xml.etree.ElementTree as ET
 
 
+# Converts a BDF bitmap font to a UFO outline font by translating each filled pixel in the BDF font to a vector square in the UFO font.
+
+
 def main():
   parser = argparse.ArgumentParser()
 
   parser.add_argument('bdf_file_path', type=pathlib.Path)
   parser.add_argument('ufo_file_path', type=pathlib.Path)
-  parser.add_argument('scale', type=int)
-  parser.add_argument('units_per_em', type=int)
+  parser.add_argument('scale', type=int, help='The length in font units of the sides of the vector squares.')
+  parser.add_argument('units_per_em', type=int, help='The number of font units per em square.')
 
   args = parser.parse_args()
 
+
+  font = bdfparser.Font(str(args.bdf_file_path))
 
   args.ufo_file_path.mkdir(exist_ok=True)
 
@@ -60,8 +65,6 @@ def main():
   glyphs_folder_path = args.ufo_file_path / 'glyphs'
   glyphs_folder_path.mkdir(exist_ok=True)
 
-  font = bdfparser.Font(str(args.bdf_file_path))
-
   fbbx = font.headers['fbbx']
   fbbyoff = font.headers['fbbyoff']
 
@@ -84,7 +87,6 @@ def main():
 
     # The array indices place the origin at the top left.
     # The graph coordinates place the origin at the bottom left.
-    # The origin is (0, 0) for both.
     # Flips the array so that the indices match the graph coordinates.
     data = numpy.flipud(data)
 
