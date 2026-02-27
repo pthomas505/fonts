@@ -18,7 +18,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1771481616
-ModificationTime: 1771998573
+ModificationTime: 1772172611
 PfmFamily: 16
 TTFWeight: 400
 TTFWidth: 5
@@ -22563,9 +22563,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 256 m 1
- 128 384 l 1
- 0 384 l 1
+0 384 m 1
  0 512 l 1
  128 512 l 1
  128 640 l 1
@@ -22592,6 +22590,8 @@ SplineSet
  256 384 l 1
  256 256 l 1
  128 256 l 1
+ 128 384 l 1
+ 0 384 l 1
 256 512 m 1
  384 512 l 1
  384 640 l 1
@@ -22747,13 +22747,12 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-91 256 m 1
+0 347 m 1
+ 91 256 l 1
  640 805 l 1
  549 896 l 1
  0 347 l 1
- 91 256 l 1
-37 768 m 1
- 0 805 l 1
+0 805 m 1
  0 859 l 1
  37 896 l 1
  91 896 l 1
@@ -22761,8 +22760,8 @@ SplineSet
  128 805 l 1
  91 768 l 1
  37 768 l 1
-549 256 m 1
- 512 293 l 1
+ 0 805 l 1
+512 293 m 1
  512 347 l 1
  549 384 l 1
  603 384 l 1
@@ -22770,6 +22769,7 @@ SplineSet
  640 293 l 1
  603 256 l 1
  549 256 l 1
+ 512 293 l 1
 EndSplineSet
 EndChar
 
@@ -22834,8 +22834,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 475 l 1
  101 576 l 1
  0 677 l 1
@@ -22867,6 +22866,7 @@ SplineSet
  448 101 l 1
  347 0 l 1
  165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -22930,8 +22930,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-421 -256 m 5
- 128 37 l 1
+128 37 m 1
  128 859 l 1
  421 1152 l 1
  512 1061 l 1
@@ -22939,6 +22938,7 @@ SplineSet
  256 91 l 1
  512 -165 l 1
  421 -256 l 5
+ 128 37 l 1
 EndSplineSet
 EndChar
 
@@ -22975,8 +22975,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-219 -256 m 1
- 128 -165 l 1
+128 -165 m 1
  384 91 l 1
  384 805 l 1
  128 1061 l 1
@@ -22984,6 +22983,7 @@ SplineSet
  512 859 l 1
  512 37 l 1
  219 -256 l 1
+ 128 -165 l 1
 EndSplineSet
 EndChar
 
@@ -23029,11 +23029,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 256 m 1
- 256 512 l 1
- 219 512 l 1
- 91 384 l 1
- 0 475 l 1
+0 475 m 1
  101 576 l 1
  0 677 l 1
  91 768 l 1
@@ -23052,6 +23048,10 @@ SplineSet
  384 512 l 1
  384 256 l 1
  256 256 l 1
+ 256 512 l 1
+ 219 512 l 1
+ 91 384 l 1
+ 0 475 l 1
 EndSplineSet
 EndChar
 
@@ -23079,9 +23079,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 256 m 1
- 256 512 l 1
- 0 512 l 1
+0 512 m 1
  0 640 l 1
  256 640 l 1
  256 896 l 1
@@ -23092,6 +23090,8 @@ SplineSet
  384 512 l 1
  384 256 l 1
  256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
 EndSplineSet
 EndChar
 
@@ -23119,11 +23119,11 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-219 -256 m 1
- 128 -165 l 1
+128 -165 m 1
  421 128 l 1
  512 37 l 1
  219 -256 l 1
+ 128 -165 l 1
 EndSplineSet
 EndChar
 
@@ -23207,11 +23207,11 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-91 256 m 1
- 0 347 l 1
+0 347 m 1
  549 896 l 1
  640 805 l 1
  91 256 l 1
+ 0 347 l 1
 EndSplineSet
 EndChar
 
@@ -23260,22 +23260,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 475 m 1
- 512 859 l 1
- 512 933 l 1
- 421 1024 l 1
- 219 1024 l 1
- 128 933 l 1
- 128 475 l 1
-219 128 m 1
- 421 128 l 1
- 512 219 l 1
- 512 677 l 1
- 128 293 l 1
- 128 219 l 1
- 219 128 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 987 l 1
  165 1152 l 1
  475 1152 l 1
@@ -23283,6 +23268,21 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 677 l 1
+ 128 293 l 1
+ 128 219 l 1
+128 475 m 1
+ 512 859 l 1
+ 512 933 l 1
+ 421 1024 l 1
+ 219 1024 l 1
+ 128 933 l 1
+ 128 475 l 1
 EndSplineSet
 EndChar
 
@@ -23446,7 +23446,11 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-512 219 m 1
+0 165 m 1
+ 91 256 l 1
+ 219 128 l 1
+ 421 128 l 1
+ 512 219 l 1
  512 421 l 1
  421 512 l 1
  256 512 l 1
@@ -23468,10 +23472,6 @@ SplineSet
  475 0 l 1
  165 0 l 1
  0 165 l 1
- 91 256 l 1
- 219 128 l 1
- 421 128 l 1
- 512 219 l 1
 EndSplineSet
 EndChar
 
@@ -23567,8 +23567,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  91 256 l 1
  219 128 l 1
  421 128 l 1
@@ -23586,6 +23585,7 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -23629,16 +23629,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-421 128 m 1
- 512 219 l 1
- 512 421 l 1
- 421 512 l 1
- 128 512 l 1
- 128 219 l 1
- 219 128 l 1
- 421 128 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 987 l 1
  165 1152 l 1
  475 1152 l 1
@@ -23653,6 +23644,15 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 421 l 1
+ 421 512 l 1
+ 128 512 l 1
+ 128 219 l 1
 EndSplineSet
 EndChar
 
@@ -23684,17 +23684,17 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 0 m 1
- 256 603 l 1
- 512 859 l 1
- 512 1024 l 1
- 0 1024 l 1
+0 1024 m 1
  0 1152 l 1
  640 1152 l 1
  640 805 l 1
  384 549 l 1
  384 0 l 1
  256 0 l 1
+ 256 603 l 1
+ 512 859 l 1
+ 512 1024 l 1
+ 0 1024 l 1
 EndSplineSet
 EndChar
 
@@ -23744,26 +23744,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-219 128 m 1
- 421 128 l 1
- 512 219 l 1
- 512 421 l 1
- 421 512 l 1
- 219 512 l 1
- 128 421 l 1
- 128 219 l 1
- 219 128 l 1
-421 640 m 1
- 512 731 l 1
- 512 933 l 1
- 421 1024 l 1
- 219 1024 l 1
- 128 933 l 1
- 128 731 l 1
- 219 640 l 1
- 421 640 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 475 l 1
  101 576 l 1
  0 677 l 1
@@ -23777,6 +23758,25 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 421 l 1
+ 421 512 l 1
+ 219 512 l 1
+ 128 421 l 1
+ 128 219 l 1
+128 731 m 1
+ 219 640 l 1
+ 421 640 l 1
+ 512 731 l 1
+ 512 933 l 1
+ 421 1024 l 1
+ 219 1024 l 1
+ 128 933 l 1
+ 128 731 l 1
 EndSplineSet
 EndChar
 
@@ -23819,8 +23819,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  91 256 l 1
  219 128 l 1
  421 128 l 1
@@ -23835,6 +23834,7 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
 128 731 m 1
  219 640 l 1
  512 640 l 1
@@ -23867,16 +23867,16 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 768 m 1
- 256 896 l 1
- 384 896 l 1
- 384 768 l 1
- 256 768 l 1
 256 256 m 1
  256 384 l 1
  384 384 l 1
  384 256 l 1
  256 256 l 1
+256 768 m 1
+ 256 896 l 1
+ 384 896 l 1
+ 384 768 l 1
+ 256 768 l 1
 EndSplineSet
 EndChar
 
@@ -23909,16 +23909,16 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
+128 91 m 1
+ 421 384 l 1
+ 512 293 l 1
+ 219 0 l 1
+ 128 91 l 1
 384 768 m 1
  384 896 l 1
  512 896 l 1
  512 768 l 1
  384 768 l 1
-219 0 m 1
- 128 91 l 1
- 421 384 l 1
- 512 293 l 1
- 219 0 l 1
 EndSplineSet
 EndChar
 
@@ -23956,13 +23956,13 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-421 256 m 5
- 101 576 l 5
+101 576 m 5
  421 896 l 5
  512 805 l 5
  283 576 l 5
  512 347 l 5
  421 256 l 5
+ 101 576 l 5
 EndSplineSet
 EndChar
 
@@ -23987,16 +23987,16 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-0 640 m 1
- 0 768 l 1
- 640 768 l 1
- 640 640 l 1
- 0 640 l 1
 0 384 m 1
  0 512 l 1
  640 512 l 1
  640 384 l 1
  0 384 l 1
+0 640 m 1
+ 0 768 l 1
+ 640 768 l 1
+ 640 640 l 1
+ 0 640 l 1
 EndSplineSet
 EndChar
 
@@ -24033,13 +24033,13 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-219 256 m 1
+128 347 m 1
+ 219 256 l 1
  539 576 l 1
  219 896 l 1
  128 805 l 1
  357 576 l 1
  128 347 l 1
- 219 256 l 1
 EndSplineSet
 EndChar
 
@@ -24084,15 +24084,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 256 m 1
- 256 475 l 1
- 512 731 l 1
- 512 933 l 1
- 421 1024 l 1
- 219 1024 l 1
- 128 933 l 1
- 128 768 l 1
- 0 768 l 1
+0 768 m 1
  0 987 l 1
  165 1152 l 1
  475 1152 l 1
@@ -24101,6 +24093,14 @@ SplineSet
  384 421 l 1
  384 256 l 1
  256 256 l 1
+ 256 475 l 1
+ 512 731 l 1
+ 512 933 l 1
+ 421 1024 l 1
+ 219 1024 l 1
+ 128 933 l 1
+ 128 768 l 1
+ 0 768 l 1
 256 0 m 1
  256 128 l 1
  384 128 l 1
@@ -24172,13 +24172,13 @@ SplineSet
  512 0 l 1
  165 0 l 1
  0 165 l 1
-384 549 m 1
- 384 475 l 1
+384 475 m 1
  475 384 l 1
  512 384 l 1
  512 640 l 1
  475 640 l 1
  384 549 l 1
+ 384 475 l 1
 EndSplineSet
 EndChar
 
@@ -24335,8 +24335,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 987 l 1
  165 1152 l 1
  475 1152 l 1
@@ -24352,6 +24351,7 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -24382,13 +24382,6 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 128 m 1
- 421 128 l 1
- 512 219 l 1
- 512 933 l 1
- 421 1024 l 1
- 128 1024 l 1
- 128 128 l 1
 0 0 m 1
  0 1152 l 1
  475 1152 l 1
@@ -24396,6 +24389,13 @@ SplineSet
  640 165 l 1
  475 0 l 1
  0 0 l 1
+128 128 m 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 933 l 1
+ 421 1024 l 1
+ 128 1024 l 1
+ 128 128 l 1
 EndSplineSet
 EndChar
 
@@ -24520,8 +24520,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 987 l 1
  165 1152 l 1
  475 1152 l 1
@@ -24541,6 +24540,7 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -24656,8 +24656,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  91 256 l 1
  219 128 l 1
  421 128 l 1
@@ -24667,6 +24666,7 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -24904,6 +24904,15 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
+0 165 m 1
+ 0 987 l 1
+ 165 1152 l 1
+ 475 1152 l 1
+ 640 987 l 1
+ 640 165 l 1
+ 475 0 l 1
+ 165 0 l 1
+ 0 165 l 1
 128 219 m 1
  219 128 l 1
  421 128 l 1
@@ -24913,15 +24922,6 @@ SplineSet
  219 1024 l 1
  128 933 l 1
  128 219 l 1
-165 0 m 1
- 0 165 l 1
- 0 987 l 1
- 165 1152 l 1
- 475 1152 l 1
- 640 987 l 1
- 640 165 l 1
- 475 0 l 1
- 165 0 l 1
 EndSplineSet
 EndChar
 
@@ -24954,13 +24954,6 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 640 m 1
- 421 640 l 1
- 512 731 l 1
- 512 933 l 1
- 421 1024 l 1
- 128 1024 l 1
- 128 640 l 1
 0 0 m 1
  0 1152 l 1
  475 1152 l 1
@@ -24970,6 +24963,13 @@ SplineSet
  128 512 l 1
  128 0 l 1
  0 0 l 1
+128 640 m 1
+ 421 640 l 1
+ 512 731 l 1
+ 512 933 l 1
+ 421 1024 l 1
+ 128 1024 l 1
+ 128 640 l 1
 EndSplineSet
 EndChar
 
@@ -25011,17 +25011,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-219 128 m 1
- 421 128 l 1
- 512 219 l 1
- 512 933 l 1
- 421 1024 l 1
- 219 1024 l 1
- 128 933 l 1
- 128 219 l 1
- 219 128 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 987 l 1
  165 1152 l 1
  475 1152 l 1
@@ -25034,6 +25024,16 @@ SplineSet
  512 -91 l 1
  421 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 933 l 1
+ 421 1024 l 1
+ 219 1024 l 1
+ 128 933 l 1
+ 128 219 l 1
 EndSplineSet
 EndChar
 
@@ -25071,13 +25071,6 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 640 m 1
- 421 640 l 1
- 512 731 l 1
- 512 933 l 1
- 421 1024 l 1
- 128 1024 l 1
- 128 640 l 1
 0 0 m 1
  0 1152 l 1
  475 1152 l 1
@@ -25092,6 +25085,13 @@ SplineSet
  128 512 l 1
  128 0 l 1
  0 0 l 1
+128 640 m 1
+ 421 640 l 1
+ 512 731 l 1
+ 512 933 l 1
+ 421 1024 l 1
+ 128 1024 l 1
+ 128 640 l 1
 EndSplineSet
 EndChar
 
@@ -25143,8 +25143,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  91 256 l 1
  219 128 l 1
  421 128 l 1
@@ -25168,6 +25167,7 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -25193,15 +25193,15 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 0 m 1
- 256 1024 l 1
- 0 1024 l 1
+0 1024 m 1
  0 1152 l 1
  640 1152 l 1
  640 1024 l 1
  384 1024 l 1
  384 0 l 1
  256 0 l 1
+ 256 1024 l 1
+ 0 1024 l 1
 EndSplineSet
 EndChar
 
@@ -25233,8 +25233,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 1152 l 1
  128 1152 l 1
  128 219 l 1
@@ -25246,6 +25245,7 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -25287,8 +25287,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-293 0 m 1
- 0 293 l 1
+0 293 m 1
  0 1152 l 1
  128 1152 l 1
  128 347 l 1
@@ -25299,6 +25298,7 @@ SplineSet
  640 293 l 1
  347 0 l 1
  293 0 l 1
+ 0 293 l 1
 EndSplineSet
 EndChar
 
@@ -25474,9 +25474,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 0 m 1
- 256 549 l 1
- 0 805 l 1
+0 805 m 1
  0 1152 l 1
  128 1152 l 1
  128 859 l 1
@@ -25488,6 +25486,8 @@ SplineSet
  384 549 l 1
  384 0 l 1
  256 0 l 1
+ 256 549 l 1
+ 0 805 l 1
 EndSplineSet
 EndChar
 
@@ -25617,11 +25617,11 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-549 256 m 1
- 0 805 l 1
+0 805 m 1
  91 896 l 1
  640 347 l 1
  549 256 l 1
+ 0 805 l 1
 EndSplineSet
 EndChar
 
@@ -25645,8 +25645,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 -256 m 1
- 128 -128 l 1
+128 -128 m 1
  384 -128 l 1
  384 1024 l 1
  128 1024 l 1
@@ -25654,6 +25653,7 @@ SplineSet
  512 1152 l 1
  512 -256 l 1
  128 -256 l 1
+ 128 -128 l 1
 EndSplineSet
 EndChar
 
@@ -25691,13 +25691,13 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-91 768 m 1
- 0 859 l 1
+0 859 m 1
  320 1179 l 1
  640 859 l 1
  549 768 l 1
  320 997 l 1
  91 768 l 1
+ 0 859 l 1
 EndSplineSet
 EndChar
 
@@ -25751,11 +25751,11 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-421 768 m 1
- 128 1061 l 1
+128 1061 m 1
  219 1152 l 1
  512 859 l 1
  421 768 l 1
+ 128 1061 l 1
 EndSplineSet
 EndChar
 
@@ -25795,15 +25795,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 219 m 1
- 219 128 l 1
- 512 128 l 1
- 512 384 l 1
- 219 384 l 1
- 128 293 l 1
- 128 219 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 347 l 1
  165 512 l 1
  512 512 l 1
@@ -25817,6 +25809,14 @@ SplineSet
  640 731 l 1
  640 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 512 128 l 1
+ 512 384 l 1
+ 219 384 l 1
+ 128 293 l 1
+ 128 219 l 1
 EndSplineSet
 EndChar
 
@@ -25846,13 +25846,6 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 128 m 5
- 421 128 l 1
- 512 219 l 1
- 512 677 l 1
- 421 768 l 1
- 128 768 l 1
- 128 128 l 5
 0 0 m 1
  0 1152 l 1
  128 1152 l 1
@@ -25862,6 +25855,13 @@ SplineSet
  640 165 l 1
  475 0 l 1
  0 0 l 1
+128 128 m 5
+ 421 128 l 1
+ 512 219 l 1
+ 512 677 l 1
+ 421 768 l 1
+ 128 768 l 1
+ 128 128 l 5
 EndSplineSet
 EndChar
 
@@ -25901,8 +25901,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 731 l 1
  165 896 l 1
  475 896 l 1
@@ -25918,6 +25917,7 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -25948,15 +25948,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-219 128 m 1
- 512 128 l 1
- 512 768 l 1
- 219 768 l 1
- 128 677 l 1
- 128 219 l 1
- 219 128 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 731 l 1
  165 896 l 1
  512 896 l 1
@@ -25964,6 +25956,14 @@ SplineSet
  640 1152 l 1
  640 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 512 128 l 1
+ 512 768 l 1
+ 219 768 l 1
+ 128 677 l 1
+ 128 219 l 1
 EndSplineSet
 EndChar
 
@@ -26004,15 +26004,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 512 m 1
- 512 512 l 1
- 512 677 l 1
- 421 768 l 1
- 219 768 l 1
- 128 677 l 1
- 128 512 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 731 l 1
  165 896 l 1
  475 896 l 1
@@ -26026,6 +26018,14 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 512 m 1
+ 512 512 l 1
+ 512 677 l 1
+ 421 768 l 1
+ 219 768 l 1
+ 128 677 l 1
+ 128 512 l 1
 EndSplineSet
 EndChar
 
@@ -26057,9 +26057,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 0 m 1
- 128 768 l 1
- 0 768 l 1
+0 768 m 1
  0 896 l 1
  128 896 l 1
  128 987 l 1
@@ -26074,6 +26072,8 @@ SplineSet
  256 768 l 1
  256 0 l 1
  128 0 l 1
+ 128 768 l 1
+ 0 768 l 1
 EndSplineSet
 EndChar
 
@@ -26109,6 +26109,20 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
+0 165 m 1
+ 0 731 l 1
+ 165 896 l 1
+ 475 896 l 1
+ 640 731 l 1
+ 640 -91 l 1
+ 475 -256 l 1
+ 128 -256 l 1
+ 128 -128 l 1
+ 421 -128 l 1
+ 512 -37 l 1
+ 512 0 l 1
+ 165 0 l 1
+ 0 165 l 1
 128 219 m 1
  219 128 l 1
  512 128 l 1
@@ -26117,20 +26131,6 @@ SplineSet
  219 768 l 1
  128 677 l 1
  128 219 l 1
-128 -256 m 1
- 128 -128 l 1
- 421 -128 l 1
- 512 -37 l 1
- 512 0 l 1
- 165 0 l 1
- 0 165 l 1
- 0 731 l 1
- 165 896 l 1
- 475 896 l 1
- 640 731 l 1
- 640 -91 l 1
- 475 -256 l 1
- 128 -256 l 1
 EndSplineSet
 EndChar
 
@@ -26202,11 +26202,6 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 1024 m 1
- 256 1152 l 1
- 384 1152 l 1
- 384 1024 l 1
- 256 1024 l 1
 0 0 m 1
  0 128 l 1
  256 128 l 1
@@ -26218,6 +26213,11 @@ SplineSet
  640 128 l 1
  640 0 l 1
  0 0 l 1
+256 1024 m 1
+ 256 1152 l 1
+ 384 1152 l 1
+ 384 1024 l 1
+ 256 1024 l 1
 EndSplineSet
 EndChar
 
@@ -26254,13 +26254,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-512 1024 m 1
- 512 1152 l 1
- 640 1152 l 1
- 640 1024 l 1
- 512 1024 l 1
-165 -256 m 1
- 0 -91 l 1
+0 -91 m 1
  91 0 l 1
  219 -128 l 1
  421 -128 l 1
@@ -26272,6 +26266,12 @@ SplineSet
  640 -91 l 1
  475 -256 l 1
  165 -256 l 1
+ 0 -91 l 1
+512 1024 m 1
+ 512 1152 l 1
+ 640 1152 l 1
+ 640 1024 l 1
+ 512 1024 l 1
 EndSplineSet
 EndChar
 
@@ -26501,17 +26501,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-219 128 m 1
- 421 128 l 1
- 512 219 l 1
- 512 677 l 1
- 421 768 l 1
- 219 768 l 1
- 128 677 l 1
- 128 219 l 1
- 219 128 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 731 l 1
  165 896 l 1
  475 896 l 1
@@ -26519,6 +26509,16 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 677 l 1
+ 421 768 l 1
+ 219 768 l 1
+ 128 677 l 1
+ 128 219 l 1
 EndSplineSet
 EndChar
 
@@ -26549,13 +26549,6 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 128 m 1
- 421 128 l 1
- 512 219 l 1
- 512 677 l 1
- 421 768 l 1
- 128 768 l 1
- 128 128 l 1
 0 -256 m 1
  0 896 l 1
  475 896 l 1
@@ -26565,6 +26558,13 @@ SplineSet
  128 0 l 1
  128 -256 l 1
  0 -256 l 1
+128 128 m 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 677 l 1
+ 421 768 l 1
+ 128 768 l 1
+ 128 128 l 1
 EndSplineSet
 EndChar
 
@@ -26595,15 +26595,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 219 m 1
- 219 128 l 1
- 512 128 l 1
- 512 768 l 1
- 219 768 l 1
- 128 677 l 1
- 128 219 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 731 l 1
  165 896 l 1
  640 896 l 1
@@ -26611,6 +26603,14 @@ SplineSet
  512 -256 l 1
  512 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 512 128 l 1
+ 512 768 l 1
+ 219 768 l 1
+ 128 677 l 1
+ 128 219 l 1
 EndSplineSet
 EndChar
 
@@ -26695,8 +26695,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  91 256 l 1
  219 128 l 1
  421 128 l 1
@@ -26720,6 +26719,7 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -26747,9 +26747,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 0 m 5
- 256 768 l 1
- 0 768 l 1
+0 768 m 1
  0 896 l 1
  256 896 l 1
  256 1152 l 1
@@ -26760,6 +26758,8 @@ SplineSet
  384 768 l 1
  384 0 l 1
  256 0 l 5
+ 256 768 l 1
+ 0 768 l 1
 EndSplineSet
 EndChar
 
@@ -26789,8 +26789,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 5
- 0 165 l 1
+0 165 m 1
  0 896 l 1
  128 896 l 1
  128 219 l 1
@@ -26802,6 +26801,7 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 5
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -26841,8 +26841,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-293 0 m 1
- 0 293 l 1
+0 293 m 1
  0 896 l 1
  128 896 l 1
  128 347 l 1
@@ -26853,6 +26852,7 @@ SplineSet
  640 293 l 1
  347 0 l 1
  293 0 l 1
+ 0 293 l 1
 EndSplineSet
 EndChar
 
@@ -26892,8 +26892,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-0 896 m 1
- 0 165 l 1
+0 165 m 1
  165 0 l 1
  219 0 l 1
  320 101 l 1
@@ -26912,6 +26911,7 @@ SplineSet
  128 219 l 1
  128 896 l 1
  0 896 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -27025,13 +27025,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 -256 m 1
- 128 -128 l 1
- 421 -128 l 1
- 512 -37 l 1
- 512 0 l 1
- 165 0 l 1
- 0 165 l 1
+0 165 m 1
  0 896 l 1
  128 896 l 1
  128 219 l 1
@@ -27042,6 +27036,12 @@ SplineSet
  640 -91 l 1
  475 -256 l 1
  128 -256 l 1
+ 128 -128 l 1
+ 421 -128 l 1
+ 512 -37 l 1
+ 512 0 l 1
+ 165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -27135,10 +27135,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-421 -256 m 5
- 256 -91 l 5
- 256 293 l 5
- 128 421 l 5
+128 421 m 5
  128 475 l 5
  256 603 l 5
  256 987 l 5
@@ -27151,6 +27148,9 @@ SplineSet
  384 -37 l 5
  512 -165 l 5
  421 -256 l 5
+ 256 -91 l 5
+ 256 293 l 5
+ 128 421 l 5
 EndSplineSet
 EndChar
 
@@ -27211,7 +27211,8 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-219 -256 m 1
+128 -165 m 1
+ 219 -256 l 1
  384 -91 l 1
  384 293 l 1
  512 421 l 1
@@ -27226,7 +27227,6 @@ SplineSet
  256 347 l 1
  256 -37 l 1
  128 -165 l 1
- 219 -256 l 1
 EndSplineSet
 EndChar
 
@@ -27265,8 +27265,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-91 896 m 1
- 0 987 l 1
+0 987 m 1
  192 1179 l 1
  448 923 l 1
  549 1024 l 1
@@ -27274,6 +27273,7 @@ SplineSet
  448 741 l 1
  192 997 l 1
  91 896 l 1
+ 0 987 l 1
 EndSplineSet
 EndChar
 
@@ -27295,13 +27295,13 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-512 768 m 5
- 512 1024 l 1
- 0 1024 l 1
+0 1024 m 1
  0 1152 l 1
  640 1152 l 1
  640 768 l 1
  512 768 l 5
+ 512 1024 l 1
+ 0 1024 l 1
 EndSplineSet
 EndChar
 
@@ -27380,8 +27380,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-91 256 m 5
- 0 347 l 1
+0 347 m 1
  229 576 l 1
  0 805 l 1
  91 896 l 1
@@ -27393,6 +27392,7 @@ SplineSet
  549 256 l 1
  320 485 l 1
  91 256 l 5
+ 0 347 l 1
 EndSplineSet
 EndChar
 
@@ -27656,19 +27656,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-219 128 m 1
- 293 128 l 1
- 384 219 l 1
- 384 677 l 1
- 293 768 l 1
- 219 768 l 1
- 128 677 l 1
- 128 219 l 1
- 219 128 l 1
-448 101 m 1
- 347 0 l 1
- 165 0 l 1
- 0 165 l 1
+0 165 m 1
  0 731 l 1
  165 896 l 1
  347 896 l 1
@@ -27680,6 +27668,18 @@ SplineSet
  640 91 l 1
  549 0 l 1
  448 101 l 1
+ 347 0 l 1
+ 165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 293 128 l 1
+ 384 219 l 1
+ 384 677 l 1
+ 293 768 l 1
+ 219 768 l 1
+ 128 677 l 1
+ 128 219 l 1
 EndSplineSet
 EndChar
 
@@ -27718,20 +27718,6 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 768 m 1
- 421 768 l 1
- 512 859 l 1
- 512 933 l 1
- 421 1024 l 1
- 128 1024 l 1
- 128 768 l 1
-128 128 m 1
- 421 128 l 1
- 512 219 l 1
- 512 549 l 1
- 421 640 l 1
- 128 640 l 1
- 128 128 l 1
 0 -256 m 1
  0 1152 l 1
  475 1152 l 1
@@ -27744,6 +27730,20 @@ SplineSet
  128 0 l 1
  128 -256 l 1
  0 -256 l 1
+128 128 m 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 549 l 1
+ 421 640 l 1
+ 128 640 l 1
+ 128 128 l 1
+128 768 m 1
+ 421 768 l 1
+ 512 859 l 1
+ 512 933 l 1
+ 421 1024 l 1
+ 128 1024 l 1
+ 128 768 l 1
 EndSplineSet
 EndChar
 
@@ -27791,8 +27791,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-91 -256 m 1
- 0 -165 l 1
+0 -165 m 1
  357 192 l 1
  0 549 l 1
  0 896 l 1
@@ -27804,6 +27803,7 @@ SplineSet
  640 896 l 1
  640 293 l 1
  91 -256 l 1
+ 0 -165 l 1
 EndSplineSet
 EndChar
 
@@ -27847,17 +27847,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 219 m 1
- 219 128 l 1
- 421 128 l 1
- 512 219 l 1
- 512 677 l 1
- 421 768 l 1
- 219 768 l 1
- 128 677 l 1
- 128 219 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 731 l 1
  101 832 l 1
  0 933 l 1
@@ -27873,6 +27863,16 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 677 l 1
+ 421 768 l 1
+ 219 768 l 1
+ 128 677 l 1
+ 128 219 l 1
 EndSplineSet
 EndChar
 
@@ -27912,8 +27912,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 347 l 1
  101 448 l 1
  0 549 l 1
@@ -27934,6 +27933,7 @@ SplineSet
  640 128 l 1
  640 0 l 1
  165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -27971,22 +27971,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 640 m 1
- 512 640 l 1
- 512 933 l 1
- 421 1024 l 1
- 219 1024 l 1
- 128 933 l 1
- 128 640 l 1
-128 219 m 1
- 219 128 l 1
- 421 128 l 1
- 512 219 l 1
- 512 512 l 1
- 128 512 l 1
- 128 219 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 987 l 1
  165 1152 l 1
  475 1152 l 1
@@ -27994,6 +27979,21 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 512 l 1
+ 128 512 l 1
+ 128 219 l 1
+128 640 m 1
+ 512 640 l 1
+ 512 933 l 1
+ 421 1024 l 1
+ 219 1024 l 1
+ 128 933 l 1
+ 128 640 l 1
 EndSplineSet
 EndChar
 
@@ -28171,9 +28171,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 0 m 1
- 128 768 l 1
- 0 768 l 1
+0 768 m 1
  0 896 l 1
  640 896 l 1
  640 768 l 1
@@ -28184,6 +28182,8 @@ SplineSet
  256 768 l 1
  256 0 l 1
  128 0 l 1
+ 128 768 l 1
+ 0 768 l 1
 EndSplineSet
 EndChar
 
@@ -28217,16 +28217,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 219 m 1
- 219 128 l 1
- 293 128 l 1
- 384 219 l 1
- 384 768 l 1
- 219 768 l 1
- 128 677 l 1
- 128 219 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 731 l 1
  165 896 l 1
  640 896 l 1
@@ -28235,6 +28226,15 @@ SplineSet
  512 165 l 1
  347 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 293 128 l 1
+ 384 219 l 1
+ 384 768 l 1
+ 219 768 l 1
+ 128 677 l 1
+ 128 219 l 1
 EndSplineSet
 EndChar
 
@@ -28258,15 +28258,15 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 0 m 5
- 256 768 l 1
- 0 768 l 1
+0 768 m 1
  0 896 l 1
  640 896 l 1
  640 768 l 1
  384 768 l 1
  384 0 l 1
  256 0 l 5
+ 256 768 l 1
+ 0 768 l 1
 EndSplineSet
 EndChar
 
@@ -28308,17 +28308,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-384 640 m 1
- 421 640 l 1
- 512 731 l 1
- 512 933 l 1
- 448 997 l 1
- 384 933 l 1
- 384 640 l 1
-256 0 m 1
- 256 512 l 1
- 165 512 l 1
- 0 677 l 1
+0 677 m 1
  0 1024 l 1
  128 1024 l 1
  128 731 l 1
@@ -28333,6 +28323,16 @@ SplineSet
  384 512 l 1
  384 0 l 1
  256 0 l 1
+ 256 512 l 1
+ 165 512 l 1
+ 0 677 l 1
+384 640 m 1
+ 421 640 l 1
+ 512 731 l 1
+ 512 933 l 1
+ 448 997 l 1
+ 384 933 l 1
+ 384 640 l 1
 EndSplineSet
 EndChar
 
@@ -28445,10 +28445,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 0 m 1
- 256 512 l 1
- 165 512 l 1
- 0 677 l 1
+0 677 m 1
  0 1152 l 1
  128 1152 l 1
  128 731 l 1
@@ -28466,6 +28463,9 @@ SplineSet
  384 512 l 1
  384 0 l 1
  256 0 l 1
+ 256 512 l 1
+ 165 512 l 1
+ 0 677 l 1
 EndSplineSet
 EndChar
 
@@ -28510,16 +28510,16 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-549 768 m 1
- 256 1061 l 1
- 347 1152 l 1
- 640 859 l 1
- 549 768 l 1
-293 768 m 1
- 0 1061 l 1
+0 1061 m 1
  91 1152 l 1
  384 859 l 1
  293 768 l 1
+ 0 1061 l 1
+256 1061 m 1
+ 347 1152 l 1
+ 640 859 l 1
+ 549 768 l 1
+ 256 1061 l 1
 EndSplineSet
 EndChar
 
@@ -28562,16 +28562,16 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-549 1152 m 1
- 256 859 l 1
- 347 768 l 1
- 640 1061 l 1
- 549 1152 l 1
-293 1152 m 1
- 0 859 l 1
+0 859 m 1
  91 768 l 1
  384 1061 l 1
  293 1152 l 1
+ 0 859 l 1
+256 859 m 1
+ 347 768 l 1
+ 640 1061 l 1
+ 549 1152 l 1
+ 256 859 l 1
 EndSplineSet
 EndChar
 
@@ -28608,8 +28608,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 987 l 1
  165 1152 l 1
  475 1152 l 1
@@ -28623,6 +28622,7 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
 EndSplineSet
 EndChar
 
@@ -28709,15 +28709,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 128 m 1
- 421 128 l 1
- 512 219 l 1
- 512 933 l 1
- 421 1024 l 1
- 256 1024 l 1
- 256 128 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 987 l 1
  165 1152 l 1
  475 1152 l 1
@@ -28730,6 +28722,14 @@ SplineSet
  512 -91 l 1
  421 0 l 1
  165 0 l 1
+ 0 165 l 1
+256 128 m 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 933 l 1
+ 421 1024 l 1
+ 256 1024 l 1
+ 256 128 l 1
 EndSplineSet
 EndChar
 
@@ -28765,13 +28765,6 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-256 640 m 1
- 421 640 l 1
- 512 731 l 1
- 512 933 l 1
- 421 1024 l 1
- 256 1024 l 1
- 256 640 l 1
 0 0 m 1
  0 1152 l 1
  475 1152 l 1
@@ -28786,6 +28779,13 @@ SplineSet
  256 512 l 1
  256 0 l 1
  0 0 l 1
+256 640 m 1
+ 421 640 l 1
+ 512 731 l 1
+ 512 933 l 1
+ 421 1024 l 1
+ 256 1024 l 1
+ 256 640 l 1
 EndSplineSet
 EndChar
 
@@ -28871,8 +28871,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-0 603 m 1
- 0 549 l 1
+0 549 m 1
  256 293 l 1
  256 512 l 1
  640 512 l 1
@@ -28880,6 +28879,7 @@ SplineSet
  256 640 l 1
  256 859 l 1
  0 603 l 1
+ 0 549 l 1
 EndSplineSet
 EndChar
 
@@ -28913,15 +28913,15 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-640 603 m 1
- 640 549 l 1
- 384 293 l 1
- 384 512 l 1
- 0 512 l 1
+0 512 m 1
  0 640 l 1
  384 640 l 1
  384 859 l 1
  640 603 l 1
+ 640 549 l 1
+ 384 293 l 1
+ 384 512 l 1
+ 0 512 l 1
 EndSplineSet
 EndChar
 
@@ -28970,19 +28970,19 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-640 603 m 1
- 640 549 l 1
- 384 293 l 1
- 384 512 l 1
- 256 512 l 1
- 256 293 l 1
- 0 549 l 1
+0 549 m 1
  0 603 l 1
  256 859 l 1
  256 640 l 1
  384 640 l 1
  384 859 l 1
  640 603 l 1
+ 640 549 l 1
+ 384 293 l 1
+ 384 512 l 1
+ 256 512 l 1
+ 256 293 l 1
+ 0 549 l 1
 EndSplineSet
 EndChar
 
@@ -29078,16 +29078,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 219 m 1
- 219 128 l 1
- 421 128 l 1
- 512 219 l 1
- 512 512 l 1
- 219 512 l 1
- 128 421 l 1
- 128 219 l 1
-165 0 m 1
- 0 165 l 1
+0 165 m 1
  0 475 l 1
  165 640 l 1
  512 640 l 1
@@ -29100,6 +29091,15 @@ SplineSet
  640 165 l 1
  475 0 l 1
  165 0 l 1
+ 0 165 l 1
+128 219 m 1
+ 219 128 l 1
+ 421 128 l 1
+ 512 219 l 1
+ 512 512 l 1
+ 219 512 l 1
+ 128 421 l 1
+ 128 219 l 1
 EndSplineSet
 EndChar
 
@@ -29205,20 +29205,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-475 256 m 1
- 603 128 l 1
- 805 128 l 1
- 1024 347 l 1
- 1024 805 l 1
- 475 256 l 1
-384 347 m 1
- 933 896 l 1
- 805 1024 l 1
- 603 1024 l 1
- 384 805 l 1
- 384 347 l 1
-219 0 m 1
- 128 91 l 1
+128 91 m 1
  293 256 l 1
  256 293 l 1
  256 859 l 1
@@ -29234,6 +29221,19 @@ SplineSet
  549 0 l 1
  384 165 l 1
  219 0 l 1
+ 128 91 l 1
+384 347 m 1
+ 933 896 l 1
+ 805 1024 l 1
+ 603 1024 l 1
+ 384 805 l 1
+ 384 347 l 1
+475 256 m 1
+ 603 128 l 1
+ 805 128 l 1
+ 1024 347 l 1
+ 1024 805 l 1
+ 475 256 l 1
 EndSplineSet
 EndChar
 
@@ -29277,8 +29277,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-293 128 m 1
- 0 421 l 1
+0 421 m 1
  0 731 l 1
  293 1024 l 1
  640 1024 l 1
@@ -29295,6 +29294,7 @@ SplineSet
  640 256 l 1
  640 128 l 1
  293 128 l 1
+ 0 421 l 1
 EndSplineSet
 EndChar
 
@@ -29344,19 +29344,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 640 m 1
- 256 640 l 1
- 256 805 l 1
- 128 677 l 1
- 128 640 l 1
-128 512 m 1
- 128 475 l 1
- 256 347 l 1
- 256 512 l 1
- 128 512 l 1
-256 0 m 1
- 256 165 l 1
- 0 421 l 1
+0 421 m 1
  0 731 l 1
  256 987 l 1
  256 1152 l 1
@@ -29375,6 +29363,18 @@ SplineSet
  384 128 l 1
  384 0 l 1
  256 0 l 1
+ 256 165 l 1
+ 0 421 l 1
+128 475 m 1
+ 256 347 l 1
+ 256 512 l 1
+ 128 512 l 1
+ 128 475 l 1
+128 640 m 1
+ 256 640 l 1
+ 256 805 l 1
+ 128 677 l 1
+ 128 640 l 1
 EndSplineSet
 EndChar
 
@@ -29408,6 +29408,15 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
+128 549 m 1
+ 128 603 l 1
+ 293 768 l 1
+ 347 768 l 1
+ 512 603 l 1
+ 512 549 l 1
+ 347 384 l 1
+ 293 384 l 1
+ 128 549 l 1
 256 549 m 1
  293 512 l 1
  347 512 l 1
@@ -29417,15 +29426,6 @@ SplineSet
  293 640 l 1
  256 603 l 1
  256 549 l 1
-293 384 m 1
- 128 549 l 1
- 128 603 l 1
- 293 768 l 1
- 347 768 l 1
- 512 603 l 1
- 512 549 l 1
- 347 384 l 1
- 293 384 l 1
 EndSplineSet
 EndChar
 
@@ -29474,6 +29474,21 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
+0 549 m 1
+ 0 603 l 1
+ 165 768 l 1
+ 219 768 l 1
+ 320 667 l 1
+ 421 768 l 1
+ 475 768 l 1
+ 640 603 l 1
+ 640 549 l 1
+ 475 384 l 1
+ 421 384 l 1
+ 320 485 l 1
+ 219 384 l 1
+ 165 384 l 1
+ 0 549 l 1
 128 549 m 1
  165 512 l 1
  219 512 l 1
@@ -29492,21 +29507,6 @@ SplineSet
  421 640 l 1
  384 603 l 1
  384 549 l 1
-165 384 m 1
- 0 549 l 1
- 0 603 l 1
- 165 768 l 1
- 219 768 l 1
- 320 667 l 1
- 421 768 l 1
- 475 768 l 1
- 640 603 l 1
- 640 549 l 1
- 475 384 l 1
- 421 384 l 1
- 320 485 l 1
- 219 384 l 1
- 165 384 l 1
 EndSplineSet
 EndChar
 
@@ -29544,13 +29544,13 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-91 384 m 5
- 0 475 l 5
+0 475 m 5
  320 795 l 5
  640 475 l 5
  549 384 l 5
  320 613 l 5
  91 384 l 5
+ 0 475 l 5
 EndSplineSet
 EndChar
 
@@ -29590,13 +29590,13 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-91 768 m 1
- 0 677 l 1
+0 677 m 1
  320 357 l 1
  640 677 l 1
  549 768 l 1
  320 539 l 1
  91 768 l 1
+ 0 677 l 1
 EndSplineSet
 EndChar
 
@@ -29668,11 +29668,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-640 1152 m 5
- 640 165 l 5
- 475 0 l 5
- 165 0 l 5
- 0 165 l 5
+0 165 m 5
  0 1152 l 5
  128 1152 l 5
  128 219 l 5
@@ -29681,6 +29677,10 @@ SplineSet
  512 219 l 5
  512 1152 l 5
  640 1152 l 5
+ 640 165 l 5
+ 475 0 l 5
+ 165 0 l 5
+ 0 165 l 5
 EndSplineSet
 EndChar
 
@@ -29766,21 +29766,21 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-0 768 m 5
- 0 896 l 5
- 640 896 l 5
- 640 768 l 5
- 0 768 l 5
-0 512 m 1
- 0 640 l 1
- 640 640 l 1
- 640 512 l 1
- 0 512 l 1
 0 256 m 1
  0 384 l 1
  640 384 l 1
  640 256 l 1
  0 256 l 1
+0 512 m 1
+ 0 640 l 1
+ 640 640 l 1
+ 640 512 l 1
+ 0 512 l 1
+0 768 m 5
+ 0 896 l 5
+ 640 896 l 5
+ 640 768 l 5
+ 0 768 l 5
 EndSplineSet
 EndChar
 
@@ -29823,19 +29823,19 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-421 256 m 5
- 128 549 l 5
+128 0 m 5
+ 128 128 l 5
+ 512 128 l 5
+ 512 0 l 5
+ 128 0 l 5
+128 549 m 5
  128 603 l 5
  421 896 l 5
  512 805 l 5
  283 576 l 5
  512 347 l 5
  421 256 l 5
-128 0 m 5
- 128 128 l 5
- 512 128 l 5
- 512 0 l 5
- 128 0 l 5
+ 128 549 l 5
 EndSplineSet
 EndChar
 
@@ -29877,19 +29877,19 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-219 256 m 1
+128 0 m 1
+ 512 0 l 1
+ 512 128 l 1
+ 128 128 l 1
+ 128 0 l 1
+128 347 m 1
+ 219 256 l 1
  512 549 l 1
  512 603 l 1
  219 896 l 1
  128 805 l 1
  357 576 l 1
  128 347 l 1
- 219 256 l 1
-512 0 m 1
- 512 128 l 1
- 128 128 l 1
- 128 0 l 1
- 512 0 l 1
 EndSplineSet
 EndChar
 
@@ -29929,8 +29929,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-293 128 m 1
- 0 421 l 1
+0 421 m 1
  0 731 l 1
  293 1024 l 1
  640 1024 l 1
@@ -29942,6 +29941,7 @@ SplineSet
  640 256 l 1
  640 128 l 1
  293 128 l 1
+ 0 421 l 1
 EndSplineSet
 EndChar
 
@@ -29986,13 +29986,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 -128 m 1
- 128 0 l 1
- 640 0 l 1
- 640 -128 l 1
- 128 -128 l 1
-293 128 m 1
- 0 421 l 1
+0 421 m 1
  0 731 l 1
  293 1024 l 1
  640 1024 l 1
@@ -30004,6 +29998,12 @@ SplineSet
  640 256 l 1
  640 128 l 1
  293 128 l 1
+ 0 421 l 1
+128 0 m 1
+ 640 0 l 1
+ 640 -128 l 1
+ 128 -128 l 1
+ 128 0 l 1
 EndSplineSet
 EndChar
 
@@ -30075,11 +30075,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-640 1152 m 1
- 640 -91 l 1
- 475 -256 l 1
- 165 -256 l 1
- 0 -91 l 1
+0 -91 m 1
  0 1152 l 1
  128 1152 l 1
  128 -37 l 1
@@ -30088,6 +30084,10 @@ SplineSet
  512 -37 l 1
  512 1152 l 1
  640 1152 l 1
+ 640 -91 l 1
+ 475 -256 l 1
+ 165 -256 l 1
+ 0 -91 l 1
 EndSplineSet
 EndChar
 
@@ -30147,8 +30147,7 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-549 -256 m 5
- 0 293 l 5
+0 293 m 5
  0 603 l 5
  549 1152 l 5
  640 1061 l 5
@@ -30156,6 +30155,7 @@ SplineSet
  128 347 l 5
  640 -165 l 5
  549 -256 l 5
+ 0 293 l 5
 EndSplineSet
 EndChar
 
@@ -30208,7 +30208,8 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-91 -256 m 1
+0 -165 m 1
+ 91 -256 l 1
  640 293 l 1
  640 603 l 1
  91 1152 l 1
@@ -30216,7 +30217,6 @@ SplineSet
  512 549 l 1
  512 347 l 1
  0 -165 l 1
- 91 -256 l 1
 EndSplineSet
 EndChar
 
