@@ -31,21 +31,26 @@ def main():
     glyph_1 = font_1.glyphbycp(cp)
     glyph_2 = font_2.glyphbycp(cp)
 
-    bmp_1 = bdfparser.Bitmap(['0'])
-    bmp_2 = bdfparser.Bitmap(['0'])
+    compare_bmp_1 = bdfparser.Bitmap(['0'])
+    compare_bmp_2 = bdfparser.Bitmap(['0'])
+
+    display_bmp_1 = bdfparser.Bitmap(['0'])
+    display_bmp_2 = bdfparser.Bitmap(['0'])
 
     if glyph_1 is not None:
-      bmp_1 = glyph_1.draw()
+      compare_bmp_1 = glyph_1.draw(1)
+      display_bmp_1 = glyph_1.draw()
 
     if glyph_2 is not None:
-      bmp_2 = glyph_2.draw()
+      compare_bmp_2 = glyph_2.draw(1)
+      display_bmp_2 = glyph_2.draw()
 
-    if bmp_1.bindata != bmp_2.bindata:
+    if compare_bmp_1.bindata != compare_bmp_2.bindata:
       # Sets the color of the glyphs to red when translated to a PIL RGB image.
-      bmp_1 = bmp_1.replace(1, 2)
-      bmp_2 = bmp_2.replace(1, 2)
+      display_bmp_1 = display_bmp_1.replace(1, 2)
+      display_bmp_2 = display_bmp_2.replace(1, 2)
 
-    bmp_pair = bdfparser.Bitmap.concatall([bmp_1, bmp_2], direction=0, align=1, offsetlist=[5])
+    bmp_pair = bdfparser.Bitmap.concatall([display_bmp_1, display_bmp_2], direction=0, align=1, offsetlist=[5])
     bmp_pair_list.append(bmp_pair)
 
   bmp_pair_tuple_list = list(itertools.batched(bmp_pair_list, cols))
