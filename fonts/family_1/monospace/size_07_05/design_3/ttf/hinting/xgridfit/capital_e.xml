@@ -1,0 +1,140 @@
+<glyph ps-name="E">
+  <constant name="last" value="11" />
+
+  <!-- phantom points -->
+  <constant name="character-origin" value="last + 1" />
+  <constant name="advance-width-point" value="last + 2" />
+  <constant name="top-origin" value="last + 3" />
+  <constant name="advance-height-point" value="last + 4" />
+
+
+  <!-- left stem -->
+
+  <with-vectors axis="x">
+    <move>
+      <reference>
+        <point num="character-origin" />
+      </reference>
+      <point num="0" />
+      <align>
+        <point num="1" />
+      </align>
+    </move>
+
+    <move distance="stem">
+      <reference>
+        <point num="0" />
+      </reference>
+      <point num="9" />
+      <align>
+        <point num="8" />
+        <point num="5" />
+        <point num="4" />
+      </align>
+    </move>
+  </with-vectors>
+
+
+  <!-- right side -->
+
+  <with-vectors axis="x">
+    <move>
+      <reference>
+        <point num="advance-width-point" />
+      </reference>
+      <point num="11" />
+      <align>
+        <point num="10" />
+        <point num="3" />
+        <point num="2" />
+      </align>
+    </move>
+
+    <move distance="stem">
+      <reference>
+        <point num="10" />
+      </reference>
+      <point num="7" />
+      <align>
+        <point num="6" />
+      </align>
+    </move>
+  </with-vectors>
+
+
+  <!-- bottom stem -->
+
+  <with-vectors axis="y">
+    <move>
+      <point num="0" />
+      <align>
+        <point num="11" />
+      </align>
+    </move>
+
+    <move distance="stem">
+      <reference>
+        <point num="0" />
+      </reference>
+      <point num="9" />
+      <align>
+        <point num="10" />
+      </align>
+    </move>
+  </with-vectors>
+
+
+  <!-- top stem -->
+
+  <with-vectors axis="y">
+    <move>
+      <reference>
+        <point num="top-origin" />
+      </reference>
+      <point num="1" />
+      <align>
+        <point num="2" />
+      </align>
+    </move>
+
+    <move distance="stem">
+      <reference>
+        <point num="1" />
+      </reference>
+      <point num="4" />
+      <align>
+        <point num="3" />
+      </align>
+    </move>
+  </with-vectors>
+
+
+  <!-- bar -->
+
+  <with-vectors axis="y">
+    <interpolate round="to-grid">
+      <reference>
+        <point num="0" />
+        <point num="1" />
+      </reference>
+      <point num="5" />
+    </interpolate>
+
+    <align>
+      <reference>
+        <point num="5" />
+      </reference>
+      <point num="6" />
+    </align>
+
+    <move distance="stem">
+      <reference>
+        <point num="5" />
+      </reference>
+      <point num="8" />
+      <align>
+        <point num="7" />
+      </align>
+    </move>
+  </with-vectors>
+</glyph>
