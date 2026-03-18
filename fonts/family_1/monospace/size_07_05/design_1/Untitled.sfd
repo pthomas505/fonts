@@ -18,7 +18,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1771300331
-ModificationTime: 1772171734
+ModificationTime: 1773810458
 PfmFamily: 16
 TTFWeight: 400
 TTFWidth: 5
@@ -19963,8 +19963,8 @@ EndChar
 StartChar: uni0394
 Encoding: 99 916 99
 GlifName: uni0394
-Width: 2048
-Flags: H
+Width: 1355
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -20055,14 +20055,23 @@ SplineSet
  640 768 l 257
 EndSplineSet
 Fore
-Validated: 1
+SplineSet
+465 128 m 1
+ 704 606 l 1
+ 943 128 l 1
+ 465 128 l 1
+1152 0 m 1
+ 704 896 l 1
+ 256 0 l 1
+ 1152 0 l 1
+EndSplineSet
 EndChar
 
 StartChar: Lambda
 Encoding: 100 923 100
 GlifName: L_ambda
-Width: 2048
-Flags: H
+Width: 1355
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -20138,7 +20147,15 @@ SplineSet
  640 768 l 257
 EndSplineSet
 Fore
-Validated: 1
+SplineSet
+256 0 m 1
+ 401 0 l 1
+ 704 606 l 1
+ 1007 0 l 1
+ 1152 0 l 1
+ 704 896 l 1
+ 256 0 l 1
+EndSplineSet
 EndChar
 
 StartChar: Pi
@@ -22896,6 +22913,21 @@ SplineSet
  1152 896 l 257
  1152 768 l 257
  1024 768 l 257
+EndSplineSet
+Fore
+SplineSet
+657 384 m 5
+ 704 290 l 5
+ 751 384 l 5
+ 657 384 l 5
+256 896 m 5
+ 401 896 l 5
+ 593 512 l 5
+ 815 512 l 5
+ 1007 896 l 5
+ 1152 896 l 5
+ 704 0 l 5
+ 256 896 l 5
 EndSplineSet
 EndChar
 
