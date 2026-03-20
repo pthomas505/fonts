@@ -18,7 +18,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1772000712
-ModificationTime: 1772172332
+ModificationTime: 1774047719
 PfmFamily: 16
 TTFWeight: 400
 TTFWidth: 5
@@ -33732,8 +33732,8 @@ EndChar
 StartChar: logicalnot.uni00AC
 Encoding: 95 172 95
 GlifName: logicalnot.uni00AC
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -33798,8 +33798,8 @@ EndChar
 StartChar: periodcentered.uni00B7
 Encoding: 96 183 96
 GlifName: periodcentered.uni00B7
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -33895,8 +33895,8 @@ EndChar
 StartChar: Gamma.uni0393
 Encoding: 98 915 98
 GlifName: Gamma.uni0393
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -34152,6 +34152,17 @@ SplineSet
  1024 1280 l 257
  896 1280 l 257
 EndSplineSet
+Fore
+SplineSet
+465 128 m 1
+ 960 1118 l 1
+ 1455 128 l 1
+ 465 128 l 1
+1664 0 m 1
+ 960 1408 l 1
+ 256 0 l 1
+ 1664 0 l 1
+EndSplineSet
 EndChar
 
 StartChar: Lambda.uni039B
@@ -34273,13 +34284,23 @@ SplineSet
  1024 1280 l 257
  896 1280 l 257
 EndSplineSet
+Fore
+SplineSet
+256 0 m 1
+ 401 0 l 1
+ 960 1118 l 1
+ 1519 0 l 1
+ 1664 0 l 1
+ 960 1408 l 5
+ 256 0 l 1
+EndSplineSet
 EndChar
 
 StartChar: Pi.uni03A0
 Encoding: 101 928 101
 GlifName: Pi.uni03A0
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -34436,8 +34457,8 @@ EndChar
 StartChar: Sigma.uni03A3
 Encoding: 102 931 102
 GlifName: Sigma.uni03A3
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -34580,8 +34601,8 @@ EndChar
 StartChar: alpha.uni03B1
 Encoding: 103 945 103
 GlifName: alpha.uni03B1
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -34712,8 +34733,8 @@ EndChar
 StartChar: beta.uni03B2
 Encoding: 104 946 104
 GlifName: beta.uni03B2
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -34884,8 +34905,8 @@ EndChar
 StartChar: gamma.uni03B3
 Encoding: 105 947 105
 GlifName: gamma.uni03B3
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -34993,8 +35014,8 @@ EndChar
 StartChar: delta.uni03B4
 Encoding: 106 948 106
 GlifName: delta.uni03B4
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -35148,8 +35169,8 @@ EndChar
 StartChar: epsilon.uni03B5
 Encoding: 107 949 107
 GlifName: epsilon.uni03B5
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -35294,8 +35315,8 @@ EndChar
 StartChar: theta.uni03B8
 Encoding: 108 952 108
 GlifName: theta.uni03B8
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -35476,8 +35497,8 @@ EndChar
 StartChar: lambda.uni03BB
 Encoding: 109 955 109
 GlifName: lambda.uni03BB
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -35585,8 +35606,8 @@ EndChar
 StartChar: uni03BC.uni03BC
 Encoding: 110 956 110
 GlifName: uni03BC.uni03BC
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -35707,8 +35728,8 @@ EndChar
 StartChar: nu.uni03BD
 Encoding: 111 957 111
 GlifName: nu.uni03BD
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -35807,8 +35828,8 @@ EndChar
 StartChar: pi.uni03C0
 Encoding: 112 960 112
 GlifName: pi.uni03C0
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -35929,8 +35950,8 @@ EndChar
 StartChar: sigma.uni03C3
 Encoding: 113 963 113
 GlifName: sigma.uni03C3
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -36061,8 +36082,8 @@ EndChar
 StartChar: tau.uni03C4
 Encoding: 114 964 114
 GlifName: tau.uni03C4
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -36149,8 +36170,8 @@ EndChar
 StartChar: phi.uni03C6
 Encoding: 115 966 115
 GlifName: phi.uni03C6
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -36314,8 +36335,8 @@ EndChar
 StartChar: chi.uni03C7
 Encoding: 116 967 116
 GlifName: chi.uni03C7
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -36430,8 +36451,8 @@ EndChar
 StartChar: psi.uni03C8
 Encoding: 117 968 117
 GlifName: psi.uni03C8
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -36590,8 +36611,8 @@ EndChar
 StartChar: quotedblleft.uni201C
 Encoding: 118 8220 118
 GlifName: quotedblleft.uni201C
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -36644,7 +36665,7 @@ EndChar
 StartChar: quotedblright.uni201D
 Encoding: 119 8221 119
 GlifName: quotedblright.uni201D
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
@@ -36698,8 +36719,8 @@ EndChar
 StartChar: uni2102.uni2102
 Encoding: 120 8450 120
 GlifName: uni2102.uni2102
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -36872,8 +36893,8 @@ EndChar
 StartChar: uni2115.uni2115
 Encoding: 121 8469 121
 GlifName: uni2115.uni2115
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -37058,8 +37079,8 @@ EndChar
 StartChar: uni211A.uni211A
 Encoding: 122 8474 122
 GlifName: uni211A.uni211A
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -37276,8 +37297,8 @@ EndChar
 StartChar: uni211D.uni211D
 Encoding: 123 8477 123
 GlifName: uni211D.uni211D
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -37495,8 +37516,8 @@ EndChar
 StartChar: uni2124.uni2124
 Encoding: 124 8484 124
 GlifName: uni2124.uni2124
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -37672,8 +37693,8 @@ EndChar
 StartChar: arrowleft.uni2190
 Encoding: 125 8592 125
 GlifName: arrowleft.uni2190
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -37747,7 +37768,7 @@ EndChar
 StartChar: arrowright.uni2192
 Encoding: 126 8594 126
 GlifName: arrowright.uni2192
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
@@ -37822,7 +37843,7 @@ EndChar
 StartChar: arrowboth.uni2194
 Encoding: 127 8596 127
 GlifName: arrowboth.uni2194
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
@@ -38049,13 +38070,28 @@ SplineSet
  1664 1280 l 257
  1536 1280 l 257
 EndSplineSet
+Fore
+SplineSet
+785 640 m 1
+ 960 290 l 1
+ 1135 640 l 1
+ 785 640 l 1
+256 1408 m 1
+ 401 1408 l 1
+ 721 768 l 1
+ 1199 768 l 1
+ 1519 1408 l 1
+ 1664 1408 l 1
+ 960 0 l 1
+ 256 1408 l 1
+EndSplineSet
 EndChar
 
 StartChar: partialdiff.uni2202
 Encoding: 129 8706 129
 GlifName: partialdiff.uni2202
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -38612,8 +38648,8 @@ EndChar
 StartChar: element.uni2208
 Encoding: 132 8712 132
 GlifName: element.uni2208
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -38748,7 +38784,7 @@ EndChar
 StartChar: notelement.uni2209
 Encoding: 133 8713 133
 GlifName: notelement.uni2209
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
@@ -38922,8 +38958,8 @@ EndChar
 StartChar: uni2218.uni2218
 Encoding: 134 8728 134
 GlifName: uni2218.uni2218
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -38974,8 +39010,8 @@ EndChar
 StartChar: infinity.uni221E
 Encoding: 135 8734 135
 GlifName: infinity.uni221E
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -39090,8 +39126,8 @@ EndChar
 StartChar: logicaland.uni2227
 Encoding: 136 8743 136
 GlifName: logicaland.uni2227
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -39146,7 +39182,7 @@ EndChar
 StartChar: logicalor.uni2228
 Encoding: 137 8744 137
 GlifName: logicalor.uni2228
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
@@ -39202,8 +39238,8 @@ EndChar
 StartChar: intersection.uni2229
 Encoding: 138 8745 138
 GlifName: intersection.uni2229
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -39344,7 +39380,7 @@ EndChar
 StartChar: union.uni222A
 Encoding: 139 8746 139
 GlifName: union.uni222A
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
@@ -39486,8 +39522,8 @@ EndChar
 StartChar: notequal.uni2260
 Encoding: 140 8800 140
 GlifName: notequal.uni2260
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -39626,8 +39662,8 @@ EndChar
 StartChar: equivalence.uni2261
 Encoding: 141 8801 141
 GlifName: equivalence.uni2261
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -39760,8 +39796,8 @@ EndChar
 StartChar: lessequal.uni2264
 Encoding: 142 8804 142
 GlifName: lessequal.uni2264
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -39856,7 +39892,7 @@ EndChar
 StartChar: greaterequal.uni2265
 Encoding: 143 8805 143
 GlifName: greaterequal.uni2265
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
@@ -39952,7 +39988,7 @@ EndChar
 StartChar: propersubset.uni2282
 Encoding: 144 8834 144
 GlifName: propersubset.uni2282
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
@@ -40064,7 +40100,7 @@ EndChar
 StartChar: reflexsubset.uni2286
 Encoding: 145 8838 145
 GlifName: reflexsubset.uni2286
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
@@ -40201,7 +40237,7 @@ EndChar
 StartChar: uni22C2.uni22C2
 Encoding: 146 8898 146
 GlifName: uni22C2.uni22C2
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
@@ -40383,7 +40419,7 @@ EndChar
 StartChar: uni22C3.uni22C3
 Encoding: 147 8899 147
 GlifName: uni22C3.uni22C3
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
@@ -40565,8 +40601,8 @@ EndChar
 StartChar: uni27E8.uni27E8
 Encoding: 148 10216 148
 GlifName: uni27E8.uni27E8
-Width: 2048
-Flags: H
+Width: 1024
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -40651,7 +40687,7 @@ EndChar
 StartChar: uni27E9.uni27E9
 Encoding: 149 10217 149
 GlifName: uni27E9.uni27E9
-Width: 2048
+Width: 1024
 Flags: HW
 LayerCount: 2
 Back
