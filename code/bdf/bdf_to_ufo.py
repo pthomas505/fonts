@@ -71,7 +71,7 @@ def main():
   glyph_name_to_glyph_file_name_dict = {}
 
   for glyph in font.iterglyphs():
-    glyph_name = glyph.meta['glyphname']
+    glyph_name = str(glyph.meta['codepoint'])
     glyph_node = ET.Element('glyph', name=glyph_name, format='2')
 
     advance = (fbbx + 1) * args.scale
