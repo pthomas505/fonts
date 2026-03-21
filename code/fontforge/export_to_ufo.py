@@ -64,7 +64,7 @@ def main():
   glyph_name_to_glyph_file_name_dict = {}
 
   for glyph in font.glyphs():
-    glyph_name = glyph.glyphname
+    glyph_name = str(glyph.unicode)
     glyph_node = ET.Element('glyph', name=glyph_name, format='2')
 
     advance = glyph.width
