@@ -65,7 +65,6 @@ def main():
   glyphs_folder_path = args.ufo_file_path / 'glyphs'
   glyphs_folder_path.mkdir(exist_ok=True)
 
-  fbbx = font.headers['fbbx']
   fbbyoff = font.headers['fbbyoff']
 
   glyph_name_to_glyph_file_name_dict = {}
@@ -74,8 +73,9 @@ def main():
     glyph_name = str(glyph.meta['codepoint'])
     glyph_node = ET.Element('glyph', name=glyph_name, format='2')
 
-    advance = (fbbx + 1) * args.scale
-    ET.SubElement(glyph_node, 'advance', width=str(advance))
+    dwidth = glyph.meta['dwx0']
+    width = dwidth * args.scale
+    ET.SubElement(glyph_node, 'advance', width=str(width))
 
     unicode = '{:04X}'.format(glyph.cp())
     ET.SubElement(glyph_node, 'unicode', hex=unicode)
