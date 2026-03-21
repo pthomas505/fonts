@@ -48,7 +48,7 @@ FitToEm: 0
 WinInfo: 0 34 12
 BeginChars: 150 150
 
-StartChar: char33
+StartChar: exclam
 Encoding: 1 33 0
 GlifName: char33
 Width: 768
@@ -82,7 +82,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char34
+StartChar: quotedbl
 Encoding: 2 34 1
 GlifName: char34
 Width: 768
@@ -116,7 +116,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char35
+StartChar: numbersign
 Encoding: 3 35 2
 GlifName: char35
 Width: 768
@@ -198,7 +198,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char36
+StartChar: dollar
 Encoding: 4 36 3
 GlifName: char36
 Width: 768
@@ -303,7 +303,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char37
+StartChar: percent
 Encoding: 5 37 4
 GlifName: char37
 Width: 768
@@ -371,7 +371,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char38
+StartChar: ampersand
 Encoding: 6 38 5
 GlifName: char38
 Width: 768
@@ -468,7 +468,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char39
+StartChar: quotesingle
 Encoding: 7 39 6
 GlifName: char39
 Width: 768
@@ -492,7 +492,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char40
+StartChar: parenleft
 Encoding: 8 40 7
 GlifName: char40
 Width: 768
@@ -540,7 +540,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char41
+StartChar: parenright
 Encoding: 9 41 8
 GlifName: char41
 Width: 768
@@ -585,7 +585,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char42
+StartChar: asterisk
 Encoding: 10 42 9
 GlifName: char42
 Width: 768
@@ -653,7 +653,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char43
+StartChar: plus
 Encoding: 11 43 10
 GlifName: char43
 Width: 768
@@ -693,7 +693,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char44
+StartChar: comma
 Encoding: 12 44 11
 GlifName: char44
 Width: 768
@@ -725,7 +725,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char45
+StartChar: hyphen
 Encoding: 13 45 12
 GlifName: char45
 Width: 768
@@ -749,7 +749,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char46
+StartChar: period
 Encoding: 14 46 13
 GlifName: char46
 Width: 768
@@ -773,7 +773,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char47
+StartChar: slash
 Encoding: 15 47 14
 GlifName: char47
 Width: 768
@@ -813,7 +813,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char48
+StartChar: zero
 Encoding: 16 48 15
 GlifName: char48
 Width: 768
@@ -884,7 +884,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char49
+StartChar: one
 Encoding: 17 49 16
 GlifName: char49
 Width: 768
@@ -928,7 +928,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char50
+StartChar: two
 Encoding: 18 50 17
 GlifName: char50
 Width: 768
@@ -997,7 +997,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char51
+StartChar: three
 Encoding: 19 51 18
 GlifName: char51
 Width: 768
@@ -1073,7 +1073,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char52
+StartChar: four
 Encoding: 20 52 19
 GlifName: char52
 Width: 768
@@ -1130,7 +1130,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char53
+StartChar: five
 Encoding: 21 53 20
 GlifName: char53
 Width: 768
@@ -1187,7 +1187,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char54
+StartChar: six
 Encoding: 22 54 21
 GlifName: char54
 Width: 768
@@ -1254,7 +1254,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char55
+StartChar: seven
 Encoding: 23 55 22
 GlifName: char55
 Width: 768
@@ -1296,7 +1296,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char56
+StartChar: eight
 Encoding: 24 56 23
 GlifName: char56
 Width: 768
@@ -1378,7 +1378,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char57
+StartChar: nine
 Encoding: 25 57 24
 GlifName: char57
 Width: 768
@@ -1444,7 +1444,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char58
+StartChar: colon
 Encoding: 26 58 25
 GlifName: char58
 Width: 768
@@ -1478,7 +1478,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char59
+StartChar: semicolon
 Encoding: 27 59 26
 GlifName: char59
 Width: 768
@@ -1520,7 +1520,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char60
+StartChar: less
 Encoding: 28 60 27
 GlifName: char60
 Width: 768
@@ -1564,7 +1564,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char61
+StartChar: equal
 Encoding: 29 61 28
 GlifName: char61
 Width: 768
@@ -1598,7 +1598,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char62
+StartChar: greater
 Encoding: 30 62 29
 GlifName: char62
 Width: 768
@@ -1641,7 +1641,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char63
+StartChar: question
 Encoding: 31 63 30
 GlifName: char63
 Width: 768
@@ -1707,7 +1707,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char64
+StartChar: at
 Encoding: 32 64 31
 GlifName: char64
 Width: 768
@@ -1780,7 +1780,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char65
+StartChar: A
 Encoding: 33 65 32
 GlifName: char65
 Width: 768
@@ -1832,7 +1832,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char66
+StartChar: B
 Encoding: 34 66 33
 GlifName: char66
 Width: 768
@@ -1895,7 +1895,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char67
+StartChar: C
 Encoding: 35 67 34
 GlifName: char67
 Width: 768
@@ -1953,7 +1953,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char68
+StartChar: D
 Encoding: 36 68 35
 GlifName: char68
 Width: 768
@@ -1997,7 +1997,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char69
+StartChar: E
 Encoding: 37 69 36
 GlifName: char69
 Width: 768
@@ -2040,7 +2040,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char70
+StartChar: F
 Encoding: 38 70 37
 GlifName: char70
 Width: 768
@@ -2078,7 +2078,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char71
+StartChar: G
 Encoding: 39 71 38
 GlifName: char71
 Width: 768
@@ -2142,7 +2142,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char72
+StartChar: H
 Encoding: 40 72 39
 GlifName: char72
 Width: 768
@@ -2184,7 +2184,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char73
+StartChar: I
 Encoding: 41 73 40
 GlifName: char73
 Width: 768
@@ -2226,7 +2226,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char74
+StartChar: J
 Encoding: 42 74 41
 GlifName: char74
 Width: 768
@@ -2268,7 +2268,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char75
+StartChar: K
 Encoding: 43 75 42
 GlifName: char75
 Width: 768
@@ -2338,7 +2338,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char76
+StartChar: L
 Encoding: 44 76 43
 GlifName: char76
 Width: 768
@@ -2368,7 +2368,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char77
+StartChar: M
 Encoding: 45 77 44
 GlifName: char77
 Width: 768
@@ -2420,7 +2420,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char78
+StartChar: N
 Encoding: 46 78 45
 GlifName: char78
 Width: 768
@@ -2469,7 +2469,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char79
+StartChar: O
 Encoding: 47 79 46
 GlifName: char79
 Width: 768
@@ -2523,7 +2523,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char80
+StartChar: P
 Encoding: 48 80 47
 GlifName: char80
 Width: 768
@@ -2571,7 +2571,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char81
+StartChar: Q
 Encoding: 49 81 48
 GlifName: char81
 Width: 768
@@ -2635,7 +2635,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char82
+StartChar: R
 Encoding: 50 82 49
 GlifName: char82
 Width: 768
@@ -2693,7 +2693,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char83
+StartChar: S
 Encoding: 51 83 50
 GlifName: char83
 Width: 768
@@ -2769,7 +2769,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char84
+StartChar: T
 Encoding: 52 84 51
 GlifName: char84
 Width: 768
@@ -2803,7 +2803,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char85
+StartChar: U
 Encoding: 53 85 52
 GlifName: char85
 Width: 768
@@ -2847,7 +2847,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char86
+StartChar: V
 Encoding: 54 86 53
 GlifName: char86
 Width: 768
@@ -2900,7 +2900,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char87
+StartChar: W
 Encoding: 55 87 54
 GlifName: char87
 Width: 768
@@ -2951,7 +2951,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char88
+StartChar: X
 Encoding: 56 88 55
 GlifName: char88
 Width: 768
@@ -3033,7 +3033,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char89
+StartChar: Y
 Encoding: 57 89 56
 GlifName: char89
 Width: 768
@@ -3089,7 +3089,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char90
+StartChar: Z
 Encoding: 58 90 57
 GlifName: char90
 Width: 768
@@ -3147,7 +3147,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char91
+StartChar: bracketleft
 Encoding: 59 91 58
 GlifName: char91
 Width: 768
@@ -3179,7 +3179,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char92
+StartChar: backslash
 Encoding: 60 92 59
 GlifName: char92
 Width: 768
@@ -3223,7 +3223,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char93
+StartChar: bracketright
 Encoding: 61 93 60
 GlifName: char93
 Width: 768
@@ -3255,7 +3255,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char94
+StartChar: asciicircum
 Encoding: 62 94 61
 GlifName: char94
 Width: 768
@@ -3299,7 +3299,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char95
+StartChar: underscore
 Encoding: 63 95 62
 GlifName: char95
 Width: 768
@@ -3323,7 +3323,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char96
+StartChar: grave
 Encoding: 64 96 63
 GlifName: char96
 Width: 768
@@ -3357,7 +3357,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char97
+StartChar: a
 Encoding: 65 97 64
 GlifName: char97
 Width: 768
@@ -3418,7 +3418,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char98
+StartChar: b
 Encoding: 66 98 65
 GlifName: char98
 Width: 768
@@ -3463,7 +3463,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char99
+StartChar: c
 Encoding: 67 99 66
 GlifName: char99
 Width: 768
@@ -3519,7 +3519,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char100
+StartChar: d
 Encoding: 68 100 67
 GlifName: char100
 Width: 768
@@ -3565,7 +3565,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char101
+StartChar: e
 Encoding: 69 101 68
 GlifName: char101
 Width: 768
@@ -3627,7 +3627,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char102
+StartChar: f
 Encoding: 70 102 69
 GlifName: char102
 Width: 768
@@ -3675,7 +3675,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char103
+StartChar: g
 Encoding: 71 103 70
 GlifName: char103
 Width: 768
@@ -3732,7 +3732,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char104
+StartChar: h
 Encoding: 72 104 71
 GlifName: char104
 Width: 768
@@ -3773,7 +3773,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char105
+StartChar: i
 Encoding: 73 105 72
 GlifName: char105
 Width: 768
@@ -3819,7 +3819,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char106
+StartChar: j
 Encoding: 74 106 73
 GlifName: char106
 Width: 768
@@ -3873,7 +3873,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char107
+StartChar: k
 Encoding: 75 107 74
 GlifName: char107
 Width: 768
@@ -3935,7 +3935,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char108
+StartChar: l
 Encoding: 76 108 75
 GlifName: char108
 Width: 768
@@ -3971,7 +3971,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char109
+StartChar: m
 Encoding: 77 109 76
 GlifName: char109
 Width: 768
@@ -4029,7 +4029,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char110
+StartChar: n
 Encoding: 78 110 77
 GlifName: char110
 Width: 768
@@ -4066,7 +4066,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char111
+StartChar: o
 Encoding: 79 111 78
 GlifName: char111
 Width: 768
@@ -4120,7 +4120,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char112
+StartChar: p
 Encoding: 80 112 79
 GlifName: char112
 Width: 768
@@ -4166,7 +4166,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char113
+StartChar: q
 Encoding: 81 113 80
 GlifName: char113
 Width: 768
@@ -4212,7 +4212,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char114
+StartChar: r
 Encoding: 82 114 81
 GlifName: char114
 Width: 768
@@ -4247,7 +4247,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char115
+StartChar: s
 Encoding: 83 115 82
 GlifName: char115
 Width: 768
@@ -4321,7 +4321,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char116
+StartChar: t
 Encoding: 84 116 83
 GlifName: char116
 Width: 768
@@ -4361,7 +4361,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char117
+StartChar: u
 Encoding: 85 117 84
 GlifName: char117
 Width: 768
@@ -4403,7 +4403,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char118
+StartChar: v
 Encoding: 86 118 85
 GlifName: char118
 Width: 768
@@ -4454,7 +4454,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char119
+StartChar: w
 Encoding: 87 119 86
 GlifName: char119
 Width: 768
@@ -4513,7 +4513,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char120
+StartChar: x
 Encoding: 88 120 87
 GlifName: char120
 Width: 768
@@ -4595,7 +4595,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char121
+StartChar: y
 Encoding: 89 121 88
 GlifName: char121
 Width: 768
@@ -4643,7 +4643,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char122
+StartChar: z
 Encoding: 90 122 89
 GlifName: char122
 Width: 768
@@ -4699,7 +4699,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char123
+StartChar: braceleft
 Encoding: 91 123 90
 GlifName: char123
 Width: 768
@@ -4752,7 +4752,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char124
+StartChar: bar
 Encoding: 92 124 91
 GlifName: char124
 Width: 768
@@ -4776,7 +4776,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char125
+StartChar: braceright
 Encoding: 93 125 92
 GlifName: char125
 Width: 768
@@ -4828,7 +4828,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: char126
+StartChar: asciitilde
 Encoding: 94 126 93
 GlifName: char126
 Width: 768
