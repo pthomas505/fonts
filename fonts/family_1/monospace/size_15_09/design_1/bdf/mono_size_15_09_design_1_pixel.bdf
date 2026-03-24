@@ -1,9 +1,9 @@
 STARTFONT 2.1
-FONT --mono_size_15_09_design_1-Normal-R-Normal--20-200-72-72-P-0--
+FONT --mono_size_15_09_design_1_pixel-Normal-R-Normal--20-200-72-72-P-0--
 SIZE 20 72 72
 FONTBOUNDINGBOX 18 19 0 -4
 STARTPROPERTIES 21
-FAMILY_NAME "mono_size_15_09_design_1"
+FAMILY_NAME "mono_size_15_09_design_1_pixel"
 DEFAULT_CHAR -1
 CODEPAGE "MS Windows 1252 Western (ANSI)"
 ENC_MODE 2
