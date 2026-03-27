@@ -1,10 +1,11 @@
 STARTFONT 2.1
-FONT --mono_size_13_09_design_1_pixel-Normal-R-Normal--19-190-72-72-P-140--
+FONT -Patrick J. Thomas-mono_size_13_09_design_1_pixel-Normal-R-Normal--19-190-72-72-P-140--
 SIZE 19 72 72
 FONTBOUNDINGBOX 7 19 1 -4
-STARTPROPERTIES 22
+STARTPROPERTIES 23
 FAMILY_NAME "mono_size_13_09_design_1_pixel"
 DEFAULT_CHAR -1
+FOUNDRY "Patrick J. Thomas"
 CODEPAGE "MS Windows 1252 Western (ANSI)"
 ENC_MODE 2
 CREATION_YEAR 2026
