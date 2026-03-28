@@ -2,12 +2,14 @@ STARTFONT 2.1
 FONT -Patrick J. Thomas-mono_size_19_11_design_1_pixel-Normal-R-Normal--26-260-72-72-P-0--
 SIZE 26 72 72
 FONTBOUNDINGBOX 22 25 0 -6
-STARTPROPERTIES 22
+STARTPROPERTIES 24
 FAMILY_NAME "mono_size_19_11_design_1_pixel"
 DEFAULT_CHAR -1
 FOUNDRY "Patrick J. Thomas"
+COPYRIGHT "Copyright (c) 2026, Patrick J. Thomas. All rights reserved."
 CODEPAGE "MS Windows 1252 Western (ANSI)"
 ENC_MODE 2
+DESIGNER "Patrick J. Thomas"
 CREATION_YEAR 2026
 WEIGHT_NAME "Normal"
 SLANT "R"
