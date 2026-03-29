@@ -12,7 +12,7 @@ Pixel Fonts
 16 ppem:
 [mono_size_11_07_design_1_pixel.ttf](fonts/family_1/monospace/size_11_07/design_1/OpenType-TT/mono_size_11_07_design_1_pixel.ttf)
 
-19 ppem:
+18 ppem:
 [mono_size_13_09_design_1_pixel.ttf](fonts/family_1/monospace/size_13_09/design_1/OpenType-TT/mono_size_13_09_design_1_pixel.ttf)
 
 20 ppem:
